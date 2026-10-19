@@ -1,0 +1,13 @@
+{
+    "version": "testing...",
+    "buildId": "",
+    "statusCode": 0,
+    "message": "",
+    "correlationId": "",
+    "result": {
+        "type": "",
+        "title": "",
+        "status": 0,
+        "traceId": ""
+    }
+}

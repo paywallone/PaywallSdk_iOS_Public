@@ -1,0 +1,27 @@
+{
+    "version": "testing...",
+    "buildId": "",
+    "statusCode": 0,
+    "message": "",
+    "correlationId": "",
+    "result": {
+        "hasCofCards": false,
+        "hasMasterpassCards": false,
+        "isAccountLinked": false,
+        "isAccountBlocked": false,
+        "isMsisdnChanged": false,
+        "isThereAnyCreditCardInAccount": false,
+        "doesMerchantHaveSupportedDebitCards": false,
+        "isThereAnyNonExpiredCards": false,
+        "isTrustedMerchant": false
+    },
+    "exception": {
+        "level": "",
+        "code": "",
+        "message": "",
+        "validationErrors": [{"field": "",
+                              "message": "",
+                              "code": ""}],
+        "details": [""]
+    }
+}

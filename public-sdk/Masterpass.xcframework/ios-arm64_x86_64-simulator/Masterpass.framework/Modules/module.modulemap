@@ -1,0 +1,11 @@
+framework module Masterpass {
+  umbrella header "Masterpass.h"
+  export *
+
+  module * { export * }
+}
+
+module Masterpass.Swift {
+  header "Masterpass-Swift.h"
+  requires objc
+}

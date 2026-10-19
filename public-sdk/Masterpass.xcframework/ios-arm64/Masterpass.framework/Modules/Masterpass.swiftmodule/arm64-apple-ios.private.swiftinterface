@@ -1,0 +1,1331 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name Masterpass
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import AuthenticationServices
+import CommonCrypto
+import CryptoKit
+import Foundation
+@_exported import Masterpass
+import SafariServices
+import Security
+import Swift
+import SwiftUI
+import UIKit
+import WebKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct MasterPass {
+  public static var logs: ((_ log: Swift.String) -> Swift.Void)? {
+    get
+    set
+  }
+  public static var tGId: Swift.String
+  public static var verbose: Swift.Bool {
+    get
+    set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func initialize(merchantId: Swift.Int, terminalGroupId: Swift.String?, language: Swift.String = "en-US", url: Swift.String, cipherText: Swift.String? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func addCard(_ jToken: Swift.String, accountKey: Swift.String?, accountKeyType: Masterpass.AccountKeyType?, rrn: Swift.String?, userId: Swift.String?, card: Masterpass.MPCard?, cardAlias: Swift.String?, isMsisdnValidatedByMerchant: Swift.Bool?, authenticationMethod: Masterpass.AuthType?, _ additionalParams: [Swift.String : Swift.String]? = nil, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.GeneralResponseWith3D>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func linkAccountToMerchant(_ jToken: Swift.String, _ accountKey: Swift.String?, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ result: Masterpass.MPResponse<Masterpass.LinkToMerchantResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func accountAccess(_ jToken: Swift.String, accountKey: Swift.String?, accountKeyType: Masterpass.AccountKeyType?, userId: Swift.String?, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.CardResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func removeCard(_ jToken: Swift.String, _ accountKey: Swift.String?, _ cardAlias: Swift.String?, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.RemoveCardResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func updateUserId(_ jToken: Swift.String, _ accountKey: Swift.String?, _ currentUserId: Swift.String?, _ newUserId: Swift.String?, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.GeneralResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func updateUserMsisdn(_ jToken: Swift.String, _ accountKey: Swift.String?, _ newMsisdn: Swift.String?, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.GeneralResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func addUserId(_ jToken: Swift.String, _ accountKey: Swift.String?, _ currentUserId: Swift.String?, _ newUserId: Swift.String?, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.GeneralResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func recurringOrderRegister(_ jToken: Swift.String, _ accountKey: Swift.String?, _ cardAlias: Swift.String?, _ productId: Swift.String?, _ amountLimit: Swift.String?, _ expireDate: Swift.String, _ authenticationMethod: Masterpass.AuthType?, _ rrn: Swift.String, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.GeneralResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func recurringOrderUpdate(_ jToken: Swift.String, _ accountKey: Swift.String?, _ cardAlias: Swift.String?, _ productId: Swift.String?, _ amountLimit: Swift.String?, _ expireDate: Swift.String, _ rrn: Swift.String, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.GeneralResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func recurringOrderDelete(_ jToken: Swift.String, _ accountKey: Swift.String?, _ accountChangedEventName: Masterpass.AccountChangeKind?, _ cardAlias: Swift.String?, _ productId: Swift.String?, _ authenticationMethod: Masterpass.AuthType?, _ rrn: Swift.String, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.RecurringOrderDeleteResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func verify(_ jToken: Swift.String, otp: Masterpass.MPText, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.VerifyResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func resendOtp(_ jToken: Swift.String, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.GeneralResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func start3DValidation(_ jToken: Swift.String, returnURL: Swift.String? = nil, webView: Masterpass.MPWebView, _ completion: @escaping (_ status: Swift.Result<Masterpass.Status3D?, Masterpass.MPError>) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func payment(_ jToken: Swift.String, _ rrn: Swift.String?, _ cvv: Masterpass.MPText?, _ cardAlias: Swift.String?, _ accountKey: Swift.String?, _ amount: Swift.String?, _ orderNo: Swift.String?, _ currencyCode: Masterpass.MPCurrencyCode?, _ paymentType: Masterpass.PaymentType?, _ acquirerIcaNumber: Swift.String?, _ installmentCount: Swift.Int? = 0, _ subMerchant: Masterpass.SubMerchant?, _ rewardList: [Masterpass.Reward]?, _ orderDetails: Masterpass.OrderDetails?, _ authenticationMethod: Masterpass.AuthType?, _ orderProductDetails: Masterpass.OrderProductDetails?, _ buyerDetails: Masterpass.BuyerDetails?, _ billDetails: Masterpass.BillDetails?, _ deliveryDetails: Masterpass.DeliveryDetails?, _ otherDetails: Masterpass.OtherDetails?, _ secure3DModel: Masterpass.SecurityType?, _ terminal: Masterpass.Terminal?, _ mokaSubDealerDetails: Masterpass.MokaSubDealerDetails?, _ customParameters: Masterpass.CustomParameters?, _ additionalParams: [Swift.String : Swift.String]? = nil, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.PaymentResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func directPayment(_ jToken: Swift.String, _ rrn: Swift.String?, _ card: Masterpass.MPCard?, _ cardAlias: Swift.String?, _ accountKey: Swift.String?, _ amount: Swift.String?, _ orderNo: Swift.String?, _ currencyCode: Masterpass.MPCurrencyCode?, _ paymentType: Masterpass.PaymentType?, _ acquirerIcaNumber: Swift.String?, _ installmentCount: Swift.Int? = 0, _ subMerchant: Masterpass.SubMerchant?, _ rewardList: [Masterpass.Reward]?, _ orderDetails: Masterpass.OrderDetails?, _ authenticationMethod: Masterpass.AuthType?, _ orderProductDetails: Masterpass.OrderProductDetails?, _ buyerDetails: Masterpass.BuyerDetails?, _ billDetails: Masterpass.BillDetails?, _ deliveryDetails: Masterpass.DeliveryDetails?, _ otherDetails: Masterpass.OtherDetails?, _ secure3DModel: Masterpass.SecurityType?, _ terminal: Masterpass.Terminal?, _ mokaSubDealerDetails: Masterpass.MokaSubDealerDetails?, _ customParameters: Masterpass.CustomParameters?, _ additionalParams: [Swift.String : Swift.String]? = nil, completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.PaymentResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func registerAndPurchase(_ jToken: Swift.String, _ card: Masterpass.MPCard?, _ cardAlias: Swift.String?, _ userId: Swift.String?, _ rrn: Swift.String?, _ accountKey: Swift.String?, _ accountKeyType: Swift.String?, _ amount: Swift.String?, _ orderNo: Swift.String?, _ currencyCode: Masterpass.MPCurrencyCode?, _ paymentType: Masterpass.PaymentType?, _ acquirerIcaNumber: Swift.String?, _ installmentCount: Swift.Int?, _ subMerchant: Masterpass.SubMerchant?, _ rewardList: [Masterpass.Reward]?, _ orderDetails: Masterpass.OrderDetails?, _ authenticationMethod: Masterpass.AuthType?, _ orderProductsDetails: Masterpass.OrderProductDetails?, _ buyerDetails: Masterpass.BuyerDetails?, _ billDetails: Masterpass.BillDetails?, _ deliveryDetails: Masterpass.DeliveryDetails?, _ otherDetails: Masterpass.OtherDetails?, _ secure3DModel: Masterpass.SecurityType?, _ terminal: Masterpass.Terminal?, _ isMsisdnValidatedByMerchant: Swift.Bool?, _ customParameters: Masterpass.CustomParameters?, _ additionalParams: [Swift.String : Swift.String]? = nil, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.RegisterAndPurchaseResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func qrPayment(_ jToken: Swift.String, _ currencyCode: Masterpass.MPCurrencyCode?, _ rrn: Swift.String?, _ cvv: Masterpass.MPText?, _ cardAlias: Swift.String?, _ accountKey: Swift.String?, _ amount: Swift.String?, _ orderId: Swift.String?, _ installmentCount: Swift.Int? = 0, _ pointAmount: Swift.String?, _ merchantName: Swift.String?, _ merchantCity: Swift.String?, _ mcc: Swift.Int?, _ merchantIdQR: Swift.Int?, _ channelCode: Swift.Int?, _ acquirerId: Swift.String?, _ userId: Swift.String?, _ additionalParams: [Swift.String : Swift.String]? = nil, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.PaymentResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func moneySend(_ jToken: Swift.String, _ sender: Swift.String?, _ receiver: Swift.String?, _ cvv: Masterpass.MPText?, _ accountKey: Swift.String?, _ amount: Swift.String?, _ orderNo: Swift.String?, _ rrn: Swift.String?, _ currencyCode: Masterpass.MPCurrencyCode?, _ authenticationMethod: Masterpass.AuthType?, _ secure3DModel: Masterpass.SecurityType?, _ acquirerIcaNumber: Swift.String?, _ moneySendType: Masterpass.MoneySendType, _ recipientDetail: Masterpass.RecipientDetail, additionalParams: [Swift.String : Swift.String]? = nil, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.MoneySendResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func fetchReward(_ jToken: Swift.String, _ card: Masterpass.MPCard?, _ amount: Swift.String?, _ installmentCount: Swift.Int? = 0, _ acquirerIcaNumber: Swift.String?, _ currencyCode: Masterpass.MPCurrencyCode?, _ terminal: Masterpass.Terminal?, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.RewardResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func completeRegistration(_ jToken: Swift.String, _ accountKey: Swift.String?, _ accountAlias: Swift.String, _ isMsisdnValidatedByMerchant: Swift.Bool?, _ responseToken: Swift.String? = nil, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.GeneralResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func digitalLoan(_ jToken: Swift.String, _ userId: Swift.String?, _ isMsisdnValidatedByMerchant: Swift.Bool?, _ rrn: Swift.String?, _ accountKey: Swift.String?, _ cvc: Masterpass.MPText?, _ amount: Swift.String?, _ currencyCode: Masterpass.MPCurrencyCode?, _ orderNo: Swift.String?, _ acquirerIcaNumber: Swift.String?, _ loanIssuerIcaNumber: Swift.String?, _ campaingCode: Swift.String?, _ basket: Swift.String?, _ accessToken: Swift.String?, _ subMerchant: Masterpass.SubMerchant?, _ orderDetails: Masterpass.OrderDetails?, _ orderProductDetails: Masterpass.OrderProductDetails?, _ buyerDetails: Masterpass.BuyerDetails?, _ billDetails: Masterpass.BillDetails?, _ deliveryDetails: Masterpass.DeliveryDetails?, _ otherDetails: Masterpass.OtherDetails?, _ mokaSubDealerDetails: Masterpass.MokaSubDealerDetails?, _ terminal: Masterpass.Terminal?, _ additionalParams: [Swift.String : Swift.String]? = nil, _ completion: @escaping (_ error: Masterpass.ServiceError?, _ response: Masterpass.MPResponse<Masterpass.LoanResponse>?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func startLoanValidation(jToken: Swift.String, returnURL: Swift.String, webView: Masterpass.MPWebView, completion: @escaping (_ status: Swift.Result<Masterpass.Status3D?, Masterpass.MPError>) -> Swift.Void)
+  #endif
+}
+public struct RecipientDetail : Swift.Encodable {
+  public let Name: Swift.String
+  public let Address: Swift.String?
+  public let City: Swift.String?
+  public let ZipCode: Swift.String?
+  public let Country: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(name: Swift.String = "", address: Swift.String? = nil, city: Swift.String? = nil, zipCode: Swift.String? = nil, country: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum PriceType : Swift.String {
+  case net
+  case gross
+  case physical
+  case virtual
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum MPError : Swift.Error, Swift.Equatable {
+  case textFieldRangeError
+  case fireEventTypeMismatch
+  case fireEventNotRegistered
+  case responseDecodeFailure(desc: Swift.String)
+  case wrongMimeType
+  case httpStatusNotSuccess(desc: Swift.String)
+  case parameterNil(desc: Swift.String)
+  case inSecureTextfield
+  case validation3dError(desc: Swift.String)
+  case validationLoanError(desc: Swift.String)
+  case paramsCannotDecode(desc: Swift.String)
+  case cardNoWrong
+  case cardNoEmpty
+  case wrongOtpFormat
+  case wrongRtaFormat
+  case tokenIsEmpty
+  case notMPText
+  case cvvInvalid
+  case wrongExpiryDate
+  case wrongTextFieldType(desc: Swift.String)
+  case checkboxNotSelected
+  case checkboxNotSelectedDirect
+  case checkBoxSelected
+  case notAuthorizedCard
+  case threeDURLisEmpty
+  case passkeyNotAuthenticated(desc: Swift.String)
+  public static func == (a: Masterpass.MPError, b: Masterpass.MPError) -> Swift.Bool
+}
+extension Masterpass.MPError : Foundation.LocalizedError {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var errorDescription: Swift.String? {
+    get
+  }
+  #endif
+}
+public struct OrderProductDetails : Swift.Codable {
+  public let orderVer: [Swift.String]?
+  public let orderProductInfo: [Swift.String]?
+  public let orderSellerCommissionAmount: [Swift.String]?
+  public let orderSellerCommissionRate: [Swift.String]?
+  public let orderSellerId: [Swift.String]?
+  public let orderProductName: [Swift.String]?
+  public let orderProductCode: [Swift.String]?
+  public let orderPrice: [Swift.String]?
+  public let subMerchantKeys: [Swift.String]?
+  public let subMerchantPrices: [Swift.String]?
+  public let orderVat: [Swift.String]?
+  public let orderPriceType: [Swift.String]?
+  public let orderQty: [Swift.String]?
+  public let orderMPlaceMerchant: [Swift.String]?
+  public let orderSellerPaymentAmount: [Swift.String]?
+  public let chargedFromMerchant: [Swift.String]?
+  public let chargedPriceFromMerchant: [Swift.String]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(orderVer: [Swift.String]? = nil, orderProductInfo: [Swift.String]? = nil, orderSellerCommissionAmount: [Swift.String]? = nil, orderSellerCommissionRate: [Swift.String]? = nil, orderSellerId: [Swift.String]? = nil, orderProductName: [Swift.String]? = nil, orderProductCode: [Swift.String]? = nil, orderPrice: [Swift.String]? = nil, subMerchantKeys: [Swift.String]? = nil, subMerchantPrices: [Swift.String]? = nil, orderPriceType: [Swift.String]? = nil, orderVat: [Swift.String]? = nil, orderQty: [Swift.String]? = nil, orderMPlaceMerchant: [Swift.String]? = nil, orderSellerPaymentAmount: [Swift.String]? = nil, chargedFromMerchant: [Swift.String]? = nil, chargedPriceFromMerchant: [Swift.String]? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+final public class MPCard {
+  final public var checkbox: Masterpass.MPCheckBox?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(_ cardNo: Masterpass.MPText, _ cardHolder: Swift.String?, _ cvv: Masterpass.MPText?, _ date: Swift.String, _ checkbox: Masterpass.MPCheckBox? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public func getCard() -> Masterpass.OpenCard?
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class OpenCard {
+  final public let cardNo: Swift.String
+  final public let cardHolder: Swift.String?
+  final public let cvv: Swift.String?
+  final public let date: Swift.String
+  @objc deinit
+}
+public struct VerifyResponse : Swift.Codable {
+  public let retrievalReferenceNumber: Swift.String?
+  public let isVerified: Swift.Bool
+  public let token: Swift.String, responseCode: Swift.String, resultDescription: Swift.String
+  public let cardUniqueNumber: Swift.String?
+  public let url3d: Foundation.URL?
+  public let url3dSuccess: Foundation.URL?
+  public let url3dFail: Foundation.URL?
+  public let urlIFrame: Swift.String?
+  public let urlIFrameFail: Swift.String?
+  public let urlIFrameSuccess: Swift.String?
+  public let terminalGroupId: Swift.String?
+  public let maskedNumber: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GeneralResponse : Swift.Codable {
+  public let retrievalReferenceNumber: Swift.String, responseCode: Swift.String, resultDescription: Swift.String, token: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum AccountKeyType : Swift.String {
+  case id
+  case msisdn
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Masterpass.AccountKeyType : Swift.CaseIterable {
+  public static var allCasesString: [Swift.String] {
+    get
+  }
+  public typealias AllCases = [Masterpass.AccountKeyType]
+  nonisolated public static var allCases: [Masterpass.AccountKeyType] {
+    get
+  }
+}
+extension Masterpass.MPText : Masterpass.MasterpassCompatible {
+  public typealias CompatibleType = Masterpass.MPText
+}
+public struct CardResponse : Swift.Codable {
+  public let accountKey: Swift.String, accountState: Swift.String
+  public let cards: [Masterpass.CardModel]
+  public let accountInformation: Masterpass.AccountInformation
+  public let recipientCards: [Masterpass.RecipientCard]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CardModel : Swift.Codable {
+  public let cardAlias: Swift.String, cardState: Swift.String, maskedCardNumber: Swift.String, uniqueCardNumber: Swift.String
+  public let cardType: Swift.String
+  public let productName: Swift.String?
+  public let cardBin: Swift.String
+  public let cardIssuerIcaNumber: Swift.String?
+  public let cardValidationType: Swift.String
+  public let cardAuthorityUrl: Swift.String?
+  public let isDefaultCard: Swift.Bool, expireSoon: Swift.Bool, isExpired: Swift.Bool, isMasterpassMember: Swift.Bool
+  public let isEightDigit: Swift.Bool, isCardCreditOrSupportedDebit: Swift.Bool, isIssuerOtpSupported: Swift.Bool
+  public let eftCode: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct AccountInformation : Swift.Codable {
+  public let isAccountLinked: Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RecipientCard : Swift.Codable {
+  public let alias: Swift.String?, encryptedNumber: Swift.String?, maskedNumber: Swift.String?, uniqueNumber: Swift.String?, issuerIca: Swift.String?, productName: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RegisterAndPurchaseRequest : Swift.Encodable {
+  public let merchantUserId: Swift.String?
+  public let requestReferenceNo: Swift.String?
+  public let cvc: Swift.String?
+  public let cardNumber: Swift.String?
+  public let cardAlias: Swift.String?
+  public let cardHolderName: Swift.String?
+  public let expiryDate: Swift.String?
+  public let accountKey: Swift.String?
+  public let accountKeyType: Swift.String?
+  public let amount: Swift.String?
+  public let orderNo: Swift.String?
+  public let currencyCode: Swift.String?
+  public let paymentType: Swift.String?
+  public let acquirerIcaNumber: Swift.String?
+  public let installmentCount: Swift.Int?
+  public let subMerchant: Masterpass.SubMerchant?
+  public let rewardList: [Masterpass.Reward]?
+  public let orderDetails: Masterpass.OrderDetails?
+  public let authenticationMethod: Swift.String?
+  public let deviceFingerprint: Swift.String?
+  public let orderProductsDetails: Masterpass.OrderProductDetails?
+  public let buyerDetails: Masterpass.BuyerDetails?
+  public let billDetails: Masterpass.BillDetails?
+  public let deliveryDetails: Masterpass.DeliveryDetails?
+  public let otherDetails: Masterpass.OtherDetails?
+  public let secure3DModel: Swift.String?
+  public let terminal: Masterpass.Terminal?
+  public let isMsisdnValidatedByMerchant: Swift.Bool?
+  public let customParameters: Masterpass.CustomParameters?
+  public let additionalParams: [Swift.String : Swift.String]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(merchantUserId: Swift.String? = nil, requestReferenceNo: Swift.String? = nil, cvc: Swift.String? = nil, cardNumber: Swift.String? = nil, cardAlias: Swift.String? = nil, cardHolderName: Swift.String? = nil, expiryDate: Swift.String? = nil, accountKey: Swift.String? = nil, accountKeyType: Swift.String? = nil, amount: Swift.String? = nil, orderNo: Swift.String? = nil, currencyCode: Masterpass.MPCurrencyCode? = nil, paymentType: Swift.String? = nil, acquirerIcaNumber: Swift.String? = nil, installmentCount: Swift.Int? = nil, subMerchant: Masterpass.SubMerchant? = nil, rewardList: [Masterpass.Reward]? = nil, orderDetails: Masterpass.OrderDetails? = nil, authenticationMethod: Swift.String? = nil, orderProductsDetails: Masterpass.OrderProductDetails? = nil, buyerDetails: Masterpass.BuyerDetails? = nil, billDetails: Masterpass.BillDetails? = nil, deliveryDetails: Masterpass.DeliveryDetails? = nil, otherDetails: Masterpass.OtherDetails? = nil, secure3DModel: Masterpass.SecurityType? = nil, terminal: Masterpass.Terminal? = nil, isMsisdnValidatedByMerchant: Swift.Bool? = nil, customParameters: Masterpass.CustomParameters? = nil, additionalParams: [Swift.String : Swift.String]? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct Terminal : Swift.Codable {
+  public let icaNumber: Swift.String?
+  public let currency: Swift.String?
+  public let posnetId: Swift.String?
+  public let acquirerMerchantId: Swift.String?
+  public let acquirerTerminalId: Swift.String?
+  public let acquirerMerchantEmail: Swift.String?
+  public let terminalUserId: Swift.String?
+  public let terminalPassword: Swift.String?
+  public let provisionUserId: Swift.String?
+  public let storeKey: Swift.String?
+  public let refundPassword: Swift.String?
+  public let integrationVersion: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(icaNumber: Swift.String? = nil, currency: Swift.String? = nil, posnetId: Swift.String? = nil, acquirerMerchantId: Swift.String? = nil, acquirerTerminalId: Swift.String? = nil, acquirerMerchantEmail: Swift.String? = nil, terminalUserId: Swift.String? = nil, terminalPassword: Swift.String? = nil, provisionUserId: Swift.String? = nil, storeKey: Swift.String? = nil, refundPassword: Swift.String? = nil, integrationVersion: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RemoveCardResponse : Swift.Codable {
+  public let clientId: Swift.Int
+  public let refNo: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct PaymentRequest : Swift.Encodable {
+  public let requestReferenceNo: Swift.String?
+  public let cvc: Swift.String?
+  public let cardAlias: Swift.String?
+  public let accountKey: Swift.String?
+  public let amount: Swift.String?
+  public let orderNo: Swift.String?
+  public let currencyCode: Swift.String?
+  public let paymentType: Swift.String?
+  public let acquirerIcaNumber: Swift.String?
+  public let installmentCount: Swift.Int?
+  public let subMerchant: Masterpass.SubMerchant?
+  public let rewardList: [Masterpass.Reward]?
+  public let orderDetails: Masterpass.OrderDetails?
+  public let authenticationMethod: Swift.String?
+  public let orderProductsDetails: Masterpass.OrderProductDetails?
+  public let buyerDetails: Masterpass.BuyerDetails?
+  public let billDetails: Masterpass.BillDetails?
+  public let deliveryDetails: Masterpass.DeliveryDetails?
+  public let otherDetails: Masterpass.OtherDetails?
+  public let secure3DModel: Swift.String?
+  public let terminal: Masterpass.Terminal?
+  public let mokaSubDealerDetails: Masterpass.MokaSubDealerDetails?
+  public let customParameters: Masterpass.CustomParameters?
+  public let additionalParams: [Swift.String : Swift.String]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(requestReferenceNo: Swift.String? = nil, cvc: Swift.String? = nil, cardAlias: Swift.String? = nil, accountKey: Swift.String? = nil, amount: Swift.String? = nil, orderNo: Swift.String? = nil, currencyCode: Masterpass.MPCurrencyCode? = nil, paymentType: Masterpass.PaymentType? = nil, acquirerIcaNumber: Swift.String? = nil, installmentCount: Swift.Int? = nil, subMerchant: Masterpass.SubMerchant? = nil, rewardList: [Masterpass.Reward]? = nil, orderDetails: Masterpass.OrderDetails? = nil, authenticationMethod: Masterpass.AuthType? = nil, orderProductsDetails: Masterpass.OrderProductDetails? = nil, buyerDetails: Masterpass.BuyerDetails? = nil, billDetails: Masterpass.BillDetails? = nil, deliveryDetails: Masterpass.DeliveryDetails? = nil, otherDetails: Masterpass.OtherDetails? = nil, secure3DModel: Masterpass.SecurityType? = nil, terminal: Masterpass.Terminal? = nil, mokaSubDealerDetails: Masterpass.MokaSubDealerDetails? = nil, customParameters: Masterpass.CustomParameters? = nil, additionalParams: [Swift.String : Swift.String]? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct SubMerchant : Swift.Codable {
+  public let code: Swift.String?
+  public let name: Swift.String?
+  public let dealerCode: Swift.String?
+  public let dealerType: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(code: Swift.String? = nil, name: Swift.String? = nil, dealerCode: Swift.String? = nil, dealerType: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct OrderDetails : Swift.Codable {
+  public let timeout: Swift.String?
+  public let cardProgramName: Swift.String?
+  public let shipping: Swift.String?
+  public let discount: Swift.String?
+  public let basketId: Swift.String?
+  public let bolum: Swift.String?
+  public let vendorId: Swift.String?
+  public let paymentContent: Swift.String?
+  public let transactionDescription: Swift.String?
+  public let noncommisionedAmount: Swift.String?
+  public let campaignType: Swift.String?
+  public let commisionRate: Swift.Int?
+  public let vftCode: Swift.String?
+  public let vftInstallmentCount: Swift.String?
+  public let vftAmount: Swift.String?
+  public let posOrderId: Swift.String?
+  public let connectorName: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(timeout: Swift.String? = nil, cardProgramName: Swift.String? = nil, shipping: Swift.String? = nil, discount: Swift.String? = nil, basketID: Swift.String? = nil, bolum: Swift.String? = nil, vendorID: Swift.String? = nil, paymentContent: Swift.String? = nil, transactionDescription: Swift.String? = nil, noncommisionedAmount: Swift.String? = nil, campaignType: Masterpass.CampaignType? = nil, commisionRate: Swift.Int? = nil, vftCode: Swift.String? = nil, vftInstallmentCount: Swift.String? = nil, vftAmount: Swift.String? = nil, posOrderId: Swift.String? = nil, connectorName: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Order : Swift.Codable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(productName: Swift.String? = nil, productCode: Swift.String? = nil, price: Swift.String? = nil, vat: Swift.String? = nil, priceType: Masterpass.PriceType? = nil, quantity: Swift.Int? = nil, productInfo: Swift.String? = nil, ver: Swift.String? = nil, mPlaceMerchant: Swift.String? = nil, sellerID: Swift.String? = nil, sellerPaymentAmount: Swift.String? = nil, sellerCommissionAmount: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct Reward : Swift.Codable {
+  public let rewardName: Swift.String?
+  public let rewardValue: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(rewardName: Swift.String? = nil, rewardValue: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MokaSubDealerDetails : Swift.Codable {
+  public let isPoolPayment: Swift.String?
+  public let commissionScenario: Swift.String?
+  public let mokaSubDealerDetailList: [Masterpass.MokaSubDealerDetailList]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MokaSubDealerDetailList : Swift.Codable {
+  public let dealerId: Swift.String?
+  public let amount: Swift.String?
+  public let dealerCommissionRate: Swift.String?
+  public let dealerCommissionAmount: Swift.String?
+  public let dealerCommissionFixedAmount: Swift.String?
+  public let groupRevenueRate: Swift.String?
+  public let groupRevenueAmount: Swift.String?
+  public let amountToBeCommissioned: Swift.String?
+  public let isIncludedFixedAmount: Swift.String?
+  public var isPoolPayment: Swift.Int
+  public var commissionScenario: Swift.Int
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MPResponse<T> : Swift.Codable where T : Swift.Decodable, T : Swift.Encodable {
+  public let version: Swift.String?
+  public let buildId: Swift.String
+  public let statusCode: Swift.Int
+  public let message: Swift.String
+  public let correlationId: Swift.String?
+  public let requestId: Swift.String?
+  public let result: T?
+  public let exception: Masterpass.ExceptionResponse?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct LoanResponse : Swift.Codable {
+  public let token: Swift.String
+  public let retrievalReferenceNumber: Swift.String
+  public let urlIFrame: Swift.String
+  public let urlIFrameSuccess: Swift.String
+  public let urlIFrameFail: Swift.String
+  public let responseCode: Swift.String
+  public let description: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum SecurityType : Swift.String {
+  case notDefined
+  case non3d
+  case model3D
+  case model3DPay
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Masterpass.SecurityType : Swift.CaseIterable {
+  public static var allCasesString: [Swift.String] {
+    get
+  }
+  public typealias AllCases = [Masterpass.SecurityType]
+  nonisolated public static var allCases: [Masterpass.SecurityType] {
+    get
+  }
+}
+public enum MPTextType {
+  case cardNo
+  case otp
+  case cvv
+  case cvc
+  case rta
+  case none
+  public static func == (a: Masterpass.MPTextType, b: Masterpass.MPTextType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol MasterpassCompatible {
+  associatedtype CompatibleType
+  var mpCard: Masterpass.CardWrapper<Self.CompatibleType> { get set }
+}
+extension Masterpass.MasterpassCompatible {
+  public var mpCard: Masterpass.CardWrapper<Self> {
+    get
+    set
+  }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class MPCheckBox : UIKit.UIControl {
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc override final public var isSelected: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @objc deinit
+}
+public enum AccountChangeKind : Swift.String, Swift.CaseIterable {
+  case msisdnUpdated
+  case cardAdded
+  case cardUpdated
+  case cardRemoved
+  case accountCreated
+  case accountUpdated
+  case accountRemoved
+  case accountAccessAdded
+  case unlinkUser
+  case accountBlocked
+  case recurringOrderAdded
+  case recurringOrderDeleted
+  case issuerCardReplacement
+  case uniqueNumberFilled
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [Masterpass.AccountChangeKind]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [Masterpass.AccountChangeKind] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum AuthType : Swift.String {
+  case none
+  case otp
+  case threeD
+  case rta
+  case noAuth
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Masterpass.AuthType : Swift.CaseIterable {
+  public static var allCasesString: [Swift.String] {
+    get
+  }
+  public typealias AllCases = [Masterpass.AuthType]
+  nonisolated public static var allCases: [Masterpass.AuthType] {
+    get
+  }
+}
+public struct RecurringOrderDeleteResponse : Swift.Codable {
+  public let retrievalReferenceNumber: Swift.String?, responseCode: Swift.String?, resultDescription: Swift.String?, msisdn: Swift.String?
+  public let listAccountName: Swift.String?, maskedAccountNo: Swift.String?, endDate: Swift.String?
+  public let amount: Swift.Int?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RewardRequest : Swift.Encodable {
+  public let currencyCode: Swift.String?
+  public let acquirerIcaNumber: Swift.String?
+  public let amount: Swift.String?
+  public let installmentCount: Swift.Int?
+  public let cardNumber: Swift.String?
+  public let cvc: Swift.String?
+  public let expiryDate: Swift.String?
+  public let terminal: Masterpass.Terminal?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(currencyCode: Masterpass.MPCurrencyCode? = nil, acquirerIcaNumber: Swift.String? = nil, amount: Swift.String? = nil, installmentCount: Swift.Int? = nil, cardNumber: Swift.String? = nil, cvc: Swift.String? = nil, expiryDate: Swift.String? = nil, terminal: Masterpass.Terminal? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public enum PaymentType : Swift.String {
+  case sale
+  case preAuth
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Masterpass.PaymentType : Swift.CaseIterable {
+  public static var allCasesString: [Swift.String] {
+    get
+  }
+  public typealias AllCases = [Masterpass.PaymentType]
+  nonisolated public static var allCases: [Masterpass.PaymentType] {
+    get
+  }
+}
+public enum MoneySendType : Swift.String {
+  case cardToCard
+  case cardToPhone
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Masterpass.MoneySendType : Swift.CaseIterable {
+  public static var allCasesString: [Swift.String] {
+    get
+  }
+  public typealias AllCases = [Masterpass.MoneySendType]
+  nonisolated public static var allCases: [Masterpass.MoneySendType] {
+    get
+  }
+}
+public struct BuyerDetails : Swift.Codable {
+  public let buyerId: Swift.String?
+  public let identityNumber: Swift.String?
+  public let lastLoginDate: Swift.String?
+  public let registrationDate: Swift.String?
+  public let name: Swift.String?
+  public let email: Swift.String?
+  public let phone: Swift.String?
+  public let ip: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(buyerId: Swift.String? = nil, identityNumber: Swift.String? = nil, lastLoginDate: Swift.String? = nil, registrationDate: Swift.String? = nil, name: Swift.String? = nil, email: Swift.String? = nil, phone: Swift.String? = nil, ip: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct GeneralResponseWith3D : Swift.Codable {
+  public let retrievalReferenceNumber: Swift.String, responseCode: Swift.String, resultDescription: Swift.String, token: Swift.String
+  public let url3d: Foundation.URL?
+  public let url3dSuccess: Foundation.URL?
+  public let url3dFail: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct BillDetails : Swift.Codable {
+  public let useRealBillEmailAddress: Swift.Bool?
+  public let billLastName: Swift.String?
+  public let billFirstName: Swift.String?
+  public let billEmail: Swift.String?
+  public let billPhone: Swift.String?
+  public let billCountryCode: Swift.String?
+  public let billFax: Swift.String?
+  public let billAddress: Swift.String?
+  public let billAddress2: Swift.String?
+  public let billZipCode: Swift.String?
+  public let billCity: Swift.String?
+  public let billState: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(useRealBillEmailAddress: Swift.Bool? = nil, billLastName: Swift.String? = nil, billFirstName: Swift.String? = nil, billEmail: Swift.String? = nil, billPhone: Swift.String? = nil, billCountryCode: Swift.String? = nil, billFax: Swift.String? = nil, billAddress: Swift.String? = nil, billAddress2: Swift.String? = nil, billZipCode: Swift.String? = nil, billCity: Swift.String? = nil, billState: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class NativeKeyWrapper {
+  public static var priKey: Swift.String {
+    get
+  }
+  public static var pubKey: Swift.String {
+    get
+  }
+  public static var jailbreakPaths: [Swift.String] {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class JailbreakPathWrapper {
+  public static var jailbreakPaths: [Swift.String]
+  @objc deinit
+}
+public struct PaymentResponse : Swift.Codable {
+  public let responseCode: Swift.String?, responseDescription: Swift.String?, token: Swift.String?, retrievalReferenceNumber: Swift.String?
+  public let terminalGroupId: Swift.String?, maskedNumber: Swift.String?
+  public let url3d: Foundation.URL?
+  public let url3dSuccess: Foundation.URL?
+  public let url3dFail: Foundation.URL?
+  public let passkeyAuthenticationUrl: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MoneySendResponse : Swift.Codable {
+  public let responseCode: Swift.String, responseDescription: Swift.String, token: Swift.String, retrievalReferenceNumber: Swift.String
+  public let terminalGroupId: Swift.String?, maskedNumber: Swift.String?, reconciliationDate: Swift.String?, orderId: Swift.String?
+  public let url3d: Foundation.URL?
+  public let url3dSuccess: Foundation.URL?
+  public let url3dFail: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum MPCurrencyCode : Swift.String {
+  case ALL
+  case DZD
+  case AND
+  case AON
+  case AZM
+  case ARS
+  case AUD
+  case BSD
+  case BHD
+  case BDT
+  case AMD
+  case BBD
+  case BEL
+  case BMD
+  case BTN
+  case BOB
+  case BWP
+  case BZD
+  case SBD
+  case BND
+  case BGL
+  case KYT
+  case BIF
+  case BLR
+  case KHR
+  case CAD
+  case CVE
+  case KYD
+  case LKR
+  case CLP
+  case CNY
+  case CNX
+  case COP
+  case KMF
+  case ZRN
+  case CRC
+  case HRK
+  case CUP
+  case CYP
+  case CSK
+  case DKK
+  case DOP
+  case ECS
+  case SVC
+  case ETB
+  case EEK
+  case FKP
+  case FJD
+  case FIN
+  case FRA
+  case DJF
+  case GEO
+  case GMD
+  case DEU
+  case GHC
+  case GIP
+  case GRC
+  case GTQ
+  case GNF
+  case GYD
+  case HTG
+  case BAL
+  case HNL
+  case HKD
+  case HUF
+  case ISK
+  case INR
+  case IDR
+  case IRR
+  case IQD
+  case IRL
+  case ILS
+  case ITA
+  case JMD
+  case JPY
+  case KZT
+  case JOD
+  case KES
+  case KPW
+  case KRW
+  case KWD
+  case KGS
+  case LAK
+  case LBP
+  case LSM
+  case LVL
+  case LRD
+  case LYD
+  case LTL
+  case LUX
+  case MOP
+  case MDG
+  case MWK
+  case MYR
+  case MVR
+  case MTL
+  case MRO
+  case MUR
+  case MXN
+  case MNT
+  case MDL
+  case MAD
+  case MZM
+  case OMR
+  case NAD
+  case NPR
+  case ANG
+  case ANG2
+  case AWG
+  case VUV
+  case NZD
+  case NIO
+  case NGN
+  case NOK
+  case PKR
+  case PAB
+  case PGK
+  case PYG
+  case PEN
+  case PHP
+  case PRT
+  case GWP
+  case TMP
+  case QAR
+  case ROL
+  case RUB
+  case RWF
+  case SHP
+  case STD
+  case SAR
+  case SCR
+  case SLL
+  case SGD
+  case SKK
+  case VND
+  case SIT
+  case SOS
+  case ZAR
+  case ZWD
+  case ESP
+  case SDD
+  case SUR
+  case SZL
+  case SEK
+  case CHF
+  case SYP
+  case TJK
+  case THB
+  case TOP
+  case TTD
+  case AED
+  case TND
+  case UGX
+  case UKR
+  case MKD
+  case EGP
+  case GBP
+  case TZS
+  case USD
+  case UYU
+  case UZS
+  case VEB
+  case WST
+  case YER
+  case YUN
+  case CSD
+  case ZMK
+  case TWD
+  case MZN
+  case AZN
+  case RON
+  case TRY
+  case XAF
+  case XCD
+  case XOF
+  case XPF
+  case ECU
+  case XAU
+  case SRD
+  case MGA
+  case AFN
+  case BYR
+  case BGN
+  case BAM
+  case EUR
+  case UAH
+  case GEL
+  case AON2
+  case UVC
+  case BOV
+  case PLN
+  case BRL
+  case GOL
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+extension Masterpass.MPCurrencyCode : Swift.CaseIterable {
+  public var name: Swift.String {
+    get
+  }
+  public static var allCasesString: [Swift.String] {
+    get
+  }
+  public typealias AllCases = [Masterpass.MPCurrencyCode]
+  nonisolated public static var allCases: [Masterpass.MPCurrencyCode] {
+    get
+  }
+}
+public struct LinkToMerchantResponse : Swift.Codable {
+  public let retrievalReferenceNumber: Swift.String
+  public let responseCode: Swift.String
+  public let description: Swift.String
+  public let token: Swift.String
+  public let cardIssuerName: Swift.String
+  public let maskedPan: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public protocol MasterpassCheckable {
+  func updateVisualState(isSelected: Swift.Bool)
+}
+@objc @_inheritsConvenienceInitializers @available(iOS 13.0, *)
+@IBDesignable @_Concurrency.MainActor @preconcurrency final public class MasterpassUIKitCheckBox : UIKit.UIControl {
+  @_Concurrency.MainActor @preconcurrency final public var mpCheckBox: Masterpass.MPCheckBox {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency final public var onStateChanged: ((Swift.Bool) -> Swift.Void)?
+  @objc @IBInspectable @_Concurrency.MainActor @preconcurrency final public var titleText: Swift.String {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override final public var isSelected: Swift.Bool {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class ServiceError : Swift.Error {
+  final public var responseCode: Masterpass.MPError?
+  final public var responseDesc: Swift.String?
+  final public var mdStatus: Swift.String?
+  final public var mdErrorMsg: Swift.String?
+  final public var exception: Masterpass.ExceptionResponse?
+  @objc deinit
+}
+public struct ResendOtpResponse : Swift.Codable {
+  public let type: Swift.String
+  public let title: Swift.String
+  public let status: Swift.Int
+  public let traceId: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct CustomParameters : Swift.Codable {
+  public let generateOrderId: Swift.String?
+  public let paymentGatewayIcaNumber: Swift.String?
+  public let eMoneyTopUp: Swift.String?
+  public let topUpMenu: Swift.String?
+  public let encodedValue: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(generateOrderId: Swift.String? = nil, paymentGatewayIcaNumber: Swift.String? = nil, eMoneyTopUp: Swift.String? = nil, topUpMenu: Swift.String? = nil, encodedValue: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct MoneySendRequest : Swift.Encodable {
+  public let sender: Swift.String?
+  public let receiver: Swift.String?
+  public let cvv: Swift.String?
+  public let accountKey: Swift.String?
+  public let amount: Swift.String?
+  public let orderNo: Swift.String?
+  public let referenceNo: Swift.String?
+  public let currencyCode: Swift.String?
+  public let authenticationMethod: Swift.String?
+  public let secure3dModel: Swift.String?
+  public let acquirerIcaNumber: Swift.String?
+  public let moneySendType: Swift.String?
+  public let recipientDetail: Masterpass.RecipientDetail
+  public let additionalParams: [Swift.String : Swift.String]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(sender: Swift.String? = nil, receiver: Swift.String? = nil, cvv: Swift.String? = nil, accountKey: Swift.String? = nil, amount: Swift.String? = nil, orderNo: Swift.String? = nil, requestReferenceNo: Swift.String? = nil, currencyCode: Masterpass.MPCurrencyCode? = nil, authenticationMethod: Masterpass.AuthType? = nil, secure3DModel: Masterpass.SecurityType? = nil, acquirerIcaNumber: Swift.String? = nil, moneySendType: Masterpass.MoneySendType? = nil, recipientDetail: Masterpass.RecipientDetail, additionalParams: [Swift.String : Swift.String]? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct OverDraftResponse : Swift.Codable {
+  public let token: Swift.String
+  public let retrievalReferenceNumber: Swift.String?
+  public let urlIFrame: Swift.String?
+  public let urlIFrameSuccess: Swift.String?
+  public let urlIFrameFail: Swift.String?
+  public let url3d: Swift.String?
+  public let url3dSuccess: Swift.String?
+  public let url3dFail: Swift.String?
+  public let responseCode: Swift.String
+  public let description: Swift.String?
+  public let maskedNumber: Swift.String?
+  public let terminalGroupId: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor @preconcurrency final public class MPText : UIKit.UITextField {
+  @_Concurrency.MainActor @preconcurrency weak final public var MPTFDelegate: (any UIKit.UITextFieldDelegate)?
+  @_Concurrency.MainActor @preconcurrency final public var count: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency final public var isEmpty: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @preconcurrency final public var type: Masterpass.MPTextType? {
+    get
+    set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc override final public var text: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public init()
+  @_Concurrency.MainActor @preconcurrency @objc override final public func awakeFromNib()
+  @_Concurrency.MainActor @preconcurrency final public func clear()
+  @_Concurrency.MainActor @preconcurrency final public func validateInput() -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency final public func getFirstSix() -> Swift.String
+  @_Concurrency.MainActor @preconcurrency final public func getFirstEight() -> Swift.String
+  @_Concurrency.MainActor @preconcurrency final public func checkLength() -> Swift.Bool
+  @objc deinit
+}
+extension Masterpass.MPText : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldShouldBeginEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldDidBeginEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldShouldEndEditing(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldDidEndEditing(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldDidEndEditing(_ textField: UIKit.UITextField, reason: UIKit.UITextField.DidEndEditingReason)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+  @available(iOS 13.0, *)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldDidChangeSelection(_ textField: UIKit.UITextField)
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldShouldClear(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor @preconcurrency @objc final public func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+}
+public struct Status3D {
+  public let mdStatus: Swift.String
+  public let mdMessage: Swift.String
+  public var token: Swift.String
+  public var responseDescription: Swift.String
+  public var responseCode: Swift.String
+}
+extension Swift.Encodable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func params(req: any Swift.Encodable) -> [Swift.String : Any]?
+  #endif
+}
+public enum Events {
+  case validateFlow
+  case OTPRequired
+  case threeDRequired
+  case cardVerifyRequired
+  case digitalLoanFlow
+  case networkConnected
+  case networkGone
+  case RTARequired
+  case overDraftFlow
+  public static func == (a: Masterpass.Events, b: Masterpass.Events) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public struct MasterpassEventProvider {
+  public static func register(_ event: Masterpass.Events, callBack: @escaping () -> Swift.Void)
+  public static func clearAllRegisteredEvent()
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class PasskeyAuthSDK : ObjectiveC.NSObject {
+  public static let shared: Masterpass.PasskeyAuthSDK
+  @objc public func handleCallbackUrl(_ incomingUrl: Foundation.URL)
+  @objc deinit
+}
+extension Masterpass.PasskeyAuthSDK : SafariServices.SFSafariViewControllerDelegate {
+  @objc dynamic public func safariViewControllerDidFinish(_ controller: SafariServices.SFSafariViewController)
+}
+public struct OtherDetails : Swift.Codable {
+  public let clientIp: Swift.String?
+  public let clientPort: Swift.String?
+  public let merchantUrl: Swift.String?
+  public let clientTime: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(clientIp: Swift.String? = nil, clientPort: Swift.String? = nil, merchantUrl: Swift.String? = nil, clientTime: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct RegisterAndPurchaseResponse : Swift.Codable {
+  public let responseCode: Swift.String, responseDescription: Swift.String, token: Swift.String, retrievalReferenceNumber: Swift.String
+  public let terminalGroupId: Swift.String?, currencyCode: Swift.String?, cardId: Swift.String?, maskedNumber: Swift.String?
+  public let url3d: Foundation.URL?
+  public let url3dSuccess: Foundation.URL?
+  public let url3dFail: Foundation.URL?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ExceptionResponse : Swift.Codable {
+  public let level: Swift.String, code: Swift.String, message: Swift.String
+  public let validationErrors: [Masterpass.ValidationError]?
+  public let vposErrorCode: Swift.String?
+  public let vposErrorMessage: Swift.String?
+  public let retrievalReferenceNumber: Swift.String?
+  public let thirdPartyApiResponse: Swift.String?
+  public let acquirerIcaNumber: Swift.String?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public struct ValidationError : Swift.Codable {
+  public let field: Swift.String, message: Swift.String, code: Swift.String
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor @preconcurrency final public class MPWebView : WebKit.WKWebView, WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor @preconcurrency final public var token: Swift.String?
+  @_Concurrency.MainActor @preconcurrency final public var url3D: Swift.String?
+  @_Concurrency.MainActor @preconcurrency final public var url3DSuccess: Swift.String?
+  @_Concurrency.MainActor @preconcurrency final public var url3DError: Swift.String?
+  @_Concurrency.MainActor @preconcurrency final public var loanUrl: Swift.String?
+  @_Concurrency.MainActor @preconcurrency final public var loanSuccess: Swift.String?
+  @_Concurrency.MainActor @preconcurrency final public var loanError: Swift.String?
+  @_Concurrency.MainActor @preconcurrency weak final public var MPWebViewDelegate: (any WebKit.WKNavigationDelegate)?
+  @_Concurrency.MainActor @preconcurrency @objc override dynamic public init(frame: CoreFoundation.CGRect, configuration: WebKit.WKWebViewConfiguration)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc required dynamic public init?(coder: Foundation.NSCoder)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public static func initWithScale() -> Masterpass.MPWebView
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, didStartProvisionalNavigation navigation: WebKit.WKNavigation!)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency @objc final public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  #endif
+  @objc deinit
+}
+public struct CardWrapper<TextField> {
+  public var tf: TextField
+  public init(_ tf: TextField)
+}
+public struct RewardResponse : Swift.Codable {
+  public let rewards: [Masterpass.Reward]?
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+public enum CampaignType : Swift.String {
+  case exIns
+  case deIns
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@available(iOS 13.0, *)
+@_Concurrency.MainActor @preconcurrency public struct MasterpassCheckBox<Content> : SwiftUICore.View where Content : SwiftUICore.View {
+  @SwiftUICore.Binding @_projectedValueProperty($state) @_Concurrency.MainActor @preconcurrency public var state: Swift.Bool {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating _modify
+  }
+  @_Concurrency.MainActor @preconcurrency public var $state: SwiftUICore.Binding<Swift.Bool> {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @SwiftUICore.Binding @_projectedValueProperty($container) @_Concurrency.MainActor @preconcurrency public var container: Masterpass.MPCheckBox? {
+    get
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating set
+    @available(iOS 13.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+    nonmutating _modify
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public var $container: SwiftUICore.Binding<Masterpass.MPCheckBox?> {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(state: SwiftUICore.Binding<Swift.Bool>, container: SwiftUICore.Binding<Masterpass.MPCheckBox?> = .constant(nil), @SwiftUICore.ViewBuilder content: @escaping (Swift.Bool) -> Content)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public var body: some SwiftUICore.View {
+    get
+  }
+  @available(iOS 13.0, *)
+  public typealias Body = @_opaqueReturnTypeOf("$s10Masterpass0A8CheckBoxV4bodyQrvp", 0) __<Content>
+}
+public struct Result3D {
+  public let url3D: Swift.String
+  public let url3DSuccess: Swift.String
+  public let url3DFailure: Swift.String
+  public let passkeyAuthenticationUrl: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(url3D: Swift.String, url3DSuccess: Swift.String, url3DFailure: Swift.String, passkeyAuthenticationUrl: Swift.String? = nil)
+  #endif
+}
+public struct DirectPaymentRequest : Swift.Encodable {
+  public let requestReferenceNo: Swift.String?
+  public let cvc: Swift.String?
+  public let cardNumber: Swift.String?
+  public let cardAlias: Swift.String?
+  public let cardHolderName: Swift.String?
+  public let expiryDate: Swift.String?
+  public let accountKey: Swift.String?
+  public let amount: Swift.String?
+  public let orderNo: Swift.String?
+  public let currencyCode: Swift.String?
+  public let paymentType: Swift.String?
+  public let acquirerIcaNumber: Swift.String?
+  public let installmentCount: Swift.Int?
+  public let subMerchant: Masterpass.SubMerchant?
+  public let rewardList: [Masterpass.Reward]?
+  public let orderDetails: Masterpass.OrderDetails?
+  public let authenticationMethod: Swift.String?
+  public let orderProductsDetails: Masterpass.OrderProductDetails?
+  public let buyerDetails: Masterpass.BuyerDetails?
+  public let billDetails: Masterpass.BillDetails?
+  public let deliveryDetails: Masterpass.DeliveryDetails?
+  public let otherDetails: Masterpass.OtherDetails?
+  public let secure3DModel: Swift.String?
+  public let terminal: Masterpass.Terminal?
+  public let mokaSubDealerDetails: Masterpass.MokaSubDealerDetails?
+  public let customParameters: Masterpass.CustomParameters?
+  public let additionalParams: [Swift.String : Swift.String]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(requestReferenceNo: Swift.String? = nil, cvc: Swift.String? = nil, cardNumber: Swift.String? = nil, cardAlias: Swift.String? = nil, cardHolderName: Swift.String? = nil, expiryDate: Swift.String? = nil, accountKey: Swift.String? = nil, amount: Swift.String? = nil, orderNo: Swift.String? = nil, currencyCode: Masterpass.MPCurrencyCode? = nil, paymentType: Masterpass.PaymentType? = nil, acquirerIcaNumber: Swift.String? = nil, installmentCount: Swift.Int? = nil, subMerchant: Masterpass.SubMerchant? = nil, rewardList: [Masterpass.Reward]? = nil, orderDetails: Masterpass.OrderDetails? = nil, authenticationMethod: Masterpass.AuthType? = nil, orderProductsDetails: Masterpass.OrderProductDetails? = nil, buyerDetails: Masterpass.BuyerDetails? = nil, billDetails: Masterpass.BillDetails? = nil, deliveryDetails: Masterpass.DeliveryDetails? = nil, otherDetails: Masterpass.OtherDetails? = nil, secure3DModel: Masterpass.SecurityType? = nil, terminal: Masterpass.Terminal? = nil, mokaSubDealerDetails: Masterpass.MokaSubDealerDetails? = nil, customParameters: Masterpass.CustomParameters? = nil, additionalParams: [Swift.String : Swift.String]? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct QrPaymentRequest : Swift.Encodable {
+  public let currencyCode: Swift.String?
+  public let cvc: Swift.String?
+  public let accountKey: Swift.String?
+  public let cardAlias: Swift.String?
+  public let amount: Swift.String?
+  public let orderId: Swift.String?
+  public let requestReferenceNo: Swift.String?
+  public let installmentCount: Swift.Int?
+  public let pointAmount: Swift.String?
+  public let merchantName: Swift.String?
+  public let merchantCity: Swift.String?
+  public let mcc: Swift.Int?
+  public let merchantIdQR: Swift.Int?
+  public let channelCode: Swift.Int?
+  public let acquirerId: Swift.String?
+  public let userId: Swift.String?
+  public let additionalParams: [Swift.String : Swift.String]?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(currencyCode: Masterpass.MPCurrencyCode? = nil, cvc: Swift.String? = nil, accountKey: Swift.String? = nil, cardAlias: Swift.String? = nil, amount: Swift.String? = nil, orderId: Swift.String? = nil, requestReferenceNo: Swift.String? = nil, installmentCount: Swift.Int? = nil, pointAmount: Swift.String? = nil, merchantName: Swift.String? = nil, merchantCity: Swift.String? = nil, mcc: Swift.Int? = nil, merchantIdQR: Swift.Int? = nil, channelCode: Swift.Int? = nil, acquirerId: Swift.String? = nil, userId: Swift.String? = nil, additionalParams: [Swift.String : Swift.String]? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public struct ResultLoan {
+  public let urlIFrame: Swift.String
+  public let urlIFrameSuccess: Swift.String
+  public let urlIFrameFail: Swift.String
+  public init(urlIFrame: Swift.String, urlIFrameSuccess: Swift.String, urlIFrameFail: Swift.String)
+}
+public struct DeliveryDetails : Swift.Codable {
+  public let deliveryLastName: Swift.String?
+  public let deliveryFirstName: Swift.String?
+  public let deliveryEmail: Swift.String?
+  public let deliveryPhone: Swift.String?
+  public let deliveryCompany: Swift.String?
+  public let deliveryAddress: Swift.String?
+  public let deliveryAddress2: Swift.String?
+  public let deliveryZipCode: Swift.String?
+  public let deliveryCity: Swift.String?
+  public let deliveryState: Swift.String?
+  public let deliveryCountryCode: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(deliveryLastName: Swift.String? = nil, deliveryFirstName: Swift.String? = nil, deliveryEmail: Swift.String? = nil, deliveryPhone: Swift.String? = nil, deliveryCompany: Swift.String? = nil, deliveryAddress: Swift.String? = nil, deliveryAddress2: Swift.String? = nil, deliveryZipCode: Swift.String? = nil, deliveryCity: Swift.String? = nil, deliveryState: Swift.String? = nil, deliveryCountryCode: Swift.String? = nil)
+  #endif
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
+extension Masterpass.PriceType : Swift.Equatable {}
+extension Masterpass.PriceType : Swift.Hashable {}
+extension Masterpass.PriceType : Swift.RawRepresentable {}
+extension Masterpass.AccountKeyType : Swift.Equatable {}
+extension Masterpass.AccountKeyType : Swift.Hashable {}
+extension Masterpass.AccountKeyType : Swift.RawRepresentable {}
+extension Masterpass.SecurityType : Swift.Equatable {}
+extension Masterpass.SecurityType : Swift.Hashable {}
+extension Masterpass.SecurityType : Swift.RawRepresentable {}
+extension Masterpass.MPTextType : Swift.Equatable {}
+extension Masterpass.MPTextType : Swift.Hashable {}
+extension Masterpass.AccountChangeKind : Swift.Equatable {}
+extension Masterpass.AccountChangeKind : Swift.Hashable {}
+extension Masterpass.AccountChangeKind : Swift.RawRepresentable {}
+extension Masterpass.AuthType : Swift.Equatable {}
+extension Masterpass.AuthType : Swift.Hashable {}
+extension Masterpass.AuthType : Swift.RawRepresentable {}
+extension Masterpass.PaymentType : Swift.Equatable {}
+extension Masterpass.PaymentType : Swift.Hashable {}
+extension Masterpass.PaymentType : Swift.RawRepresentable {}
+extension Masterpass.MoneySendType : Swift.Equatable {}
+extension Masterpass.MoneySendType : Swift.Hashable {}
+extension Masterpass.MoneySendType : Swift.RawRepresentable {}
+extension Masterpass.MPCurrencyCode : Swift.Equatable {}
+extension Masterpass.MPCurrencyCode : Swift.Hashable {}
+extension Masterpass.MPCurrencyCode : Swift.RawRepresentable {}
+extension Masterpass.Events : Swift.Equatable {}
+extension Masterpass.Events : Swift.Hashable {}
+extension Masterpass.CampaignType : Swift.Equatable {}
+extension Masterpass.CampaignType : Swift.Hashable {}
+extension Masterpass.CampaignType : Swift.RawRepresentable {}
+@available(iOS 13.0, *)
+extension Masterpass.MasterpassCheckBox : Swift.Sendable {}

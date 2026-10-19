@@ -1,0 +1,14 @@
+{
+    "version": "testing...",
+    "buildId": "",
+    "statusCode": 0,
+    "message": "",
+    "correlationId": "",
+    "result": {
+        "retrievalReferenceNumber": "",
+        "isVerified": false,
+        "token": "",
+        "responseCode": "",
+        "description": ""
+    }
+}

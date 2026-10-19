@@ -1,0 +1,11 @@
+{
+  "result": {
+    "retrievalReferenceNumber": "Testing..."
+  },
+  "version": "Testing...",
+  "buildId": "string",
+  "statusCode": 0,
+  "message": "string",
+  "correlationId": "string",
+  "requestId": "string",
+}

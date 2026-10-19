@@ -1,0 +1,46 @@
+{
+    "version": null,
+    "buildId": "543",
+    "statusCode": 200,
+    "message": "OK",
+    "correlationId": null,
+    "requestId": null,
+    "result": {
+        "account": [
+            {
+                "accountKey": "",
+                "accountState": "Activated",
+                "accountPoolId": 20000000,
+                "accountId": 123,
+                "accountIsActive": true,
+                "accountData": {
+                    "cards": [
+                        {
+                            "cardId": 1,
+                            "aliasName": "testAlias",
+                            "uniqueNumber": "ItsAnUniqueNumber",
+                            "encryptedNumber": "ItsAnEncryptedNumber",
+                            "maskedNumber": "12345******6789",
+                            "expiryDate": "MMYY",
+                            "cardState": "Activated",
+                            "issuerIcaNumber": "0000",
+                            "cardHolderName": "Holder Name",
+                            "cardType": "Card Type"
+                        }
+                    ],
+                    "accesses": [
+                        {
+                            "merchantId": "Merchant ID",
+                            "merchantUserId": "User ID",
+                            "isActive": true,
+                            "isCof": false
+                        }
+                    ],
+                    "accountDeviceFingerprints": [],
+                    "recurringOrders": []
+                }
+            }
+        ]
+    },
+    "exception": null
+}

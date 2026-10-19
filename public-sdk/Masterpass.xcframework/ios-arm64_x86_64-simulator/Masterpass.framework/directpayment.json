@@ -1,0 +1,19 @@
+{
+    "version": "testing...",
+    "buildId": "",
+    "statusCode": 0,
+    "message": "",
+    "correlationId": "",
+    "requestId": "",
+    "result": {
+        "token": "",
+        "retrievalReferenceNumber": "",
+        "maskedNumber": "",
+        "terminalGroupId": "",
+        "url3d": "",
+        "url3dSuccess": "",
+        "url3dFail": "",
+        "responseCode": "",
+        "description": ""
+    },
+}

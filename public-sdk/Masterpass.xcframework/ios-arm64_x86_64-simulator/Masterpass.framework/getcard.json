@@ -1,0 +1,42 @@
+{
+    "version": "testing...",
+    "buildId": "",
+    "statusCode": 0,
+    "message": "",
+    "correlationId": "",
+    "requestId": "",
+    "result": {
+        "accountKey": "",
+        "accountState": "",
+        "cards": [
+            {
+                "cardAlias": "",
+                "cardState": "",
+                "maskedCardNumber": "",
+                "uniqueCardNumber": "",
+                "cardType": "",
+                "productName": "",
+                "cardBin": "",
+                "cardIssuerIcaNumber": "",
+                "cardValidationType": "",
+                "isDefaultCard": false,
+                "expireSoon": false,
+                "isExpired": false,
+                "isMasterpassMember": false,
+                "isCardCreditOrSupportedDebit": false,
+                "isIssuerOtpSupported": false
+            }
+        ],
+        "recipientCards": [
+          {
+            "alias": "alias x",
+            "encryptedNumber": "encryptedNumber x",
+            "maskedNumber": "maskedNumber x",
+            "uniqueNumber": "uniqueNumber x",
+            "issuerIca": "issuerIca x",
+            "productName": "productName x"
+          }
+        ]
+    },
+    "exception": null
+}

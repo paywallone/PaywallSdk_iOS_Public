@@ -1,0 +1,1058 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -module-name PaywallSDK -package-name paywalliossdk
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import Combine
+import Foundation
+import Foundation/*.Bundle*/
+import Foundation/*.ProcessInfo*/
+import Foundation/*.URL*/
+import ObjectiveC
+import Swift
+import SwiftUI
+import UIKit
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public struct InitPaywallSdkResult : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let environment: PaywallSDK.PaywallEnvironment
+  public let sdkInitialized: Swift.Bool
+  public let hasMasterpassSession: Swift.Bool
+  public let body: PaywallSDK.VerifyTempTokenBody?
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.InitPaywallSdkResult, b: PaywallSDK.InitPaywallSdkResult) -> Swift.Bool
+}
+public struct VerifyTempTokenBody : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let tempTokenId: Swift.Int64?
+  public let token: Swift.String?
+  public let expiryDateTime: Swift.String?
+  public let scope: [Swift.String : PaywallSDK.PaywallJSON]?
+  public let masterpass: PaywallSDK.VerifyMasterpassInfo?
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.VerifyTempTokenBody, b: PaywallSDK.VerifyTempTokenBody) -> Swift.Bool
+}
+public struct VerifyMasterpassInfo : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let sessionId: Swift.String?
+  public let sessionExpiryDate: Swift.String?
+  public let masterpassToken: Swift.String?
+  public let masterpassMerchantId: Swift.String?
+  public let masterpassTerminalGroupId: Swift.String?
+  public let userId: Swift.String?
+  public let userPhone: Swift.String?
+  public let isProd: Swift.Bool?
+  public let isTest: Swift.Bool?
+  public let isUat: Swift.Bool?
+  public let force3D: Swift.Bool?
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.VerifyMasterpassInfo, b: PaywallSDK.VerifyMasterpassInfo) -> Swift.Bool
+}
+@frozen public enum AccountKeyType : Swift.String, Swift.Sendable, Swift.CaseIterable {
+  case msisdn
+  case userId
+  public var wireValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [PaywallSDK.AccountKeyType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PaywallSDK.AccountKeyType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct GetCardListParams : Swift.Sendable, Swift.CustomStringConvertible {
+  public var accountKey: Swift.String
+  public var userId: Swift.String
+  public var accountKeyType: PaywallSDK.AccountKeyType
+  public init(accountKey: Swift.String, userId: Swift.String, accountKeyType: PaywallSDK.AccountKeyType = .msisdn)
+  public var description: Swift.String {
+    get
+  }
+}
+public struct GetCardListResult : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let cards: [PaywallSDK.MasterpassCard]?
+  public let accountInformation: PaywallSDK.MasterpassAccountInformation?
+  public let token: Swift.String?
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.GetCardListResult, b: PaywallSDK.GetCardListResult) -> Swift.Bool
+}
+public struct MasterpassCard : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let cardAlias: Swift.String?
+  public let maskedCardNumber: Swift.String?
+  public let cardBin: Swift.String?
+  public let cardType: Swift.String?
+  public let productName: Swift.String?
+  public let uniqueCardNumber: Swift.String?
+  public let cardState: Swift.String?
+  public let cardIssuerIcaNumber: Swift.String?
+  public let cardValidationType: Swift.String?
+  public let isDefaultCard: Swift.Bool?
+  public let isExpired: Swift.Bool?
+  public let expireSoon: Swift.Bool?
+  public let isMasterpassMember: Swift.Bool?
+  public let raw: [Swift.String : PaywallSDK.PaywallJSON]
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.MasterpassCard, b: PaywallSDK.MasterpassCard) -> Swift.Bool
+}
+public struct MasterpassAccountInformation : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let isAccountLinked: Swift.Bool?
+  public let raw: [Swift.String : PaywallSDK.PaywallJSON]
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.MasterpassAccountInformation, b: PaywallSDK.MasterpassAccountInformation) -> Swift.Bool
+}
+public struct LinkMerchantParams : Swift.Sendable, Swift.CustomStringConvertible {
+  public var accountKey: Swift.String
+  public init(accountKey: Swift.String)
+  public var description: Swift.String {
+    get
+  }
+}
+public struct LinkMerchantResult : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let isAccountLinked: Swift.Bool?
+  public let cards: [PaywallSDK.MasterpassCard]?
+  public let accountInformation: PaywallSDK.MasterpassAccountInformation?
+  public let token: Swift.String?
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.LinkMerchantResult, b: PaywallSDK.LinkMerchantResult) -> Swift.Bool
+}
+public struct ResendOtpResult : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let success: Swift.Bool?
+  public let token: Swift.String?
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.ResendOtpResult, b: PaywallSDK.ResendOtpResult) -> Swift.Bool
+}
+public struct DeleteCardParams : Swift.Sendable, Swift.CustomStringConvertible {
+  public var accountKey: Swift.String
+  public var cardAlias: Swift.String
+  public init(accountKey: Swift.String, cardAlias: Swift.String)
+  public var description: Swift.String {
+    get
+  }
+}
+public struct DeleteCardResult : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let success: Swift.Bool
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.DeleteCardResult, b: PaywallSDK.DeleteCardResult) -> Swift.Bool
+}
+public struct MasterpassProviderInitResult : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let masterpassSdkInitialized: Swift.Bool
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.MasterpassProviderInitResult, b: PaywallSDK.MasterpassProviderInitResult) -> Swift.Bool
+}
+public struct VerifyOtpParams : Swift.Sendable, Swift.CustomStringConvertible {
+  public var otp: PaywallSDK.OtpInput
+  public init(otp: PaywallSDK.OtpInput)
+  public var description: Swift.String {
+    get
+  }
+}
+public struct VerifyOtpResult : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let isVerified: Swift.Bool
+  public let token: Swift.String?
+  public let terminalGroupId: Swift.String?
+  public let maskedCard: Swift.String?
+  public let cardUniqueNumber: Swift.String?
+  public let retrievalReferenceNumber: Swift.String?
+  public let redirectUrl: Swift.String?
+  public let url3dSuccess: Swift.String?
+  public let url3dFail: Swift.String?
+  public let sessionId: Swift.String?
+  public let successUrl: Swift.String?
+  public let failUrl: Swift.String?
+  public let paymentId: Swift.Int64?
+  public let masterpassPaymentId: Swift.String?
+  public let activityId: Swift.Int64?
+  public let uniqueCode: Swift.String?
+  public let merchantUniqueCode: Swift.String?
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.VerifyOtpResult, b: PaywallSDK.VerifyOtpResult) -> Swift.Bool
+}
+public struct AddCardParams : Swift.Sendable, Swift.CustomStringConvertible {
+  public var userId: Swift.String
+  public var accountKey: Swift.String
+  public var accountAliasName: Swift.String
+  public var cardHolderName: Swift.String
+  public var cardNumber: PaywallSDK.CardNumberInput
+  public var expiryDate: Swift.String
+  public var cvv: PaywallSDK.CvvInput
+  public var termsConsent: PaywallSDK.TermsConsentInput
+  public var requestReferenceNumber: Swift.String
+  public var accountKeyType: PaywallSDK.AccountKeyType
+  public init(userId: Swift.String, accountKey: Swift.String, accountAliasName: Swift.String, cardHolderName: Swift.String, cardNumber: PaywallSDK.CardNumberInput, expiryDate: Swift.String, cvv: PaywallSDK.CvvInput, termsConsent: PaywallSDK.TermsConsentInput, requestReferenceNumber: Swift.String, accountKeyType: PaywallSDK.AccountKeyType = .msisdn)
+  public var description: Swift.String {
+    get
+  }
+}
+public struct AddCardResult : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let sessionId: Swift.String?
+  public let cardAlias: Swift.String?
+  public let maskedCard: Swift.String?
+  public let token: Swift.String?
+  public let retrievalReferenceNumber: Swift.String?
+  public let redirectUrl: Swift.String?
+  public let errorCode: Swift.String?
+  public let errorDetails: PaywallSDK.PaywallJSON?
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.AddCardResult, b: PaywallSDK.AddCardResult) -> Swift.Bool
+}
+@frozen public enum PaymentSource : Swift.String, Swift.Sendable, Swift.CaseIterable {
+  case registeredCard
+  case manualCard
+  public var wireValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [PaywallSDK.PaymentSource]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PaywallSDK.PaymentSource] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PaymentDetail : Swift.Sendable, Swift.CustomStringConvertible {
+  public var amount: Foundation.Decimal
+  public var currencyId: Swift.Int
+  public var merchantUniqueCode: Swift.String
+  public var trackingCode: Swift.String
+  public var successUrl: Swift.String
+  public var failUrl: Swift.String
+  public var clientIp: Swift.String
+  public var installment: Swift.Int
+  public var channelId: Swift.Int?
+  public var tagId: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(amount: Foundation.Decimal, currencyId: Swift.Int, merchantUniqueCode: Swift.String, trackingCode: Swift.String, successUrl: Swift.String, failUrl: Swift.String, clientIp: Swift.String, installment: Swift.Int, channelId: Swift.Int? = nil, tagId: Swift.Int? = nil)
+  #endif
+  public var description: Swift.String {
+    get
+  }
+}
+public struct PaymentInitCard : Swift.Sendable, Swift.CustomStringConvertible {
+  public var cardBin: Swift.String?
+  public var cardMasked: Swift.String?
+  public var ownerName: Swift.String?
+  public var cardAlias: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(cardBin: Swift.String? = nil, cardMasked: Swift.String? = nil, ownerName: Swift.String? = nil, cardAlias: Swift.String? = nil)
+  #endif
+  public var description: Swift.String {
+    get
+  }
+}
+public struct PaymentCardData : Swift.Sendable, Swift.CustomStringConvertible {
+  public var cardAlias: Swift.String?
+  public var cardNumber: PaywallSDK.CardNumberInput?
+  public var cardHolderName: Swift.String?
+  public var ownerName: Swift.String?
+  public var expiryDate: Swift.String?
+  public var cvv: PaywallSDK.CvvInput?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(cardAlias: Swift.String? = nil, cardNumber: PaywallSDK.CardNumberInput? = nil, cardHolderName: Swift.String? = nil, ownerName: Swift.String? = nil, expiryDate: Swift.String? = nil, cvv: PaywallSDK.CvvInput? = nil)
+  #endif
+  public var description: Swift.String {
+    get
+  }
+}
+public struct Customer : Swift.Sendable, Swift.CustomStringConvertible {
+  public var fullName: Swift.String?
+  public var phone: Swift.String?
+  public var customerId: Swift.String?
+  public var email: Swift.String?
+  public var identityNumber: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(fullName: Swift.String? = nil, phone: Swift.String? = nil, customerId: Swift.String? = nil, email: Swift.String? = nil, identityNumber: Swift.String? = nil)
+  #endif
+  public var description: Swift.String {
+    get
+  }
+}
+public struct Product : Swift.Sendable, Swift.CustomStringConvertible {
+  public var productId: Swift.String
+  public var productName: Swift.String
+  public var productAmount: Foundation.Decimal
+  public var productCategory: Swift.String?
+  public var productDescription: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(productId: Swift.String, productName: Swift.String, productAmount: Foundation.Decimal, productCategory: Swift.String? = nil, productDescription: Swift.String? = nil)
+  #endif
+  public var description: Swift.String {
+    get
+  }
+}
+public struct PaymentInitParams : Swift.Sendable, Swift.CustomStringConvertible {
+  public var paymentSource: PaywallSDK.PaymentSource
+  public var paymentDetail: PaywallSDK.PaymentDetail
+  public var cardData: PaywallSDK.PaymentCardData
+  public var products: [PaywallSDK.Product]
+  public var sessionId: Swift.String?
+  public var force3D: Swift.Bool?
+  public var saveCard: Swift.Bool
+  public var card: PaywallSDK.PaymentInitCard
+  public var customer: PaywallSDK.Customer?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(paymentSource: PaywallSDK.PaymentSource, paymentDetail: PaywallSDK.PaymentDetail, cardData: PaywallSDK.PaymentCardData, products: [PaywallSDK.Product], sessionId: Swift.String? = nil, force3D: Swift.Bool? = nil, saveCard: Swift.Bool = false, card: PaywallSDK.PaymentInitCard = PaymentInitCard(), customer: PaywallSDK.Customer? = nil)
+  #endif
+  public var description: Swift.String {
+    get
+  }
+}
+public struct RegisteredCardPaymentParams : Swift.Sendable, Swift.CustomStringConvertible {
+  public var alias: Swift.String
+  public var maskedCard: Swift.String
+  public var cardBin: Swift.String
+  public var cardHolderName: Swift.String
+  public var paymentDetail: PaywallSDK.PaymentDetail
+  public var products: [PaywallSDK.Product]
+  public var sessionId: Swift.String?
+  public var force3D: Swift.Bool?
+  public var customer: PaywallSDK.Customer?
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(alias: Swift.String, maskedCard: Swift.String, cardBin: Swift.String, cardHolderName: Swift.String, paymentDetail: PaywallSDK.PaymentDetail, products: [PaywallSDK.Product], sessionId: Swift.String? = nil, force3D: Swift.Bool? = nil, customer: PaywallSDK.Customer? = nil)
+  #endif
+  public var description: Swift.String {
+    get
+  }
+}
+public struct RegisterCardData : Swift.Sendable, Swift.CustomStringConvertible {
+  public var cardNumber: PaywallSDK.CardNumberInput
+  public var cardHolderName: Swift.String
+  public var expiryDate: Swift.String
+  public var cvv: PaywallSDK.CvvInput
+  public var cardAlias: Swift.String
+  public init(cardNumber: PaywallSDK.CardNumberInput, cardHolderName: Swift.String, expiryDate: Swift.String, cvv: PaywallSDK.CvvInput, cardAlias: Swift.String)
+  public var description: Swift.String {
+    get
+  }
+}
+public struct RegisterAndPurchaseParams : Swift.Sendable, Swift.CustomStringConvertible {
+  public var accountKey: Swift.String
+  public var merchantUserId: Swift.String
+  public var paymentDetail: PaywallSDK.PaymentDetail
+  public var cardData: PaywallSDK.RegisterCardData
+  public var termsConsent: PaywallSDK.TermsConsentInput
+  public var products: [PaywallSDK.Product]
+  public var sessionId: Swift.String?
+  public var accountKeyType: PaywallSDK.AccountKeyType
+  public var customer: PaywallSDK.Customer?
+  public var force3D: Swift.Bool?
+  public var isMsisdnValidatedByMerchant: Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(accountKey: Swift.String, merchantUserId: Swift.String, paymentDetail: PaywallSDK.PaymentDetail, cardData: PaywallSDK.RegisterCardData, termsConsent: PaywallSDK.TermsConsentInput, products: [PaywallSDK.Product], sessionId: Swift.String? = nil, accountKeyType: PaywallSDK.AccountKeyType = .msisdn, customer: PaywallSDK.Customer? = nil, force3D: Swift.Bool? = nil, isMsisdnValidatedByMerchant: Swift.Bool = true)
+  #endif
+  public var description: Swift.String {
+    get
+  }
+}
+public struct MaskedCard : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let bin: Swift.String
+  public let last4: Swift.String
+  public let masked: Swift.String
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.MaskedCard, b: PaywallSDK.MaskedCard) -> Swift.Bool
+}
+public struct MasterpassPaymentInitResult : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let sessionId: Swift.String
+  public let status: PaywallSDK.SdkStatus
+  public let actionType: PaywallSDK.SdkActionType?
+  public let message: Swift.String?
+  public let nextActionHint: Swift.String?
+  public let token: Swift.String?
+  public let retrievalReferenceNumber: Swift.String?
+  public let redirectUrl: Swift.String?
+  public let successUrl: Swift.String?
+  public let failUrl: Swift.String?
+  public let paymentId: Swift.Int64?
+  public let masterpassPaymentId: Swift.String?
+  public let activityId: Swift.Int64?
+  public let uniqueCode: Swift.String?
+  public let merchantUniqueCode: Swift.String?
+  public let maskedCard: PaywallSDK.MaskedCard?
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.MasterpassPaymentInitResult, b: PaywallSDK.MasterpassPaymentInitResult) -> Swift.Bool
+}
+@frozen public enum PaywallJSON : Swift.Sendable, Swift.Equatable {
+  case null
+  case bool(Swift.Bool)
+  case number(Swift.String)
+  case string(Swift.String)
+  case array([PaywallSDK.PaywallJSON])
+  case object([Swift.String : PaywallSDK.PaywallJSON])
+  #if compiler(>=5.3) && $NonescapableTypes
+  public subscript(key: Swift.String) -> PaywallSDK.PaywallJSON? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var stringValue: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var boolValue: Swift.Bool? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var int64Value: Swift.Int64? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var doubleValue: Swift.Double? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var objectValue: [Swift.String : PaywallSDK.PaywallJSON]? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public var arrayValue: [PaywallSDK.PaywallJSON]? {
+    get
+  }
+  #endif
+  public var foundationValue: Any {
+    get
+  }
+  public func jsonString(pretty: Swift.Bool = false) -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func parse(_ text: Swift.String) -> PaywallSDK.PaywallJSON?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func parse(_ data: Foundation.Data) -> PaywallSDK.PaywallJSON?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func from(foundation value: Any?) -> PaywallSDK.PaywallJSON
+  #endif
+  public static func == (a: PaywallSDK.PaywallJSON, b: PaywallSDK.PaywallJSON) -> Swift.Bool
+}
+extension PaywallSDK.PaywallJSON : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+@frozen public enum PaywallNetworkSource : Swift.String, Swift.Sendable, Swift.CaseIterable {
+  case paywall
+  case masterpass
+  public var wireValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [PaywallSDK.PaywallNetworkSource]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PaywallSDK.PaywallNetworkSource] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct PaywallNetworkEvent : Swift.Sendable, Swift.CustomStringConvertible {
+  public let source: PaywallSDK.PaywallNetworkSource
+  public let method: Swift.String
+  public let url: Swift.String
+  public let requestHeaders: [Swift.String : Swift.String]
+  public let requestBody: Swift.String?
+  public let statusCode: Swift.Int?
+  public let responseBody: Swift.String?
+  public let error: Swift.String?
+  public let startedAt: Foundation.Date
+  public let durationMs: Swift.Int
+  public let vendorLogs: [Swift.String]
+  public var description: Swift.String {
+    get
+  }
+}
+public protocol PaywallNetworkListener : AnyObject, Swift.Sendable {
+  func onNetworkEvent(_ event: PaywallSDK.PaywallNetworkEvent)
+}
+public enum PaywallSdk {
+  public static let version: Swift.String
+  public static let masterpassVersion: Swift.String
+  public static let providers: PaywallSDK.Providers
+  public static let payment: PaywallSDK.Payment
+  public static func initPaywallSdk(environment: PaywallSDK.PaywallEnvironment, token: Swift.String, includeMasterpassSession: Swift.Bool) async -> PaywallSDK.SdkResponse<PaywallSDK.InitPaywallSdkResult>
+  #if compiler(>=5.3) && $NonescapableTypes
+  @discardableResult
+  public static func setNetworkListener(_ listener: (any PaywallSDK.PaywallNetworkListener)?) -> Swift.Bool
+  #endif
+}
+@_hasMissingDesignatedInitializers final public class Providers : Swift.Sendable {
+  final public let masterpass: PaywallSDK.MasterpassProvider
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class MasterpassProvider : Swift.Sendable {
+  final public func initialize() async -> PaywallSDK.SdkResponse<PaywallSDK.MasterpassProviderInitResult>
+  final public func getCardList(_ params: PaywallSDK.GetCardListParams) async -> PaywallSDK.SdkResponse<PaywallSDK.GetCardListResult>
+  final public func linkMerchant(_ params: PaywallSDK.LinkMerchantParams) async -> PaywallSDK.SdkResponse<PaywallSDK.LinkMerchantResult>
+  final public func resendOtp() async -> PaywallSDK.SdkResponse<PaywallSDK.ResendOtpResult>
+  final public func verifyOtp(_ params: PaywallSDK.VerifyOtpParams) async -> PaywallSDK.SdkResponse<PaywallSDK.VerifyOtpResult>
+  final public func addCard(_ params: PaywallSDK.AddCardParams) async -> PaywallSDK.SdkResponse<PaywallSDK.AddCardResult>
+  final public func deleteCard(_ params: PaywallSDK.DeleteCardParams) async -> PaywallSDK.SdkResponse<PaywallSDK.DeleteCardResult>
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class Payment : Swift.Sendable {
+  final public func initPayment(_ params: PaywallSDK.PaymentInitParams) async -> PaywallSDK.SdkResponse<PaywallSDK.MasterpassPaymentInitResult>
+  final public func initWithRegisteredCard(_ params: PaywallSDK.RegisteredCardPaymentParams) async -> PaywallSDK.SdkResponse<PaywallSDK.MasterpassPaymentInitResult>
+  final public func registerAndPurchase(_ params: PaywallSDK.RegisterAndPurchaseParams) async -> PaywallSDK.SdkResponse<PaywallSDK.MasterpassPaymentInitResult>
+  @objc deinit
+}
+@frozen public enum SdkStatus : Swift.String, Swift.Sendable, Swift.CaseIterable {
+  case success
+  case failed
+  case actionRequired
+  public var wireValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [PaywallSDK.SdkStatus]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PaywallSDK.SdkStatus] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@frozen public enum SdkSource : Swift.String, Swift.Sendable, Swift.CaseIterable {
+  case sdk
+  case paywall
+  case masterpass
+  public var wireValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [PaywallSDK.SdkSource]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PaywallSDK.SdkSource] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@frozen public enum SdkActionType : Swift.String, Swift.Sendable, Swift.CaseIterable {
+  case threeD
+  case bankOtp
+  case masterpassOtp
+  case merchantLinkRequired
+  public var wireValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [PaywallSDK.SdkActionType]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PaywallSDK.SdkActionType] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@frozen public enum PaywallEnvironment : Swift.String, Swift.Sendable, Swift.CaseIterable {
+  case dev
+  case test
+  case prod
+  public var wireValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [PaywallSDK.PaywallEnvironment]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PaywallSDK.PaywallEnvironment] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public enum SdkErrorCodes {
+  public static let SDK_NOT_INITIALIZED: Swift.String
+  public static let SESSION_NOT_STARTED: Swift.String
+  public static let MISSING_TOKEN: Swift.String
+  public static let PROVIDER_NOT_INITIALIZED: Swift.String
+  public static let SESSION_EXPIRED: Swift.String
+  public static let SDK_NOT_LOADED: Swift.String
+  public static let SDK_ERROR: Swift.String
+  public static let MISSING_INCLUDE_MASTERPASS_SESSION: Swift.String
+  public static let INVALID_ENVIRONMENT: Swift.String
+  public static let VERIFY_RESPONSE_INVALID: Swift.String
+  public static let MASTERPASS_OBJECT_NULL: Swift.String
+  public static let INIT_WITH_MASTERPASS_TOKEN_ERROR: Swift.String
+  public static let MISSING_MERCHANT_ID: Swift.String
+  public static let MASTERPASS_PROVIDER_INIT_ERROR: Swift.String
+  public static let MISSING_USER_ID: Swift.String
+  public static let MISSING_ACCOUNT_KEY: Swift.String
+  public static let MISSING_CARD_ALIAS: Swift.String
+  public static let MISSING_CARD_HOLDER_NAME: Swift.String
+  public static let MISSING_CARD_NUMBER: Swift.String
+  public static let INVALID_CARD_NUMBER_FORMAT: Swift.String
+  public static let MISSING_EXPIRY_DATE: Swift.String
+  public static let INVALID_EXPIRY_DATE_FORMAT: Swift.String
+  public static let MISSING_CVV: Swift.String
+  public static let INVALID_CVV_FORMAT: Swift.String
+  public static let MISSING_REQUEST_REFERENCE_NUMBER: Swift.String
+  public static let MISSING_OTP_CODE: Swift.String
+  public static let OTP_IS_NOT_VALID: Swift.String
+  public static let TOKEN_ALREADY_USED: Swift.String
+  public static let USER_NOT_FOUND: Swift.String
+  public static let DELETE_FAILED: Swift.String
+  public static let UNKNOWN_ERROR: Swift.String
+  public static let INVALID_SESSION: Swift.String
+  public static let MISSING_SESSION_ID: Swift.String
+  public static let INVALID_AMOUNT: Swift.String
+  public static let INVALID_CURRENCY_ID: Swift.String
+  public static let MISSING_MERCHANT_UNIQUE_CODE: Swift.String
+  public static let MISSING_TRACKING_CODE: Swift.String
+  public static let MISSING_SUCCESS_URL: Swift.String
+  public static let MISSING_FAIL_URL: Swift.String
+  public static let MISSING_CLIENT_IP: Swift.String
+  public static let ALIAS_REQUIRED: Swift.String
+  public static let MISSING_OWNER_NAME: Swift.String
+  public static let MISSING_CARD_DATA: Swift.String
+  public static let PAYWALL_INIT_FAILED: Swift.String
+  public static let MISSING_MASTERPASS_REQUEST_BODY: Swift.String
+  public static let PAYMENT_INIT_FAILED: Swift.String
+  public static let MASTERPASS_ERROR: Swift.String
+  public static let TERMS_NOT_ACCEPTED: Swift.String
+}
+public struct SdkResponse<T> {
+  public let status: PaywallSDK.SdkStatus
+  public let source: PaywallSDK.SdkSource
+  public let message: Swift.String?
+  public let errorCode: Swift.String?
+  public let actionType: PaywallSDK.SdkActionType?
+  public let data: T?
+  public let providerMeta: PaywallSDK.ProviderMeta?
+  public let actionHint: Swift.String?
+  public let field: Swift.String?
+  public let nextActionHint: Swift.String?
+  public var success: Swift.Bool {
+    get
+  }
+}
+extension PaywallSDK.SdkResponse : Swift.Sendable where T : Swift.Sendable {
+}
+extension PaywallSDK.SdkResponse : Swift.Equatable where T : Swift.Equatable {
+  public static func == (a: PaywallSDK.SdkResponse<T>, b: PaywallSDK.SdkResponse<T>) -> Swift.Bool
+}
+extension PaywallSDK.SdkResponse : Swift.CustomStringConvertible {
+  public var description: Swift.String {
+    get
+  }
+}
+public struct ProviderMeta : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
+  public let httpStatus: Swift.Int?
+  public let responseCode: Swift.String?
+  public let raw: Swift.String?
+  public var description: Swift.String {
+    get
+  }
+  public static func == (a: PaywallSDK.ProviderMeta, b: PaywallSDK.ProviderMeta) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers final public class CardNumberInput : @unchecked Swift.Sendable, Swift.CustomStringConvertible {
+  #if compiler(>=5.3) && $NonescapableTypes
+  final public var bin: Swift.String? {
+    get
+  }
+  #endif
+  final public var digitCount: Swift.Int {
+    get
+  }
+  final public var isValid: Swift.Bool {
+    get
+  }
+  final public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class CvvInput : @unchecked Swift.Sendable, Swift.CustomStringConvertible {
+  final public var digitCount: Swift.Int {
+    get
+  }
+  final public var isValid: Swift.Bool {
+    get
+  }
+  final public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class OtpInput : @unchecked Swift.Sendable, Swift.CustomStringConvertible {
+  final public var digitCount: Swift.Int {
+    get
+  }
+  final public var isValid: Swift.Bool {
+    get
+  }
+  final public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers final public class TermsConsentInput : @unchecked Swift.Sendable, Swift.CustomStringConvertible {
+  final public var isChecked: Swift.Bool {
+    get
+  }
+  final public var description: Swift.String {
+    get
+  }
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor public class PaywallSecureTextField : UIKit.UIView {
+  @_Concurrency.MainActor public var onInputChanged: (() -> Swift.Void)?
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public var placeholder: Swift.String? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public var attributedPlaceholder: Foundation.NSAttributedString? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public var font: UIKit.UIFont? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public var textColor: UIKit.UIColor? {
+    get
+    set
+  }
+  #endif
+  @_Concurrency.MainActor public var textAlignment: UIKit.NSTextAlignment {
+    get
+    set
+  }
+  @_Concurrency.MainActor public var borderStyle: UIKit.UITextField.BorderStyle {
+    get
+    set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public var fieldBackgroundColor: UIKit.UIColor? {
+    get
+    set
+  }
+  #endif
+  @_Concurrency.MainActor public var keyboardAppearance: UIKit.UIKeyboardAppearance {
+    get
+    set
+  }
+  @_Concurrency.MainActor public var returnKeyType: UIKit.UIReturnKeyType {
+    get
+    set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public var fieldInputAccessoryView: UIKit.UIView? {
+    get
+    set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public var leftView: UIKit.UIView? {
+    get
+    set
+  }
+  #endif
+  @_Concurrency.MainActor public var leftViewMode: UIKit.UITextField.ViewMode {
+    get
+    set
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor public var rightView: UIKit.UIView? {
+    get
+    set
+  }
+  #endif
+  @_Concurrency.MainActor public var rightViewMode: UIKit.UITextField.ViewMode {
+    get
+    set
+  }
+  @_Concurrency.MainActor public var isEditing: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor @objc override dynamic public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor public func clear()
+  @_Concurrency.MainActor public var isEnabled: Swift.Bool {
+    get
+    set
+  }
+  @discardableResult
+  @_Concurrency.MainActor @objc override dynamic public func becomeFirstResponder() -> Swift.Bool
+  @discardableResult
+  @_Concurrency.MainActor @objc override dynamic public func resignFirstResponder() -> Swift.Bool
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class PaywallCardNumberField : PaywallSDK.PaywallSecureTextField {
+  @_Concurrency.MainActor final public var onBinChanged: ((Swift.String?) -> Swift.Void)?
+  @_Concurrency.MainActor public init()
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var bin: Swift.String? {
+    get
+  }
+  #endif
+  @_Concurrency.MainActor final public var digitCount: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor final public var isValid: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var input: PaywallSDK.CardNumberInput {
+    get
+  }
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class PaywallCvvField : PaywallSDK.PaywallSecureTextField {
+  @_Concurrency.MainActor public init()
+  @_Concurrency.MainActor final public var digitCount: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor final public var isValid: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var input: PaywallSDK.CvvInput {
+    get
+  }
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class PaywallOtpField : PaywallSDK.PaywallSecureTextField {
+  @_Concurrency.MainActor public init()
+  @_Concurrency.MainActor final public var digitCount: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor final public var isValid: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var input: PaywallSDK.OtpInput {
+    get
+  }
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @_Concurrency.MainActor final public class PaywallTermsCheckBox : UIKit.UIView {
+  @_Concurrency.MainActor final public var onCheckedChanged: ((Swift.Bool) -> Swift.Void)?
+  @_Concurrency.MainActor @objc dynamic public init()
+  @_Concurrency.MainActor final public var titleText: Swift.String {
+    get
+    set
+  }
+  @_Concurrency.MainActor final public var isChecked: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var isEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor @objc override final public var intrinsicContentSize: CoreFoundation.CGSize {
+    @objc get
+  }
+  @_Concurrency.MainActor final public var input: PaywallSDK.TermsConsentInput {
+    get
+  }
+  @objc deinit
+}
+@_Concurrency.MainActor final public class PaywallCardNumberState : Combine.ObservableObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @Combine.Published @_projectedValueProperty($bin) @_Concurrency.MainActor final public var bin: Swift.String? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var $bin: Combine.Published<Swift.String?>.Publisher {
+    get
+  }
+  #endif
+  @Combine.Published @_projectedValueProperty($digitCount) @_Concurrency.MainActor final public var digitCount: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor final public var $digitCount: Combine.Published<Swift.Int>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($isValid) @_Concurrency.MainActor final public var isValid: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var $isValid: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
+  @_Concurrency.MainActor final public let field: PaywallSDK.PaywallCardNumberField
+  @_Concurrency.MainActor final public var input: PaywallSDK.CardNumberInput {
+    get
+  }
+  @_Concurrency.MainActor public init()
+  @_Concurrency.MainActor final public func clear()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_Concurrency.MainActor final public class PaywallSecureTextState : Combine.ObservableObject {
+  @frozen public enum Kind : Swift.Sendable {
+    case cvv
+    case otp
+    public static func == (a: PaywallSDK.PaywallSecureTextState.Kind, b: PaywallSDK.PaywallSecureTextState.Kind) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  @Combine.Published @_projectedValueProperty($digitCount) @_Concurrency.MainActor final public var digitCount: Swift.Int {
+    get
+  }
+  @_Concurrency.MainActor final public var $digitCount: Combine.Published<Swift.Int>.Publisher {
+    get
+  }
+  @Combine.Published @_projectedValueProperty($isValid) @_Concurrency.MainActor final public var isValid: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var $isValid: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
+  @_Concurrency.MainActor final public let kind: PaywallSDK.PaywallSecureTextState.Kind
+  @_Concurrency.MainActor final public let field: PaywallSDK.PaywallSecureTextField
+  @_Concurrency.MainActor public init(kind: PaywallSDK.PaywallSecureTextState.Kind)
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var cvvInput: PaywallSDK.CvvInput? {
+    get
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor final public var otpInput: PaywallSDK.OtpInput? {
+    get
+  }
+  #endif
+  @_Concurrency.MainActor final public func clear()
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_Concurrency.MainActor final public class PaywallTermsState : Combine.ObservableObject {
+  @Combine.Published @_projectedValueProperty($isChecked) @_Concurrency.MainActor final public var isChecked: Swift.Bool {
+    get
+  }
+  @_Concurrency.MainActor final public var $isChecked: Combine.Published<Swift.Bool>.Publisher {
+    get
+  }
+  @_Concurrency.MainActor final public let checkBox: PaywallSDK.PaywallTermsCheckBox
+  @_Concurrency.MainActor final public var input: PaywallSDK.TermsConsentInput {
+    get
+  }
+  @_Concurrency.MainActor public init(titleText: Swift.String = "")
+  public typealias ObjectWillChangePublisher = Combine.ObservableObjectPublisher
+  @objc deinit
+}
+@_Concurrency.MainActor @preconcurrency public struct PaywallCardNumberFieldView : SwiftUI.UIViewRepresentable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(state: PaywallSDK.PaywallCardNumberState, placeholder: Swift.String? = nil, configure: ((PaywallSDK.PaywallCardNumberField) -> Swift.Void)? = nil)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: PaywallSDK.PaywallCardNumberFieldView.Context) -> PaywallSDK.PaywallCardNumberField
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: PaywallSDK.PaywallCardNumberField, context: PaywallSDK.PaywallCardNumberFieldView.Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+  public typealias UIViewType = PaywallSDK.PaywallCardNumberField
+}
+@_Concurrency.MainActor @preconcurrency public struct PaywallSecureTextFieldView : SwiftUI.UIViewRepresentable {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @_Concurrency.MainActor @preconcurrency public init(state: PaywallSDK.PaywallSecureTextState, placeholder: Swift.String? = nil, configure: ((PaywallSDK.PaywallSecureTextField) -> Swift.Void)? = nil)
+  #endif
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: PaywallSDK.PaywallSecureTextFieldView.Context) -> PaywallSDK.PaywallSecureTextField
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: PaywallSDK.PaywallSecureTextField, context: PaywallSDK.PaywallSecureTextFieldView.Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+  public typealias UIViewType = PaywallSDK.PaywallSecureTextField
+}
+@_Concurrency.MainActor @preconcurrency public struct PaywallTermsCheckBoxView : SwiftUI.UIViewRepresentable {
+  @_Concurrency.MainActor @preconcurrency public init(state: PaywallSDK.PaywallTermsState)
+  @_Concurrency.MainActor @preconcurrency public func makeUIView(context: PaywallSDK.PaywallTermsCheckBoxView.Context) -> PaywallSDK.PaywallTermsCheckBox
+  @_Concurrency.MainActor @preconcurrency public func updateUIView(_ uiView: PaywallSDK.PaywallTermsCheckBox, context: PaywallSDK.PaywallTermsCheckBoxView.Context)
+  public typealias Body = Swift.Never
+  public typealias Coordinator = Swift.Void
+  public typealias UIViewType = PaywallSDK.PaywallTermsCheckBox
+}
+extension PaywallSDK.AccountKeyType : Swift.Equatable {}
+extension PaywallSDK.AccountKeyType : Swift.Hashable {}
+extension PaywallSDK.AccountKeyType : Swift.RawRepresentable {}
+extension PaywallSDK.AccountKeyType : Swift.BitwiseCopyable {}
+extension PaywallSDK.PaymentSource : Swift.Equatable {}
+extension PaywallSDK.PaymentSource : Swift.Hashable {}
+extension PaywallSDK.PaymentSource : Swift.RawRepresentable {}
+extension PaywallSDK.PaymentSource : Swift.BitwiseCopyable {}
+extension PaywallSDK.PaywallNetworkSource : Swift.Equatable {}
+extension PaywallSDK.PaywallNetworkSource : Swift.Hashable {}
+extension PaywallSDK.PaywallNetworkSource : Swift.RawRepresentable {}
+extension PaywallSDK.PaywallNetworkSource : Swift.BitwiseCopyable {}
+extension PaywallSDK.SdkStatus : Swift.Equatable {}
+extension PaywallSDK.SdkStatus : Swift.Hashable {}
+extension PaywallSDK.SdkStatus : Swift.RawRepresentable {}
+extension PaywallSDK.SdkStatus : Swift.BitwiseCopyable {}
+extension PaywallSDK.SdkSource : Swift.Equatable {}
+extension PaywallSDK.SdkSource : Swift.Hashable {}
+extension PaywallSDK.SdkSource : Swift.RawRepresentable {}
+extension PaywallSDK.SdkSource : Swift.BitwiseCopyable {}
+extension PaywallSDK.SdkActionType : Swift.Equatable {}
+extension PaywallSDK.SdkActionType : Swift.Hashable {}
+extension PaywallSDK.SdkActionType : Swift.RawRepresentable {}
+extension PaywallSDK.SdkActionType : Swift.BitwiseCopyable {}
+extension PaywallSDK.PaywallEnvironment : Swift.Equatable {}
+extension PaywallSDK.PaywallEnvironment : Swift.Hashable {}
+extension PaywallSDK.PaywallEnvironment : Swift.RawRepresentable {}
+extension PaywallSDK.PaywallEnvironment : Swift.BitwiseCopyable {}
+extension PaywallSDK.PaywallCardNumberState : Swift.Sendable {}
+extension PaywallSDK.PaywallSecureTextState : Swift.Sendable {}
+extension PaywallSDK.PaywallSecureTextState.Kind : Swift.Equatable {}
+extension PaywallSDK.PaywallSecureTextState.Kind : Swift.Hashable {}
+extension PaywallSDK.PaywallSecureTextState.Kind : Swift.BitwiseCopyable {}
+extension PaywallSDK.PaywallTermsState : Swift.Sendable {}
+extension PaywallSDK.PaywallCardNumberFieldView : Swift.Sendable {}
+extension PaywallSDK.PaywallSecureTextFieldView : Swift.Sendable {}
+extension PaywallSDK.PaywallTermsCheckBoxView : Swift.Sendable {}
