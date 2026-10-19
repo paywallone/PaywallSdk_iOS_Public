@@ -17,17 +17,17 @@ yönetimi akışlarını sunar. Swift ile yazılmıştır; Masterpass iOS SDK pa
 
 ### Swift Package Manager
 
-SDK, [PaywallIosSdk.Public](https://github.com/paywallone/PaywallIosSdk.Public) reposunda derlenmiş
+SDK, [PaywallSdk_iOS_Public](https://github.com/paywallone/PaywallSdk_iOS_Public) reposunda derlenmiş
 (`xcframework`) olarak yayınlanır. Xcode'da **File > Add Package Dependencies…** ile repo adresini girin
-(`https://github.com/paywallone/PaywallIosSdk.Public`) ve uygulama hedefinize `PaywallSDK` ürününü bağlayın.
+(`https://github.com/paywallone/PaywallSdk_iOS_Public`) ve uygulama hedefinize `PaywallSDK` ürününü bağlayın.
 `Package.swift` kullanıyorsanız:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/paywallone/PaywallIosSdk.Public", from: "1.0.0"),
+    .package(url: "https://github.com/paywallone/PaywallSdk_iOS_Public", from: "1.0.0"),
 ],
 targets: [
-    .target(name: "MyApp", dependencies: [.product(name: "PaywallSDK", package: "PaywallIosSdk.Public")]),
+    .target(name: "MyApp", dependencies: [.product(name: "PaywallSDK", package: "PaywallSdk_iOS_Public")]),
 ]
 ```
 
