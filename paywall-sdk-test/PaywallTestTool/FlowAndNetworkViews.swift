@@ -56,7 +56,7 @@ struct FlowView: View {
                 EmptyState(
                     systemImage: "list.bullet.rectangle",
                     title: "Henüz çağrı yok",
-                    message: "Test sekmesinde initPaywallSdk(...) ile başla."
+                    message: "Test sekmesinde PaywallSdk.initPaywallSdk ile başla."
                 )
             }
             ForEach(Array(state.logs.enumerated().reversed()), id: \.element.id) { index, step in
@@ -130,7 +130,7 @@ private struct FlowCard: View {
             }
         }
         .padding(14)
-        .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Color(.secondarySystemGroupedBackground)))
+        .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Theme.surfaceContainer))
     }
 }
 
@@ -222,7 +222,7 @@ struct NetworkRow: View {
         .padding(12)
         .background(
             RoundedRectangle(cornerRadius: 12, style: .continuous)
-                .fill(failed ? Color.red.opacity(0.08) : Color(.secondarySystemGroupedBackground))
+                .fill(failed ? Color.red.opacity(0.08) : Theme.surfaceContainer)
         )
     }
 
@@ -242,8 +242,8 @@ struct GuideView: View {
         VStack(spacing: 24) {
             FormSection(title: "Test aracı nasıl kullanılır") {
                 VStack(alignment: .leading, spacing: 10) {
-                    numbered(1, "Bağlantı: ortamı seç, merchant backend'inden alınan token'ı yapıştır, initPaywallSdk(...) butonuna bas. Ardından masterpass.initialize() otomatik çağrılır.")
-                    numbered(2, "Hesap ve kartlar: getCardList(...) ile kartları getir. OTP veya linkMerchant gerekirse araç seni yönlendirir.")
+                    numbered(1, "Bağlantı: ortamı seç, merchant backend'inden alınan token'ı yapıştır, PaywallSdk.initPaywallSdk butonuna bas. Ardından providers.masterpass.initialize otomatik çağrılır.")
+                    numbered(2, "Hesap ve kartlar: providers.masterpass.getCardList ile kartları getir. OTP veya linkMerchant gerekirse araç seni yönlendirir.")
                     numbered(3, "Ödeme: kayıtlı kartla ya da yeni kartla öde. OTP penceresi ve 3D sayfası otomatik açılır.")
                     numbered(4, "Her çağrının kodu, isteği ve cevabı Akış sekmesinde; ham HTTP trafiği Ağ sekmesinde.")
                 }
@@ -317,9 +317,9 @@ struct GuideView: View {
         HStack(alignment: .firstTextBaseline, spacing: 8) {
             Text("\(number)")
                 .font(.caption.weight(.bold))
-                .foregroundStyle(.white)
+                .foregroundStyle(Theme.onPrimary)
                 .frame(width: 20, height: 20)
-                .background(Circle().fill(Color.accentColor))
+                .background(Circle().fill(Theme.primary))
             Text(text).font(.footnote).fixedSize(horizontal: false, vertical: true)
         }
     }

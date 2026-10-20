@@ -58,7 +58,7 @@ private struct ProgressHeader: View {
         }
         .padding(.vertical, 14)
         .padding(.horizontal, 8)
-        .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Color(.secondarySystemGroupedBackground)))
+        .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Theme.surfaceContainer))
     }
 
     private struct Step: View {
@@ -109,7 +109,7 @@ private struct ConnectionSection: View {
     var body: some View {
         FormSection(
             title: "1 · Bağlantı",
-            footer: "Token'ı merchant backend'i üretir. initPaywallSdk başarılı olunca providers.masterpass.initialize() otomatik çağrılır."
+            footer: "Token'ı merchant backend'i üretir. initPaywallSdk başarılı olunca providers.masterpass.initialize otomatik çağrılır."
         ) {
             VStack(alignment: .leading, spacing: 14) {
                 Picker("Ortam", selection: $state.environment) {
@@ -146,7 +146,7 @@ private struct ConnectionSection: View {
             .disabled(locked)
 
             ActionRow(
-                function: "PaywallSdk.initPaywallSdk(...)",
+                function: "PaywallSdk.initPaywallSdk",
                 label: locked ? "SDK başlatıldı" : "Token'ı doğrular, session'ı başlatır",
                 action: sdkInit,
                 enabled: !state.accessToken.isBlankText && !locked
@@ -154,13 +154,13 @@ private struct ConnectionSection: View {
 
             if state.sessionId != nil && (providerInit.hasResult || providerInit.loading) && !providerInit.success {
                 ActionRow(
-                    function: "providers.masterpass.initialize()",
+                    function: "PaywallSdk.providers.masterpass.initialize",
                     label: "Masterpass'ı tekrar başlat",
                     action: providerInit,
                     prominent: false
                 ) { state.initMasterpassProvider() }
             } else if providerInit.success {
-                Label("providers.masterpass.initialize() başarılı", systemImage: StatusKind.success.icon)
+                Label("PaywallSdk.providers.masterpass.initialize başarılı", systemImage: StatusKind.success.icon)
                     .font(.footnote)
                     .foregroundStyle(.green)
             }
@@ -178,7 +178,7 @@ private struct AccountSection: View {
     var body: some View {
         FormSection(
             title: "2 · Hesap ve kartlar",
-            footer: state.isProviderAndSessionReady ? nil : "Önce 1. adımda initPaywallSdk(...) çağır."
+            footer: state.isProviderAndSessionReady ? nil : "Önce 1. adımda PaywallSdk.initPaywallSdk çağır."
         ) {
             HStack(spacing: 10) {
                 Field(label: "Telefon (accountKey)", text: $state.userPhone, keyboard: .phonePad)
@@ -186,7 +186,7 @@ private struct AccountSection: View {
             }
 
             ActionRow(
-                function: "providers.masterpass.getCardList(...)",
+                function: "PaywallSdk.providers.masterpass.getCardList",
                 label: "Kayıtlı kartları getirir (Account Access)",
                 action: cardList,
                 enabled: state.isProviderAndSessionReady
@@ -199,7 +199,7 @@ private struct AccountSection: View {
                         if card != state.cards.last { Divider().padding(.leading, 44) }
                     }
                 }
-                .background(RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(.tertiarySystemFill)))
+                .background(RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Theme.surfaceVariant))
             }
 
             ResultView(action: cardDelete)
@@ -207,7 +207,7 @@ private struct AccountSection: View {
             Collapsible(title: "Merchant link", summary: "linkMerchant", systemImage: "link") {
                 Hint(text: "Kart listesi \"hesap bu merchant'a bağlı değil\" derse kullanılır; OTP isteyebilir.")
                 ActionRow(
-                    function: "providers.masterpass.linkMerchant(...)",
+                    function: "PaywallSdk.providers.masterpass.linkMerchant",
                     label: "Hesabı bu merchant'a bağlar",
                     action: state.merchantLink,
                     enabled: state.isProviderAndSessionReady,
@@ -225,7 +225,7 @@ private struct CardListRow: View {
 
     var body: some View {
         HStack(spacing: 12) {
-            Image(systemName: "creditcard.fill").foregroundStyle(.tint).frame(width: 22)
+            Image(systemName: "creditcard.fill").foregroundStyle(Theme.primary).frame(width: 22)
             VStack(alignment: .leading, spacing: 2) {
                 HStack(spacing: 6) {
                     Text(card.alias).font(.subheadline.weight(.semibold))
@@ -234,14 +234,14 @@ private struct CardListRow: View {
                             .font(.caption2.weight(.semibold))
                             .padding(.horizontal, 6)
                             .padding(.vertical, 1)
-                            .background(Capsule().fill(Color.accentColor.opacity(0.15)))
+                            .background(Capsule().fill(Theme.primaryContainer))
                     }
                 }
                 Text(card.masked).font(.system(.caption, design: .monospaced)).foregroundStyle(.secondary)
             }
             Spacer()
             Button(role: .destructive, action: delete) {
-                Image(systemName: "trash")
+                Label("deleteCard", systemImage: "trash").font(.system(.caption, design: .monospaced))
             }
             .buttonStyle(.borderless)
             .disabled(deleting)
@@ -265,7 +265,7 @@ private struct PaymentSection: View {
     var body: some View {
         FormSection(
             title: "3 · Ödeme",
-            footer: state.isProviderAndSessionReady ? nil : "Ödeme için önce initPaywallSdk(...) çağır."
+            footer: state.isProviderAndSessionReady ? nil : "Ödeme için önce PaywallSdk.initPaywallSdk çağır."
         ) {
             amountRow
             Divider()
@@ -290,7 +290,7 @@ private struct PaymentSection: View {
                         .foregroundStyle(.secondary)
                         .lineLimit(2)
                         .textSelection(.enabled)
-                    Button("3D sayfasını aç") { state.threeDOpen = threeD }.buttonStyle(.borderedProminent)
+                    Button("3D sayfasını aç") { state.threeDOpen = threeD }.buttonStyle(PaywallButtonStyle())
                 }
                 .padding(12)
                 .frame(maxWidth: .infinity, alignment: .leading)
@@ -312,7 +312,7 @@ private struct PaymentSection: View {
                         Label("Ürün toplamı: \(formatted(state.productTotal))", systemImage: "arrow.down.circle")
                             .font(.caption)
                     }
-                    .buttonStyle(.bordered)
+                    .buttonStyle(PaywallButtonStyle(prominent: false))
                 }
             }
         }
@@ -333,10 +333,10 @@ private struct PaymentSection: View {
             }
             .padding(.horizontal, 12)
             .frame(minHeight: 44)
-            .background(RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(.tertiarySystemFill)))
+            .background(RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Theme.surfaceVariant))
         }
         ActionRow(
-            function: "payment.initPayment(.registeredCard)",
+            function: "PaywallSdk.payment.initPayment (.registeredCard)",
             label: "Seçili kayıtlı kartla öder",
             action: state.registeredPayment,
             enabled: state.isProviderAndSessionReady && state.selectedCard != nil
@@ -364,18 +364,18 @@ private struct PaymentSection: View {
         PaywallTermsCheckBoxView(state: terms).frame(minHeight: 32)
         Toggle(isOn: $state.saveCardOnPayment) {
             VStack(alignment: .leading, spacing: 2) {
-                Text("Kartı kaydet ve öde").font(.subheadline)
-                Hint(text: "Kart kaydı ve ödeme tek seferde yapılır.")
+                Text("Kartımı kaydet ve öde").font(.subheadline)
+                Hint(text: "İşaretliyse kart kaydı ve ödeme tek seferde yapılır: payment.registerAndPurchase")
             }
         }
         ActionRow(
-            function: state.saveCardOnPayment ? "payment.registerAndPurchase(...)" : "payment.initPayment(.manualCard)",
+            function: state.saveCardOnPayment ? "PaywallSdk.payment.registerAndPurchase" : "PaywallSdk.payment.initPayment (.manualCard)",
             label: state.saveCardOnPayment ? "Kartı kaydeder ve öder" : "Yeni kartla öder (kaydetmeden)",
             action: state.manualPayment,
             enabled: state.isProviderAndSessionReady
         ) { state.payWithManualCard() }
         ActionRow(
-            function: "providers.masterpass.addCard(...)",
+            function: "PaywallSdk.providers.masterpass.addCard",
             label: "Sadece kartı kaydeder",
             action: state.addCard,
             enabled: state.isProviderAndSessionReady,

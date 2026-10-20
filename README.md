@@ -2,10 +2,11 @@
 
 Bu repository iki ana bileşenden oluşmaktadır:
 
-- **public-sdk**: Paywall iOS SDK'nın derlenmiş dağıtım paketini (`PaywallSDK.xcframework`, `Masterpass.xcframework`)
-  içerir. Merchant'lar SDK'yı bu repoyu Swift Package Manager ile ekleyerek kurar (bkz. [Kurulum](#kurulum)).
+- **public-sdk**: Paywall iOS SDK'nın derlenmiş dağıtım paketini içerir (`Package.swift`, `PaywallSDK.xcframework`,
+  `Masterpass.xcframework`). Merchant'lar bu klasörü projelerine kopyalayıp yerel Swift paketi olarak ekler
+  (bkz. [Kurulum](#kurulum)).
 - **paywall-sdk-test**: SDK'nın tüm fonksiyonlarını cihazda veya simülatörde deneyen iOS test uygulamasıdır. SDK'yı
-  bu repodaki paketten kullanır; her çağrıda giden istekleri ve SDK'nın döndüğü cevabı gösterir. Xcode ile
+  yandaki `public-sdk` klasöründen kullanır; her çağrıda giden istekleri ve SDK'nın döndüğü cevabı gösterir. Xcode ile
   `paywall-sdk-test/PaywallTestTool.xcodeproj` açılarak ya da `cd paywall-sdk-test && ./run.sh` komutuyla çalıştırılır.
 
 # Paywall iOS SDK
@@ -15,25 +16,57 @@ yönetimi akışlarını sunar. Swift ile yazılmıştır; Masterpass iOS SDK pa
 
 ## Kurulum
 
-### Swift Package Manager
+### SDK'yı projenize ekleme
 
-SDK, [PaywallSdk_iOS_Public](https://github.com/paywallone/PaywallSdk_iOS_Public) reposunda derlenmiş
-(`xcframework`) olarak yayınlanır. Xcode'da **File > Add Package Dependencies…** ile repo adresini girin
-(`https://github.com/paywallone/PaywallSdk_iOS_Public`) ve uygulama hedefinize `PaywallSDK` ürününü bağlayın.
-`Package.swift` kullanıyorsanız:
+SDK, `public-sdk` klasörü olarak dağıtılır. Klasörü projenizin içine koyarsınız; internetten bir şey çekilmez.
+Klasör bir Swift paketidir; derlenmiş SDK'yı ve Masterpass iOS SDK'yı içerir.
+
+1. `public-sdk` klasörünü projenizin kök klasörüne, `.xcodeproj` dosyasının yanına kopyalayın:
+
+   ```
+   MerchantApp/
+   ├── MerchantApp/
+   ├── MerchantApp.xcodeproj
+   └── public-sdk/
+       ├── Package.swift
+       ├── PaywallSDK.xcframework
+       └── Masterpass.xcframework
+   ```
+
+2. Xcode'da **File > Add Package Dependencies…** penceresini açın, sol alttaki **Add Local…** butonuyla
+   `public-sdk` klasörünü seçin ve **Add Package** deyin.
+
+3. Açılan listede `PaywallSDK` ürününü uygulama hedefinize (target) bağlayın.
+
+Projeniz `Package.swift` ile yönetiliyorsa aynı şey şöyledir:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/paywallone/PaywallSdk_iOS_Public", from: "1.0.0"),
+    .package(path: "public-sdk"),
 ],
 targets: [
-    .target(name: "MyApp", dependencies: [.product(name: "PaywallSDK", package: "PaywallSdk_iOS_Public")]),
+    .target(name: "MyApp", dependencies: [.product(name: "PaywallSDK", package: "public-sdk")]),
 ]
 ```
 
-**Gereksinimler:** iOS 13.0+, Xcode 26.2+.
+- **Klasörün tamamını kopyalayın.** `xcframework` dosyalarını tek tek projeye sürüklemeyin. `Package.swift`, iki
+  framework'ü birlikte ve doğru ayarlarla bağlar; Masterpass'ın ihtiyaç duyduğu dosyalar da bu yolla
+  uygulamaya kopyalanır.
+- **Masterpass'ı ayrıca eklemeyin.** SDK'nın içinde gelir. İkinci kez eklenirse derleme hata verir.
+- **Yeni sürüm geldiğinde** `public-sdk` klasörünü yenisiyle değiştirin. Xcode paketi kendiliğinden yeniden okur;
+  okumazsa **File > Packages > Reset Package Caches** yapın.
 
-> Masterpass SDK'yı uygulamanıza **ayrıca eklemeyin**; Paywall SDK'nın içinde gelir.
+### Gereksinimler
+
+| | |
+|---|---|
+| iOS | 13.0+ |
+| Xcode | 26.2+ |
+| Swift | 5.10+ (fonksiyonlar `async`; `await` ile çağrılır) |
+| SwiftUI | İsteğe bağlı; yalnızca SwiftUI bileşenleri kullanılacaksa |
+
+`Info.plist`'e bir şey eklemeniz gerekmez. SDK'nın gizlilik bildirimi (`PrivacyInfo.xcprivacy`) framework'lerin
+içinde gelir.
 
 ### Import
 

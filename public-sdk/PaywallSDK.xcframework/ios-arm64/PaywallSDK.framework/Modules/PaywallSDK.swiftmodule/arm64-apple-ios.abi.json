@@ -33104,1750 +33104,1757 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.1Hc4qslVMa\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphoneos\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.6oq3PfCUZf\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphoneos\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 295,
       "length": 23,
       "value": "\"PaywallSDK_PaywallSDK\""
     },
     {
-      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.1Hc4qslVMa\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphoneos\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.6oq3PfCUZf\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphoneos\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "Array",
       "offset": 965,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.1Hc4qslVMa\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphoneos\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.6oq3PfCUZf\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphoneos\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1492,
       "length": 9,
       "value": "\".bundle\""
     },
     {
-      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.1Hc4qslVMa\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphoneos\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.6oq3PfCUZf\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphoneos\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1644,
       "length": 51,
       "value": "\"unable to find bundle named PaywallSDK_PaywallSDK\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Config\/PaywallEndpoints.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Config\/PaywallEndpoints.swift",
       "kind": "StringLiteral",
       "offset": 434,
       "length": 35,
       "value": "\"\/api\/paywall\/temptoken\/sdk\/verify\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Config\/PaywallEndpoints.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Config\/PaywallEndpoints.swift",
       "kind": "StringLiteral",
       "offset": 503,
       "length": 45,
       "value": "\"\/api\/paywall\/masterpass\/by\/sdk\/payment\/init\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Config\/PaywallEndpoints.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Config\/PaywallEndpoints.swift",
       "kind": "StringLiteral",
       "offset": 582,
       "length": 45,
       "value": "\"\/api\/paywall\/masterpass\/by\/sdk\/payment\/mark\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Config\/PaywallEndpoints.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Config\/PaywallEndpoints.swift",
       "kind": "StringLiteral",
       "offset": 774,
       "length": 38,
       "value": "\"https:\/\/mp-sdk.masterpassturkiye.com\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Config\/PaywallEndpoints.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Config\/PaywallEndpoints.swift",
       "kind": "StringLiteral",
       "offset": 834,
       "length": 42,
       "value": "\"https:\/\/mp-uat-sdk.masterpassturkiye.com\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Config\/PaywallEndpoints.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Config\/PaywallEndpoints.swift",
       "kind": "StringLiteral",
       "offset": 899,
       "length": 43,
       "value": "\"https:\/\/mp-test-sdk.masterpassturkiye.com\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Core\/PaywallSdkCore.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Core\/PaywallSdkCore.swift",
       "kind": "BooleanLiteral",
       "offset": 532,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Core\/PaywallSdkCore.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Core\/PaywallSdkCore.swift",
       "kind": "Array",
       "offset": 600,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Json\/LenientDecoding.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Json\/LenientDecoding.swift",
       "kind": "IntegerLiteral",
       "offset": 646,
       "length": 2,
       "value": "64"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 109,
       "length": 6,
       "value": "\"0000\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 141,
       "length": 6,
       "value": "\"5001\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 179,
       "length": 6,
       "value": "\"5008\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 210,
       "length": 6,
       "value": "\"5010\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "Array",
       "offset": 1242,
       "length": 24,
       "value": "[\"5001\", \"5008\", \"5010\"]"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 1429,
       "length": 18,
       "value": "\"OTP_IS_NOT_VALID\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 1461,
       "length": 4,
       "value": "4001"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 1476,
       "length": 57,
       "value": "\"OTP code is invalid. Please enter the correct OTP code.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 1546,
       "length": 32,
       "value": "\"ACCOUNT_NOT_LINKED_TO_MERCHANT\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 1605,
       "length": 4,
       "value": "4002"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 1632,
       "length": 78,
       "value": "\"Account is not linked to merchant. Please link your account to the merchant.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 1732,
       "length": 16,
       "value": "\"USER_NOT_FOUND\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 1762,
       "length": 4,
       "value": "4003"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 1777,
       "length": 56,
       "value": "\"User not found. Please provide valid user information.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 1846,
       "length": 21,
       "value": "\"CARD_ALREADY_EXISTS\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 1881,
       "length": 4,
       "value": "4004"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 1940,
       "length": 33,
       "value": "\"MERCHANT_USER_ID_ALREADY_IN_USE\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 2000,
       "length": 4,
       "value": "4005"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 2027,
       "length": 60,
       "value": "\"User ID is already in use. Please use a different user ID.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 2109,
       "length": 43,
       "value": "\"FRAUD_DETECTED_DUE_TO_REPETITIVE_DELETION\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 2179,
       "length": 4,
       "value": "4006"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 2206,
       "length": 85,
       "value": "\"Transaction rejected for security reasons. Repetitive deletion operations detected.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 2313,
       "length": 30,
       "value": "\"INVALID_ACCOUNT_KEY_IN_TOKEN\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 2357,
       "length": 4,
       "value": "4007"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 2416,
       "length": 21,
       "value": "\"INVALID_CARD_NUMBER\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 2451,
       "length": 4,
       "value": "4008"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 2510,
       "length": 21,
       "value": "\"INVALID_EXPIRY_DATE\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 2545,
       "length": 4,
       "value": "4009"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 2604,
       "length": 13,
       "value": "\"INVALID_CVV\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 2631,
       "length": 4,
       "value": "4010"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 2682,
       "length": 20,
       "value": "\"MISSING_CARD_ALIAS\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 2716,
       "length": 4,
       "value": "4011"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 2774,
       "length": 26,
       "value": "\"MISSING_CARD_HOLDER_NAME\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 2814,
       "length": 4,
       "value": "4012"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 2878,
       "length": 6,
       "value": "\"5008\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 2898,
       "length": 4,
       "value": "5008"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 2961,
       "length": 6,
       "value": "\"5001\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 2981,
       "length": 4,
       "value": "5001"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 3038,
       "length": 6,
       "value": "\"5010\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "IntegerLiteral",
       "offset": 3058,
       "length": 4,
       "value": "5010"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mapping\/Mappings.swift",
       "kind": "StringLiteral",
       "offset": 4986,
       "length": 70,
       "value": "\"Masterpass terms must be accepted by the user before this operation.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mark\/PaymentMarker.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mark\/PaymentMarker.swift",
       "kind": "IntegerLiteral",
       "offset": 99,
       "length": 1,
       "value": "1"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mark\/PaymentMarker.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mark\/PaymentMarker.swift",
       "kind": "IntegerLiteral",
       "offset": 125,
       "length": 1,
       "value": "2"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mark\/PaymentMarker.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mark\/PaymentMarker.swift",
       "kind": "IntegerLiteral",
       "offset": 142,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mark\/PaymentMarker.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Mark\/PaymentMarker.swift",
       "kind": "IntegerLiteral",
       "offset": 257,
       "length": 1,
       "value": "4"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Masterpass\/MasterpassGateway.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Masterpass\/MasterpassGateway.swift",
       "kind": "StringLiteral",
       "offset": 3563,
       "length": 7,
       "value": "\"tr-TR\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Masterpass\/MasterpassResponse.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Masterpass\/MasterpassResponse.swift",
       "kind": "Dictionary",
       "offset": 1724,
       "length": 336,
       "value": "[(\"badrequest\", 400), (\"unauthorized\", 401), (\"forbidden\", 403), (\"notfound\", 404), (\"conflict\", 409), (\"unprocessableentity\", 422), (\"toomanyrequests\", 429), (\"internalservererror\", 500), (\"badgateway\", 502), (\"serviceunavailable\", 503), (\"gatewaytimeout\", 504)]"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Masterpass\/MasterpassResponse.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Masterpass\/MasterpassResponse.swift",
       "kind": "StringLiteral",
       "offset": 2968,
       "length": 9,
       "value": "\"TIMEOUT\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 245,
       "length": 98,
       "value": "\"SDK core must be initialized first. Call PaywallSdk.initPaywallSdk() before using this function.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 386,
       "length": 79,
       "value": "\"Environment not resolved. Make sure initPaywallSdk() was called successfully.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 511,
       "length": 99,
       "value": "\"Session must be started first. Use PaywallSdk.initPaywallSdk with includeMasterpassSession: true.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 656,
       "length": 68,
       "value": "\"Masterpass session must be created before calling this operation. \""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 739,
       "length": 68,
       "value": "\"Use PaywallSdk.initPaywallSdk with includeMasterpassSession: true.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 852,
       "length": 111,
       "value": "\"Session ID is missing. Use PaywallSdk.initPaywallSdk with includeMasterpassSession: true to create a session.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 1014,
       "length": 121,
       "value": "\"Masterpass provider must be initialized first. Call PaywallSdk.providers.masterpass.initialize() before this operation.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 1167,
       "length": 89,
       "value": "\"MasterpassToken not found in session state. Make sure session was started successfully.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 1289,
       "length": 28,
       "value": "\"Masterpass SDK not loaded.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 1356,
       "length": 53,
       "value": "\"User ID is missing. Please provide a valid user ID.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 1455,
       "length": 97,
       "value": "\"Account key (phone number or email) is missing. Please provide a phone number or email address.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 1589,
       "length": 85,
       "value": "\"Card alias name is missing. Please provide a name for the card (e.g., \"My Card\").\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 1717,
       "length": 67,
       "value": "\"Card holder name is missing. Please provide the name on the card.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 1822,
       "length": 67,
       "value": "\"Card number is missing. Please provide a 13-19 digit card number.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 2124,
       "length": 74,
       "value": "\"Card expiry date is missing. Please provide in MMYY format (e.g., 1226).\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 2457,
       "length": 91,
       "value": "\"CVV code is missing. Please provide the 3 or 4 digit CVV code from the back of your card.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 2641,
       "length": 69,
       "value": "\"CVV code format is invalid. Please provide a 3 or 4 digit CVV code.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 2769,
       "length": 80,
       "value": "\"Request reference number is missing. Please provide a unique reference number.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 2895,
       "length": 103,
       "value": "\"Account key (phone number or email) is invalid. Please provide a valid phone number or email address.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 3036,
       "length": 70,
       "value": "\"This card is already registered. Please try adding a different card.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 3144,
       "length": 65,
       "value": "\"Card number is invalid. Please check your 16-digit card number.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 3245,
       "length": 83,
       "value": "\"Card information is invalid. Please check card number, expiry date, and CVV code.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 3366,
       "length": 74,
       "value": "\"Card expiry date is invalid. Please provide in MMYY format (e.g., 1226).\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 3470,
       "length": 86,
       "value": "\"CVV code is invalid. Please provide the 3-digit CVV code from the back of your card.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 3733,
       "length": 68,
       "value": "\"Card addition failed. Please check your information and try again.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 3964,
       "length": 100,
       "value": "\"Payment details are missing. Please provide amount, currencyId, merchantUniqueCode, trackingCode, \""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 4079,
       "length": 36,
       "value": "\"successUrl, failUrl, and clientIp.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 4531,
       "length": 82,
       "value": "\"Merchant unique code is missing. Please provide a unique code for your merchant.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 4653,
       "length": 83,
       "value": "\"Tracking code is missing. Please provide a unique tracking code for this payment.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 4782,
       "length": 100,
       "value": "\"Success redirect URL is missing. Please provide the URL to redirect to when payment is successful.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 4917,
       "length": 89,
       "value": "\"Fail redirect URL is missing. Please provide the URL to redirect to when payment fails.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 5042,
       "length": 73,
       "value": "\"Client IP address is missing. Please provide the customer's IP address.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 5171,
       "length": 83,
       "value": "\"Card alias is missing. Please provide a valid card alias for the registered card.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 5299,
       "length": 67,
       "value": "\"Card number is missing. Please provide a 13-19 digit card number.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 5419,
       "length": 90,
       "value": "\"Card expiry date is missing. Please provide in MMYY format (e.g., 1226 - December 2026).\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 5546,
       "length": 55,
       "value": "\"CVV code is missing. Please provide a valid CVV code.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 5638,
       "length": 67,
       "value": "\"Card holder name is missing. Please provide the name on the card.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 5763,
       "length": 84,
       "value": "\"Masterpass request body not found in Paywall response. Payment cannot be started. \""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 5862,
       "length": 58,
       "value": "\"Please ensure your Paywall backend is working correctly.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 5953,
       "length": 41,
       "value": "\"Card alias must be filled to save card.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 6028,
       "length": 89,
       "value": "\"Masterpass session is invalid. MasterpassToken is missing. Please create a new session.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 6166,
       "length": 85,
       "value": "\"Masterpass SDK is not loaded. Please ensure Masterpass SDK is properly initialized.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 6295,
       "length": 90,
       "value": "\"Card data is required. cardNumber, cardHolderName, expiryDate, and cvv must be provided.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 6452,
       "length": 99,
       "value": "\"cardAlias is required for registerAndPurchase. Please provide a card alias for card registration.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 6597,
       "length": 29,
       "value": "\"Paywall payment init failed\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 6673,
       "length": 39,
       "value": "\"Masterpass registerAndPurchase failed\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 6952,
       "length": 33,
       "value": "\"Payment completed successfully.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 7024,
       "length": 48,
       "value": "\"Payment initialization completed successfully.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 7110,
       "length": 77,
       "value": "\"Payment initialization failed. Please check your information and try again.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 7400,
       "length": 26,
       "value": "\"Card added successfully.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 7471,
       "length": 82,
       "value": "\"Bank OTP verification is required. Please enter the OTP code sent by your bank. \""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 7568,
       "length": 50,
       "value": "\"OTP verification is handled by merchant backend.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 7668,
       "length": 88,
       "value": "\"Masterpass OTP verification is required. Please enter the OTP code sent by Masterpass.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 7791,
       "length": 85,
       "value": "\"3D Secure verification is required. You will be redirected to the 3D Secure screen.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 7921,
       "length": 28,
       "value": "\"Please commit the payment.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 7993,
       "length": 29,
       "value": "\"Please start a new session.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 8054,
       "length": 46,
       "value": "\"An unknown error occurred. Please try again.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 8135,
       "length": 64,
       "value": "\"Operation failed. Please check your information and try again.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 8233,
       "length": 42,
       "value": "\"Masterpass session not found or expired.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Messages\/SdkMessages.swift",
       "kind": "StringLiteral",
       "offset": 8321,
       "length": 29,
       "value": "\"Please start a new session.\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
       "kind": "StringLiteral",
       "offset": 650,
       "length": 10,
       "value": "\"embedded\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
       "kind": "StringLiteral",
       "offset": 670,
       "length": 17,
       "value": "\"mobileprovision\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
       "kind": "StringLiteral",
       "offset": 966,
       "length": 8,
       "value": "\"<plist\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
       "kind": "StringLiteral",
       "offset": 1016,
       "length": 10,
       "value": "\"<\/plist>\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
       "kind": "StringLiteral",
       "offset": 1280,
       "length": 14,
       "value": "\"Entitlements\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
       "kind": "BooleanLiteral",
       "offset": 1336,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
       "kind": "StringLiteral",
       "offset": 1372,
       "length": 16,
       "value": "\"get-task-allow\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
       "kind": "BooleanLiteral",
       "offset": 1402,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
       "kind": "Array",
       "offset": 1780,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
       "kind": "IntegerLiteral",
       "offset": 1817,
       "length": 3,
       "value": "200"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Network\/DebugBuild.swift",
       "kind": "StringLiteral",
       "offset": 2771,
       "length": 105,
       "value": "\"(?i)(\"?(?:authorization|jtoken|token|accesstoken|flowtoken)\"?\\s*[:=]\\s*\"?)(bearer\\s+)?([^\"\\s,;})\\]]+)\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
       "kind": "StringLiteral",
       "offset": 345,
       "length": 13,
       "value": "\"getCardList\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
       "kind": "StringLiteral",
       "offset": 401,
       "length": 32,
       "value": "\"ACCOUNT_NOT_LINKED_TO_MERCHANT\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
       "kind": "StringLiteral",
       "offset": 472,
       "length": 16,
       "value": "\"USER_NOT_FOUND\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
       "kind": "Array",
       "offset": 5112,
       "length": 241,
       "value": "[\"AUTHENTICATION_FAILED\", \"CLIENT_IS_NOT_AUTHENTICATED\", \"SOURCE_CHANNEL_IS_NOT_AUTHORIZED\", \"TOKEN_IS_REQUIRED\", \"TOKEN_IS_NOT_VALID\", \"TOKEN_HAS_EXPIRED\", \"TOKEN_ALREADY_USED\"]"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
       "kind": "StringLiteral",
       "offset": 5840,
       "length": 14,
       "value": "\"linkMerchant\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
       "kind": "StringLiteral",
       "offset": 9022,
       "length": 11,
       "value": "\"resendOtp\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
       "kind": "StringLiteral",
       "offset": 9076,
       "length": 20,
       "value": "\"TOKEN_ALREADY_USED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
       "kind": "StringLiteral",
       "offset": 12055,
       "length": 12,
       "value": "\"deleteCard\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/MasterpassOperationSupport.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/MasterpassOperationSupport.swift",
       "kind": "IntegerLiteral",
       "offset": 5459,
       "length": 3,
       "value": "400"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/OtpAndCardOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/OtpAndCardOperations.swift",
       "kind": "StringLiteral",
       "offset": 435,
       "length": 11,
       "value": "\"verifyOtp\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/OtpAndCardOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/OtpAndCardOperations.swift",
       "kind": "StringLiteral",
       "offset": 481,
       "length": 5,
       "value": "\"otp\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/OtpAndCardOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/OtpAndCardOperations.swift",
       "kind": "StringLiteral",
       "offset": 526,
       "length": 18,
       "value": "\"OTP_IS_NOT_VALID\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/OtpAndCardOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/OtpAndCardOperations.swift",
       "kind": "StringLiteral",
       "offset": 11321,
       "length": 9,
       "value": "\"addCard\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/OtpAndCardOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/OtpAndCardOperations.swift",
       "kind": "IntegerLiteral",
       "offset": 21862,
       "length": 2,
       "value": "13"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/OtpAndCardOperations.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/OtpAndCardOperations.swift",
       "kind": "IntegerLiteral",
       "offset": 21867,
       "length": 2,
       "value": "19"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1061,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1013,
+      "offset": 1103,
       "length": 11,
       "value": "\"cardAlias\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1061,
+      "offset": 1151,
       "length": 14,
       "value": "\"termsConsent\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1111,
+      "offset": 1201,
       "length": 3,
       "value": "\"-\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1148,
+      "offset": 1238,
       "length": 9,
       "value": "\"UNKNOWN\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1201,
+      "offset": 1291,
       "length": 23,
       "value": "\"%EXPIRY_DATE_REPLACE%\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1268,
+      "offset": 1358,
       "length": 28,
       "value": "\"%CARD_HOLDER_NAME_REPLACE%\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
       "kind": "StringLiteral",
-      "offset": 1339,
+      "offset": 1429,
       "length": 22,
       "value": "\"%CARD_ALIAS_REPLACE%\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 14124,
+      "offset": 14214,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Session\/SessionExpiry.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Session\/SessionExpiry.swift",
       "kind": "IntegerLiteral",
       "offset": 366,
       "length": 1,
       "value": "3"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Session\/SessionExpiry.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Session\/SessionExpiry.swift",
       "kind": "IntegerLiteral",
       "offset": 370,
       "length": 2,
       "value": "60"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/Session\/SessionExpiry.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Session\/SessionExpiry.swift",
       "kind": "StringLiteral",
       "offset": 450,
       "length": 97,
       "value": "\"^(\\d{4})-(\\d{2})-(\\d{2})[T ](\\d{2}):(\\d{2})(?::(\\d{2})(?:\\.(\\d+))?)?([zZ]|[+-]\\d{2}:?\\d{2})?$\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/State\/SdkState.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/State\/SdkState.swift",
       "kind": "IntegerLiteral",
       "offset": 265,
       "length": 2,
       "value": "10"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/State\/SdkState.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/State\/SdkState.swift",
       "kind": "StringLiteral",
       "offset": 1975,
       "length": 12,
       "value": "\"masterpass\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/State\/SdkState.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/State\/SdkState.swift",
       "kind": "BooleanLiteral",
       "offset": 2385,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Internal\/State\/SdkState.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/State\/SdkState.swift",
       "kind": "Array",
       "offset": 2444,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Masterpass\/MasterpassAccountModels.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Masterpass\/MasterpassAccountModels.swift",
       "kind": "StringLiteral",
       "offset": 295,
       "length": 8,
       "value": "\"Msisdn\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Masterpass\/MasterpassAccountModels.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Masterpass\/MasterpassAccountModels.swift",
       "kind": "StringLiteral",
       "offset": 359,
       "length": 8,
       "value": "\"UserId\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Payment\/PaymentModels.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Payment\/PaymentModels.swift",
       "kind": "StringLiteral",
       "offset": 216,
       "length": 17,
       "value": "\"REGISTERED_CARD\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Payment\/PaymentModels.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Payment\/PaymentModels.swift",
       "kind": "StringLiteral",
       "offset": 330,
       "length": 13,
       "value": "\"MANUAL_CARD\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Payment\/PaymentModels.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Payment\/PaymentModels.swift",
       "kind": "BooleanLiteral",
       "offset": 7605,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/Payment\/PaymentModels.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Payment\/PaymentModels.swift",
       "kind": "BooleanLiteral",
       "offset": 12275,
       "length": 4,
       "value": "true"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/PaywallJSON.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/PaywallJSON.swift",
       "kind": "BooleanLiteral",
       "offset": 2349,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/PaywallJSON.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/PaywallJSON.swift",
       "kind": "BooleanLiteral",
       "offset": 7784,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/PaywallNetwork.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/PaywallNetwork.swift",
       "kind": "StringLiteral",
       "offset": 144,
       "length": 9,
       "value": "\"PAYWALL\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/PaywallNetwork.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/PaywallNetwork.swift",
       "kind": "StringLiteral",
       "offset": 176,
       "length": 12,
       "value": "\"MASTERPASS\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/PaywallNetwork.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/PaywallNetwork.swift",
       "kind": "Array",
       "offset": 2887,
       "length": 26,
       "value": "[\"authorization\", \"token\"]"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/PaywallNetwork.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/PaywallNetwork.swift",
       "kind": "StringLiteral",
       "offset": 3418,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/PaywallNetwork.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/PaywallNetwork.swift",
       "kind": "Array",
       "offset": 3707,
       "length": 70,
       "value": "[\"token\", \"masterpasstoken\", \"accesstoken\", \"jtoken\", \"authorization\"]"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/PaywallSdk.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/PaywallSdk.swift",
       "kind": "StringLiteral",
       "offset": 784,
       "length": 7,
       "value": "\"1.0.0\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/PaywallSdk.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/PaywallSdk.swift",
       "kind": "StringLiteral",
       "offset": 900,
       "length": 7,
       "value": "\"1.7.1\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
       "kind": "StringLiteral",
       "offset": 209,
       "length": 9,
       "value": "\"SUCCESS\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
       "kind": "StringLiteral",
       "offset": 237,
       "length": 8,
       "value": "\"FAILED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
       "kind": "StringLiteral",
       "offset": 272,
       "length": 17,
       "value": "\"ACTION_REQUIRED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
       "kind": "StringLiteral",
       "offset": 558,
       "length": 5,
       "value": "\"SDK\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
       "kind": "StringLiteral",
       "offset": 583,
       "length": 9,
       "value": "\"PAYWALL\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
       "kind": "StringLiteral",
       "offset": 615,
       "length": 12,
       "value": "\"MASTERPASS\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
       "kind": "StringLiteral",
       "offset": 904,
       "length": 4,
       "value": "\"3D\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
       "kind": "StringLiteral",
       "offset": 1005,
       "length": 10,
       "value": "\"BANK_OTP\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
       "kind": "StringLiteral",
       "offset": 1123,
       "length": 16,
       "value": "\"MASTERPASS_OTP\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkEnums.swift",
       "kind": "StringLiteral",
       "offset": 1256,
       "length": 24,
       "value": "\"MERCHANT_LINK_REQUIRED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 305,
       "length": 21,
       "value": "\"SDK_NOT_INITIALIZED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 371,
       "length": 21,
       "value": "\"SESSION_NOT_STARTED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 431,
       "length": 15,
       "value": "\"MISSING_TOKEN\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 496,
       "length": 26,
       "value": "\"PROVIDER_NOT_INITIALIZED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 563,
       "length": 17,
       "value": "\"SESSION_EXPIRED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 620,
       "length": 16,
       "value": "\"SDK_NOT_LOADED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 671,
       "length": 11,
       "value": "\"SDK_ERROR\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 765,
       "length": 36,
       "value": "\"MISSING_INCLUDE_MASTERPASS_SESSION\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 846,
       "length": 21,
       "value": "\"INVALID_ENVIRONMENT\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 916,
       "length": 25,
       "value": "\"VERIFY_RESPONSE_INVALID\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 989,
       "length": 24,
       "value": "\"MASTERPASS_OBJECT_NULL\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1071,
       "length": 34,
       "value": "\"INIT_WITH_MASTERPASS_TOKEN_ERROR\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1190,
       "length": 21,
       "value": "\"MISSING_MERCHANT_ID\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1267,
       "length": 32,
       "value": "\"MASTERPASS_PROVIDER_INIT_ERROR\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1374,
       "length": 17,
       "value": "\"MISSING_USER_ID\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1436,
       "length": 21,
       "value": "\"MISSING_ACCOUNT_KEY\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1501,
       "length": 20,
       "value": "\"MISSING_CARD_ALIAS\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1571,
       "length": 26,
       "value": "\"MISSING_CARD_HOLDER_NAME\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1642,
       "length": 21,
       "value": "\"MISSING_CARD_NUMBER\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1715,
       "length": 28,
       "value": "\"INVALID_CARD_NUMBER_FORMAT\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1788,
       "length": 21,
       "value": "\"MISSING_EXPIRY_DATE\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1861,
       "length": 28,
       "value": "\"INVALID_EXPIRY_DATE_FORMAT\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1926,
       "length": 13,
       "value": "\"MISSING_CVV\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 1983,
       "length": 20,
       "value": "\"INVALID_CVV_FORMAT\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2061,
       "length": 34,
       "value": "\"MISSING_REQUEST_REFERENCE_NUMBER\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2137,
       "length": 18,
       "value": "\"MISSING_OTP_CODE\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2197,
       "length": 18,
       "value": "\"OTP_IS_NOT_VALID\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2259,
       "length": 20,
       "value": "\"TOKEN_ALREADY_USED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2319,
       "length": 16,
       "value": "\"USER_NOT_FOUND\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2374,
       "length": 15,
       "value": "\"DELETE_FAILED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2428,
       "length": 15,
       "value": "\"UNKNOWN_ERROR\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2500,
       "length": 17,
       "value": "\"INVALID_SESSION\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2561,
       "length": 20,
       "value": "\"MISSING_SESSION_ID\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2621,
       "length": 16,
       "value": "\"INVALID_AMOUNT\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2682,
       "length": 21,
       "value": "\"INVALID_CURRENCY_ID\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2757,
       "length": 30,
       "value": "\"MISSING_MERCHANT_UNIQUE_CODE\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2834,
       "length": 23,
       "value": "\"MISSING_TRACKING_CODE\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2902,
       "length": 21,
       "value": "\"MISSING_SUCCESS_URL\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 2965,
       "length": 18,
       "value": "\"MISSING_FAIL_URL\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 3026,
       "length": 19,
       "value": "\"MISSING_CLIENT_IP\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 3085,
       "length": 16,
       "value": "\"ALIAS_REQUIRED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 3145,
       "length": 20,
       "value": "\"MISSING_OWNER_NAME\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 3208,
       "length": 19,
       "value": "\"MISSING_CARD_DATA\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 3272,
       "length": 21,
       "value": "\"PAYWALL_INIT_FAILED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 3350,
       "length": 33,
       "value": "\"MISSING_MASTERPASS_REQUEST_BODY\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 3428,
       "length": 21,
       "value": "\"PAYMENT_INIT_FAILED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 3491,
       "length": 18,
       "value": "\"MASTERPASS_ERROR\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
       "offset": 3687,
       "length": 20,
       "value": "\"TERMS_NOT_ACCEPTED\""
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/UI\/SecureInputs.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/UI\/SecureInputs.swift",
       "kind": "IntegerLiteral",
       "offset": 2908,
       "length": 1,
       "value": "8"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/UI\/SecureInputs.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/UI\/SecureInputs.swift",
       "kind": "IntegerLiteral",
       "offset": 3754,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/UI\/SecureInputs.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/UI\/SecureInputs.swift",
       "kind": "BooleanLiteral",
       "offset": 3783,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/UI\/SecureInputs.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/UI\/SecureInputs.swift",
       "kind": "BooleanLiteral",
       "offset": 3848,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/iOS\/MasterpassIOSGateway.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/iOS\/MasterpassIOSGateway.swift",
       "kind": "IntegerLiteral",
       "offset": 1118,
       "length": 2,
       "value": "30"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/iOS\/MasterpassIOSGateway.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/iOS\/MasterpassIOSGateway.swift",
       "kind": "BooleanLiteral",
       "offset": 1228,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/iOS\/MasterpassPaymentArgs.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/iOS\/MasterpassPaymentArgs.swift",
       "kind": "Dictionary",
       "offset": 5145,
       "length": 56,
       "value": "[(\"949\", \"TRY\"), (\"840\", \"USD\"), (\"978\", \"EUR\"), (\"826\", \"GBP\")]"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSecureFields.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSecureFields.swift",
       "kind": "BooleanLiteral",
       "offset": 8625,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSecureFields.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSecureFields.swift",
       "kind": "IntegerLiteral",
-      "offset": 12589,
+      "offset": 12778,
       "length": 1,
       "value": "6"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSwiftUIFields.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSwiftUIFields.swift",
       "kind": "IntegerLiteral",
       "offset": 618,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSwiftUIFields.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSwiftUIFields.swift",
       "kind": "BooleanLiteral",
       "offset": 781,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSwiftUIFields.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSwiftUIFields.swift",
       "kind": "IntegerLiteral",
       "offset": 1479,
       "length": 1,
       "value": "0"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSwiftUIFields.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSwiftUIFields.swift",
       "kind": "BooleanLiteral",
       "offset": 1530,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSwiftUIFields.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSwiftUIFields.swift",
       "kind": "BooleanLiteral",
       "offset": 2724,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/paywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSwiftUIFields.swift",
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/iOS\/PaywallSwiftUIFields.swift",
       "kind": "StringLiteral",
       "offset": 2910,
       "length": 2,

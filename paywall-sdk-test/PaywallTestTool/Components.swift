@@ -1,5 +1,50 @@
 import PaywallSDK
 import SwiftUI
+import UIKit
+
+// MARK: - Theme
+
+/// Material 3 baseline palette (purple), with light and dark variants.
+enum Theme {
+    static let primary = dynamic(light: 0x6750A4, dark: 0xD0BCFF)
+    static let onPrimary = dynamic(light: 0xFFFFFF, dark: 0x381E72)
+    static let primaryContainer = dynamic(light: 0xEADDFF, dark: 0x4F378B)
+    static let onPrimaryContainer = dynamic(light: 0x21005D, dark: 0xEADDFF)
+    static let background = dynamic(light: 0xFEF7FF, dark: 0x141218)
+    static let surfaceContainer = dynamic(light: 0xF3EDF7, dark: 0x211F26)
+    static let surfaceVariant = dynamic(light: 0xE7E0EC, dark: 0x36343B)
+
+    private static func dynamic(light: UInt32, dark: UInt32) -> Color {
+        Color(UIColor { $0.userInterfaceStyle == .dark ? uiColor(dark) : uiColor(light) })
+    }
+
+    private static func uiColor(_ hex: UInt32) -> UIColor {
+        UIColor(
+            red: CGFloat((hex >> 16) & 0xFF) / 255,
+            green: CGFloat((hex >> 8) & 0xFF) / 255,
+            blue: CGFloat(hex & 0xFF) / 255,
+            alpha: 1
+        )
+    }
+}
+
+/// Filled button (primary) or tonal button (secondary actions).
+struct PaywallButtonStyle: ButtonStyle {
+    var prominent = true
+    @Environment(\.isEnabled) private var isEnabled
+
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding(.horizontal, 14)
+            .padding(.vertical, 8)
+            .foregroundStyle(prominent ? Theme.onPrimary : Theme.onPrimaryContainer)
+            .background(
+                RoundedRectangle(cornerRadius: 20, style: .continuous)
+                    .fill(prominent ? Theme.primary : Theme.primaryContainer)
+            )
+            .opacity(isEnabled ? (configuration.isPressed ? 0.8 : 1) : 0.38)
+    }
+}
 
 // MARK: - Layout
 
@@ -18,7 +63,7 @@ struct FormSection<Content: View>: View {
             VStack(alignment: .leading, spacing: 14) { content }
                 .padding(16)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Color(.secondarySystemGroupedBackground)))
+                .background(RoundedRectangle(cornerRadius: 14, style: .continuous).fill(Theme.surfaceContainer))
             if let footer {
                 Text(footer)
                     .font(.footnote)
@@ -42,7 +87,7 @@ struct Collapsible<Content: View>: View {
             Button { withAnimation(.easeInOut(duration: 0.2)) { open.toggle() } } label: {
                 HStack(spacing: 10) {
                     if let systemImage {
-                        Image(systemName: systemImage).foregroundStyle(Color.accentColor).frame(width: 22)
+                        Image(systemName: systemImage).foregroundStyle(Theme.primary).frame(width: 22)
                     }
                     Text(title).foregroundStyle(.primary)
                     Spacer()
@@ -110,7 +155,7 @@ extension View {
     func inputBackground() -> some View {
         padding(.horizontal, 12)
             .frame(minHeight: 44)
-            .background(RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Color(.tertiarySystemFill)))
+            .background(RoundedRectangle(cornerRadius: 10, style: .continuous).fill(Theme.surfaceVariant))
     }
 }
 
@@ -164,7 +209,7 @@ struct Mono: View {
             .textSelection(.enabled)
             .padding(10)
             .frame(maxWidth: .infinity, alignment: .leading)
-            .background(RoundedRectangle(cornerRadius: 8, style: .continuous).fill(Color(.tertiarySystemFill)))
+            .background(RoundedRectangle(cornerRadius: 8, style: .continuous).fill(Theme.surfaceVariant))
     }
 }
 
@@ -276,8 +321,9 @@ struct ActionRow: View {
                     VStack(spacing: 2) {
                         Text(function)
                             .font(.system(.subheadline, design: .monospaced).weight(.semibold))
-                            .lineLimit(1)
-                            .minimumScaleFactor(0.7)
+                            .lineLimit(2)
+                            .minimumScaleFactor(0.6)
+                            .multilineTextAlignment(.center)
                         Text(label).font(.caption).opacity(0.85)
                     }
                 }
@@ -294,11 +340,7 @@ private struct ActionButtonStyle: ViewModifier {
     let prominent: Bool
 
     func body(content: Content) -> some View {
-        if prominent {
-            content.buttonStyle(.borderedProminent)
-        } else {
-            content.buttonStyle(.bordered)
-        }
+        content.buttonStyle(PaywallButtonStyle(prominent: prominent))
     }
 }
 

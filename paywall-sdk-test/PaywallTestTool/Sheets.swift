@@ -28,17 +28,17 @@ struct OtpSheet: View {
                 }
                 Button { state.submitOtp() } label: {
                     VStack(spacing: 2) {
-                        Text("providers.masterpass.verifyOtp(...)").font(.system(.subheadline, design: .monospaced).weight(.semibold))
+                        Text("PaywallSdk.providers.masterpass.verifyOtp").font(.system(.subheadline, design: .monospaced).weight(.semibold))
                         Text("Kodu doğrular").font(.caption).opacity(0.85)
                     }
                     .frame(maxWidth: .infinity, minHeight: 40)
                 }
-                .buttonStyle(.borderedProminent)
+                .buttonStyle(PaywallButtonStyle())
                 .disabled(otp.digitCount == 0)
                 Button { state.resendOtp() } label: {
                     HStack(spacing: 6) {
                         if state.otpResendLoading { ProgressView().controlSize(.small) }
-                        Text("providers.masterpass.resendOtp()").font(.system(.footnote, design: .monospaced))
+                        Text("PaywallSdk.providers.masterpass.resendOtp").font(.system(.footnote, design: .monospaced))
                     }
                     .frame(maxWidth: .infinity)
                 }

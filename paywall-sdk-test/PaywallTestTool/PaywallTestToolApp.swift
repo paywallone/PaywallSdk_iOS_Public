@@ -9,6 +9,7 @@ struct PaywallTestToolApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView(state: state, network: network)
+                .tint(Theme.primary)
                 .onAppear { PaywallSdk.setNetworkListener(network) }
         }
     }
@@ -56,10 +57,10 @@ struct ContentView: View {
             isPresented: Binding(get: { state.cardToDelete != nil }, set: { if !$0 { state.cardToDelete = nil } }),
             presenting: state.cardToDelete
         ) { _ in
-            Button("Sil", role: .destructive) { state.deleteCard() }
+            Button("PaywallSdk.providers.masterpass.deleteCard", role: .destructive) { state.deleteCard() }
             Button("Vazgeç", role: .cancel) { state.cardToDelete = nil }
         } message: { card in
-            Text("providers.masterpass.deleteCard(...)\n\"\(card.alias)\" kartı Masterpass hesabından kaldırılacak.")
+            Text("\"\(card.alias)\" kartı Masterpass hesabından kaldırılacak.")
         }
         .fullScreenCover(item: $state.threeDOpen) { request in
             ThreeDSheet(request: request) { result, lastUrl in state.onThreeDFinished(result, lastUrl: lastUrl) }
@@ -73,7 +74,7 @@ struct ContentView: View {
                 content().padding(.horizontal, 16).padding(.vertical, 12)
             }
             .scrollDismissesKeyboard(.interactively)
-            .background(Color(.systemGroupedBackground).ignoresSafeArea())
+            .background(Theme.background.ignoresSafeArea())
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 ToolbarItem(placement: .principal) {
