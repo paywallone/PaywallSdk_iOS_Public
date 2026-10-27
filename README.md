@@ -143,7 +143,7 @@ let response = await PaywallSdk.payment.initPayment(PaymentInitParams(
     paymentSource: .registeredCard,                  // veya .manualCard
     paymentDetail: PaymentDetail(
         amount: 100.00,
-        currencyId: 949,                             // TRY
+        currencyId: 1,                               // TRY. Para birimi listesi: https://developer.paywall.one/sistem-verileri/para-birimleri
         merchantUniqueCode: "ORDER-\(Date().timeIntervalSince1970)",
         trackingCode: "TRACK-\(Date().timeIntervalSince1970)",
         successUrl: "https://yoursite.com/success",
@@ -483,7 +483,7 @@ func completePaymentFlow() async {
             cardBin: card.cardBin ?? "",
             cardHolderName: "John Doe",
             paymentDetail: PaymentDetail(
-                amount: 100.00, currencyId: 949,
+                amount: 100.00, currencyId: 1,
                 merchantUniqueCode: "ORDER-1", trackingCode: "TRACK-1",
                 successUrl: "https://yoursite.com/success", failUrl: "https://yoursite.com/fail",
                 clientIp: "192.168.1.1", installment: 1
@@ -509,7 +509,7 @@ func completePaymentFlow() async {
 Tüm fonksiyonlar `async`'tir, herhangi bir thread'den çağrılabilir ve **hata fırlatmaz**: her durumda
 `SdkResponse<T>` döner (bkz. "Response Formatları").
 
-### `PaywallSdk.initPaywallSdk(environment:token:includeMasterpassSession:)`
+### `PaywallSdk.initPaywallSdk(environment:token:includeMasterpassSession:logLevel:)`
 
 **📚 Dokümantasyon:** https://developer.paywall.one/client-side-servisler/2.-yetkilendirme-sdk
 
@@ -520,6 +520,7 @@ SDK'yı başlatır; token'ı Paywall'da doğrular ve Masterpass session bilgiler
 | `environment` | `PaywallEnvironment` | `.dev` / `.test` / `.prod` |
 | `token` | `String` | Merchant backend'inden gelen geçici token |
 | `includeMasterpassSession` | `Bool` | Masterpass işlemleri için `true` |
+| `logLevel` | `PaywallLogLevel` | İsteğe bağlı, varsayılan `.error`. `.debug`'da `providerMeta.raw` tüm fonksiyonlarda dolar |
 
 **Dönüş:** `InitPaywallSdkResult` — `sdkInitialized`, `hasMasterpassSession`, `body` (`masterpass.sessionId`,
 `userId`, `userPhone` …).
@@ -574,6 +575,7 @@ OTP kodunu doğrular.
   içinde `paymentId`, `masterpassPaymentId`, `successUrl`, `failUrl` gibi ödeme bilgileri de döner.
 - `FAILED`:
   - `OTP_IS_NOT_VALID`: kod hatalı; ödeme beklemede kalır, kullanıcı tekrar deneyebilir.
+  - `MASTERPASS_TIMEOUT`: Masterpass zamanında cevap vermedi; ödeme beklemede kalır, tekrar denenebilir.
   - Masterpass'ın kesin hatasında ödeme OTP'si Paywall'a başarısız olarak bildirilir.
 
 ### `PaywallSdk.providers.masterpass.resendOtp()`
@@ -631,7 +633,7 @@ Kayıtlı kartı siler. Son kart silinse bile hesap merchant'tan ayrılmaz.
 | Alan | Tip | Açıklama |
 |---|---|---|
 | `amount` | `Decimal` | Ödeme tutarı (ör. `100.00`) |
-| `currencyId` | `Int` | Para birimi (949 TRY, 840 USD, 978 EUR) |
+| `currencyId` | `Int` | Para birimi ID'si (ör. `1` TRY). Geçerli değerler: [Para birimleri](https://developer.paywall.one/sistem-verileri/para-birimleri) |
 | `merchantUniqueCode` | `String` | Benzersiz sipariş kodu |
 | `trackingCode` | `String` | Takip kodu |
 | `successUrl` / `failUrl` | `String` | Başarı / hata dönüş adresleri |
@@ -647,7 +649,8 @@ Kayıtlı kartı siler. Son kart silinse bile hesap merchant'tan ayrılmaz.
 - `SUCCESS`: ödeme tamamlandı; `nextActionHint = "Please commit the payment."`
 - `ACTION_REQUIRED` + `.bankOtp` / `.masterpassOtp`: `verifyOtp` ile devam edin.
 - `ACTION_REQUIRED` + `.threeD`: `data.redirectUrl`'i açın.
-- `FAILED`: `errorCode` + `message`.
+- `FAILED`: `errorCode` + `message`. `MASTERPASS_TIMEOUT` ise ödemenin sonucu belirsizdir; tekrar denemeden önce
+  ödemenin durumunu backend'inizden (Paywall'dan) sorgulayın.
 
 ### `PaywallSdk.payment.initWithRegisteredCard(_:)`
 
@@ -670,7 +673,7 @@ Kartı kaydedip ödeme alır.
 | `accountKeyType` | `AccountKeyType` | `.msisdn` (varsayılan) |
 | `isMsisdnValidatedByMerchant` | `Bool` | Varsayılan `true` |
 
-Sonuç `initPayment` ile aynı yapıdadır.
+Sonuç `initPayment` ile aynı yapıdadır. Koşul kutusu işaretli değilse `FAILED` + `TERMS_NOT_ACCEPTED` döner.
 
 ## Response Formatları
 
@@ -687,7 +690,35 @@ Tüm fonksiyonlar `SdkResponse<T>` döner:
 | `data` | İşleme özel sonuç |
 | `field` | Hatalı parametrenin adı (ör. `"otp"`, `"cardAlias"`) |
 | `actionHint` / `nextActionHint` | Sonraki adıma dair ipucu |
-| `providerMeta` | `httpStatus`, `responseCode` (ör. Masterpass `"0000"`, `"5010"`) |
+| `providerMeta` | Teknik bilgi; çoğu cevapta `data.providerMeta` içindedir (aşağıda) |
+
+### `providerMeta`
+
+Sağlayıcının (Paywall / Masterpass) teknik bilgisi. Kullanıcıya gösterilmez; hata ayıklama ve kayıt içindir.
+
+| Alan | Açıklama |
+|---|---|
+| `httpStatus` | HTTP durum kodu |
+| `responseCode` | Sağlayıcının cevap kodu (ör. Masterpass `"0000"` başarılı, `"5008"` OTP, `"5010"` 3D) |
+| `raw` | Paywall / Masterpass'ın ham cevabı (JSON metni) |
+
+Nerede bulunur (web SDK ile aynı):
+
+- `data` dolu olan her cevapta `data.providerMeta` içindedir.
+- Ön kontrol hatalarında (`SDK_NOT_INITIALIZED`, `PROVIDER_NOT_INITIALIZED` vb.) ayrıca `response.providerMeta`'dadır.
+- `data`'sı olmayan hatalarda (ör. Masterpass'ın reddettiği ödeme) yalnızca `response.providerMeta`'dadır.
+
+Her durumda okumak için:
+
+```swift
+let providerMeta = response.data?.providerMeta ?? response.providerMeta
+```
+
+`raw` her zaman dolmaz:
+
+- `initPayment` ve `initWithRegisteredCard`: her zaman.
+- `registerAndPurchase`: Masterpass hata döndürdüğünde her zaman, diğer sonuçlarda yalnızca `.debug`'da.
+- Diğer fonksiyonlar: yalnızca `initPaywallSdk(..., logLevel: .debug)` ile.
 
 ### Başarılı Response
 
@@ -709,6 +740,53 @@ data: { token (OTP), redirectUrl (3D), … }
 status: .failed, success: false, source: .sdk | .paywall | .masterpass,
 errorCode: "MISSING_CARD_ALIAS", message: "…", field: "cardAlias"
 ```
+
+## Hata Kodları
+
+`errorCode` yalnızca `FAILED`'da dolar. Değerler web SDK ile aynıdır; sabitler `SdkErrorCodes` içindedir
+(ör. `SdkErrorCodes.OTP_IS_NOT_VALID`).
+
+**Çağrı sırası ve session:** `SDK_NOT_INITIALIZED`, `SESSION_NOT_STARTED`, `MISSING_TOKEN`,
+`PROVIDER_NOT_INITIALIZED`, `SESSION_EXPIRED` (backend'den yeni token alıp `initPaywallSdk`), `SDK_NOT_LOADED`,
+`INVALID_SESSION`, `MISSING_SESSION_ID`.
+
+**Başlatma:** `VERIFY_RESPONSE_INVALID`, `MASTERPASS_OBJECT_NULL`, `INIT_WITH_MASTERPASS_TOKEN_ERROR`,
+`MISSING_MERCHANT_ID`, `MASTERPASS_PROVIDER_INIT_ERROR`.
+
+**Parametre kontrolü** (`field` hatalı alanı gösterir): `MISSING_USER_ID`, `MISSING_ACCOUNT_KEY`,
+`MISSING_CARD_ALIAS`, `MISSING_CARD_HOLDER_NAME`, `MISSING_CARD_NUMBER`, `INVALID_CARD_NUMBER_FORMAT`,
+`MISSING_EXPIRY_DATE`, `INVALID_EXPIRY_DATE_FORMAT`, `MISSING_CVV`, `INVALID_CVV_FORMAT`,
+`MISSING_REQUEST_REFERENCE_NUMBER`, `MISSING_OTP_CODE`, `INVALID_AMOUNT`, `INVALID_CURRENCY_ID`,
+`MISSING_MERCHANT_UNIQUE_CODE`, `MISSING_TRACKING_CODE`, `MISSING_SUCCESS_URL`, `MISSING_FAIL_URL`,
+`MISSING_CLIENT_IP`, `ALIAS_REQUIRED`, `MISSING_OWNER_NAME`, `MISSING_CARD_DATA`, `TERMS_NOT_ACCEPTED` (mobil SDK'lara
+özel; web SDK'da yok).
+
+**İşlem:** `USER_NOT_FOUND`, `TOKEN_ALREADY_USED`, `DELETE_FAILED`, `UNKNOWN_ERROR`.
+
+**Ödeme:** `PAYWALL_INIT_FAILED` (ya da Paywall'ın kendi `ErrorCode`'u; Paywall'a ulaşılamadığında da bu döner),
+`MISSING_MASTERPASS_REQUEST_BODY`, `PAYMENT_INIT_FAILED`, `MASTERPASS_ERROR` (Masterpass'a ulaşılamadı),
+`MASTERPASS_TIMEOUT` (Masterpass zamanında cevap vermedi; ödemenin sonucu belirsizdir, tekrar denemeden önce
+sorgulayın), `SDK_ERROR` (beklenmeyen hata).
+
+**Masterpass'ın bilinen hataları** (SDK kodu + açıklayıcı mesaj):
+
+| Kod | Masterpass kodu | Anlamı |
+|---|---|---|
+| `4001` | `OTP_IS_NOT_VALID` | OTP yanlış |
+| `4002` | `ACCOUNT_NOT_LINKED_TO_MERCHANT` | Hesap merchant'a bağlı değil |
+| `4003` | `USER_NOT_FOUND` | Kullanıcı bulunamadı |
+| `4004` | `CARD_ALREADY_EXISTS` | Kart zaten kayıtlı |
+| `4005` | `MERCHANT_USER_ID_ALREADY_IN_USE` | Kullanıcı ID'si kullanımda |
+| `4006` | `FRAUD_DETECTED_DUE_TO_REPETITIVE_DELETION` | Art arda silme nedeniyle reddedildi |
+| `4007` | `INVALID_ACCOUNT_KEY_IN_TOKEN` | Telefon numarası token'dakiyle uyuşmuyor |
+| `4008` | `INVALID_CARD_NUMBER` | Kart numarası geçersiz |
+| `4009` | `INVALID_EXPIRY_DATE` | Son kullanma tarihi geçersiz |
+| `4010` | `INVALID_CVV` | CVV geçersiz |
+| `4011` | `MISSING_CARD_ALIAS` | Kart adı eksik |
+| `4012` | `MISSING_CARD_HOLDER_NAME` | Kart sahibi eksik |
+
+**Diğer Masterpass hataları** (ör. `ACCOUNT_NOT_FOUND`, `INSUFFICIENT_FUNDS`, `TOKEN_HAS_EXPIRED`) `errorCode`'da
+Masterpass'ın kendi koduyla, `message`'da Masterpass'ın mesajıyla döner.
 
 ## Environment'lar
 
@@ -738,8 +816,7 @@ Session bilgisi Masterpass ortamını belirtiyorsa (prod/UAT/test) o kullanılı
 - Ödeme OTP'si beklerken `addCard` veya `linkMerchant` yeni bir OTP başlatırsa bekleyen ödeme OTP'si iptal edilir.
 - OTP ve 3D ekranlarını SDK açmaz; ekranlar merchant uygulamasına aittir.
 - Jailbreak'li cihazlarda Masterpass çalışmaz; `providers.masterpass.initialize()` `MASTERPASS_PROVIDER_INIT_ERROR` döner.
-- `getCardList` 401 döndüğünde: yetki/token hatası (`AUTHENTICATION_FAILED`, `TOKEN_HAS_EXPIRED`, `..._IN_TOKEN` …)
-  `FAILED` olarak döner (yeni token alın); diğer 401'ler `ACTION_REQUIRED` + `.masterpassOtp`'dir.
+- Masterpass `getCardList`'te 401 döndüğünde sonuç `ACTION_REQUIRED` + `.masterpassOtp`'dir (web SDK ile aynı).
 
 ## Güvenlik
 

@@ -228,6 +228,68 @@
           },
           {
             "kind": "Var",
+            "name": "providerMeta",
+            "printedName": "providerMeta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaywallSDK.ProviderMeta?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProviderMeta",
+                    "printedName": "PaywallSDK.ProviderMeta",
+                    "usr": "s:10PaywallSDK12ProviderMetaV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK04InitA9SdkResultV12providerMetaAA08ProviderG0VSgvp",
+            "mangledName": "$s10PaywallSDK04InitA9SdkResultV12providerMetaAA08ProviderG0VSgvp",
+            "moduleName": "PaywallSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PaywallSDK.ProviderMeta?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProviderMeta",
+                        "printedName": "PaywallSDK.ProviderMeta",
+                        "usr": "s:10PaywallSDK12ProviderMetaV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK04InitA9SdkResultV12providerMetaAA08ProviderG0VSgvg",
+                "mangledName": "$s10PaywallSDK04InitA9SdkResultV12providerMetaAA08ProviderG0VSgvg",
+                "moduleName": "PaywallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -2687,6 +2749,68 @@
           },
           {
             "kind": "Var",
+            "name": "providerMeta",
+            "printedName": "providerMeta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaywallSDK.ProviderMeta?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProviderMeta",
+                    "printedName": "PaywallSDK.ProviderMeta",
+                    "usr": "s:10PaywallSDK12ProviderMetaV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK17GetCardListResultV12providerMetaAA08ProviderH0VSgvp",
+            "mangledName": "$s10PaywallSDK17GetCardListResultV12providerMetaAA08ProviderH0VSgvp",
+            "moduleName": "PaywallSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PaywallSDK.ProviderMeta?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProviderMeta",
+                        "printedName": "PaywallSDK.ProviderMeta",
+                        "usr": "s:10PaywallSDK12ProviderMetaV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK17GetCardListResultV12providerMetaAA08ProviderH0VSgvg",
+                "mangledName": "$s10PaywallSDK17GetCardListResultV12providerMetaAA08ProviderH0VSgvg",
+                "moduleName": "PaywallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -4529,6 +4653,68 @@
           },
           {
             "kind": "Var",
+            "name": "providerMeta",
+            "printedName": "providerMeta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaywallSDK.ProviderMeta?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProviderMeta",
+                    "printedName": "PaywallSDK.ProviderMeta",
+                    "usr": "s:10PaywallSDK12ProviderMetaV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK18LinkMerchantResultV12providerMetaAA08ProviderG0VSgvp",
+            "mangledName": "$s10PaywallSDK18LinkMerchantResultV12providerMetaAA08ProviderG0VSgvp",
+            "moduleName": "PaywallSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PaywallSDK.ProviderMeta?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProviderMeta",
+                        "printedName": "PaywallSDK.ProviderMeta",
+                        "usr": "s:10PaywallSDK12ProviderMetaV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK18LinkMerchantResultV12providerMetaAA08ProviderG0VSgvg",
+                "mangledName": "$s10PaywallSDK18LinkMerchantResultV12providerMetaAA08ProviderG0VSgvg",
+                "moduleName": "PaywallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -4772,6 +4958,68 @@
                 "declKind": "Accessor",
                 "usr": "s:10PaywallSDK15ResendOtpResultV5tokenSSSgvg",
                 "mangledName": "$s10PaywallSDK15ResendOtpResultV5tokenSSSgvg",
+                "moduleName": "PaywallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "providerMeta",
+            "printedName": "providerMeta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaywallSDK.ProviderMeta?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProviderMeta",
+                    "printedName": "PaywallSDK.ProviderMeta",
+                    "usr": "s:10PaywallSDK12ProviderMetaV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK15ResendOtpResultV12providerMetaAA08ProviderG0VSgvp",
+            "mangledName": "$s10PaywallSDK15ResendOtpResultV12providerMetaAA08ProviderG0VSgvp",
+            "moduleName": "PaywallSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PaywallSDK.ProviderMeta?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProviderMeta",
+                        "printedName": "PaywallSDK.ProviderMeta",
+                        "usr": "s:10PaywallSDK12ProviderMetaV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK15ResendOtpResultV12providerMetaAA08ProviderG0VSgvg",
+                "mangledName": "$s10PaywallSDK15ResendOtpResultV12providerMetaAA08ProviderG0VSgvg",
                 "moduleName": "PaywallSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -5252,6 +5500,68 @@
           },
           {
             "kind": "Var",
+            "name": "providerMeta",
+            "printedName": "providerMeta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaywallSDK.ProviderMeta?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProviderMeta",
+                    "printedName": "PaywallSDK.ProviderMeta",
+                    "usr": "s:10PaywallSDK12ProviderMetaV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK16DeleteCardResultV12providerMetaAA08ProviderG0VSgvp",
+            "mangledName": "$s10PaywallSDK16DeleteCardResultV12providerMetaAA08ProviderG0VSgvp",
+            "moduleName": "PaywallSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PaywallSDK.ProviderMeta?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProviderMeta",
+                        "printedName": "PaywallSDK.ProviderMeta",
+                        "usr": "s:10PaywallSDK12ProviderMetaV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK16DeleteCardResultV12providerMetaAA08ProviderG0VSgvg",
+                "mangledName": "$s10PaywallSDK16DeleteCardResultV12providerMetaAA08ProviderG0VSgvg",
+                "moduleName": "PaywallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -5419,6 +5729,68 @@
                 "declKind": "Accessor",
                 "usr": "s:10PaywallSDK28MasterpassProviderInitResultV24masterpassSdkInitializedSbvg",
                 "mangledName": "$s10PaywallSDK28MasterpassProviderInitResultV24masterpassSdkInitializedSbvg",
+                "moduleName": "PaywallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "providerMeta",
+            "printedName": "providerMeta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaywallSDK.ProviderMeta?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProviderMeta",
+                    "printedName": "PaywallSDK.ProviderMeta",
+                    "usr": "s:10PaywallSDK12ProviderMetaV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK28MasterpassProviderInitResultV12providerMetaAA0dH0VSgvp",
+            "mangledName": "$s10PaywallSDK28MasterpassProviderInitResultV12providerMetaAA0dH0VSgvp",
+            "moduleName": "PaywallSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PaywallSDK.ProviderMeta?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProviderMeta",
+                        "printedName": "PaywallSDK.ProviderMeta",
+                        "usr": "s:10PaywallSDK12ProviderMetaV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK28MasterpassProviderInitResultV12providerMetaAA0dH0VSgvg",
+                "mangledName": "$s10PaywallSDK28MasterpassProviderInitResultV12providerMetaAA0dH0VSgvg",
                 "moduleName": "PaywallSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -6759,6 +7131,68 @@
                 "declKind": "Accessor",
                 "usr": "s:10PaywallSDK15VerifyOtpResultV18merchantUniqueCodeSSSgvg",
                 "mangledName": "$s10PaywallSDK15VerifyOtpResultV18merchantUniqueCodeSSSgvg",
+                "moduleName": "PaywallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "providerMeta",
+            "printedName": "providerMeta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaywallSDK.ProviderMeta?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProviderMeta",
+                    "printedName": "PaywallSDK.ProviderMeta",
+                    "usr": "s:10PaywallSDK12ProviderMetaV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK15VerifyOtpResultV12providerMetaAA08ProviderG0VSgvp",
+            "mangledName": "$s10PaywallSDK15VerifyOtpResultV12providerMetaAA08ProviderG0VSgvp",
+            "moduleName": "PaywallSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PaywallSDK.ProviderMeta?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProviderMeta",
+                        "printedName": "PaywallSDK.ProviderMeta",
+                        "usr": "s:10PaywallSDK12ProviderMetaV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK15VerifyOtpResultV12providerMetaAA08ProviderG0VSgvg",
+                "mangledName": "$s10PaywallSDK15VerifyOtpResultV12providerMetaAA08ProviderG0VSgvg",
                 "moduleName": "PaywallSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8404,6 +8838,68 @@
                 "declKind": "Accessor",
                 "usr": "s:10PaywallSDK13AddCardResultV12errorDetailsAA0A4JSONOSgvg",
                 "mangledName": "$s10PaywallSDK13AddCardResultV12errorDetailsAA0A4JSONOSgvg",
+                "moduleName": "PaywallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "providerMeta",
+            "printedName": "providerMeta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaywallSDK.ProviderMeta?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProviderMeta",
+                    "printedName": "PaywallSDK.ProviderMeta",
+                    "usr": "s:10PaywallSDK12ProviderMetaV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK13AddCardResultV12providerMetaAA08ProviderG0VSgvp",
+            "mangledName": "$s10PaywallSDK13AddCardResultV12providerMetaAA08ProviderG0VSgvp",
+            "moduleName": "PaywallSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PaywallSDK.ProviderMeta?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProviderMeta",
+                        "printedName": "PaywallSDK.ProviderMeta",
+                        "usr": "s:10PaywallSDK12ProviderMetaV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK13AddCardResultV12providerMetaAA08ProviderG0VSgvg",
+                "mangledName": "$s10PaywallSDK13AddCardResultV12providerMetaAA08ProviderG0VSgvg",
                 "moduleName": "PaywallSDK",
                 "implicit": true,
                 "accessorKind": "get"
@@ -18064,6 +18560,68 @@
           },
           {
             "kind": "Var",
+            "name": "providerMeta",
+            "printedName": "providerMeta",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaywallSDK.ProviderMeta?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProviderMeta",
+                    "printedName": "PaywallSDK.ProviderMeta",
+                    "usr": "s:10PaywallSDK12ProviderMetaV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK27MasterpassPaymentInitResultV12providerMetaAA08ProviderH0VSgvp",
+            "mangledName": "$s10PaywallSDK27MasterpassPaymentInitResultV12providerMetaAA08ProviderH0VSgvp",
+            "moduleName": "PaywallSDK",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PaywallSDK.ProviderMeta?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProviderMeta",
+                        "printedName": "PaywallSDK.ProviderMeta",
+                        "usr": "s:10PaywallSDK12ProviderMetaV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK27MasterpassPaymentInitResultV12providerMetaAA08ProviderH0VSgvg",
+                "mangledName": "$s10PaywallSDK27MasterpassPaymentInitResultV12providerMetaAA08ProviderH0VSgvg",
+                "moduleName": "PaywallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -20621,7 +21179,7 @@
           {
             "kind": "Function",
             "name": "initPaywallSdk",
-            "printedName": "initPaywallSdk(environment:token:includeMasterpassSession:)",
+            "printedName": "initPaywallSdk(environment:token:includeMasterpassSession:logLevel:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20654,11 +21212,18 @@
                 "name": "Bool",
                 "printedName": "Swift.Bool",
                 "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PaywallLogLevel",
+                "printedName": "PaywallSDK.PaywallLogLevel",
+                "hasDefaultArg": true,
+                "usr": "s:10PaywallSDK0A8LogLevelO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10PaywallSDK0A3SdkO04initaC011environment5token24includeMasterpassSessionAA0C8ResponseVyAA04InitaC6ResultVGAA0A11EnvironmentO_SSSbtYaFZ",
-            "mangledName": "$s10PaywallSDK0A3SdkO04initaC011environment5token24includeMasterpassSessionAA0C8ResponseVyAA04InitaC6ResultVGAA0A11EnvironmentO_SSSbtYaFZ",
+            "usr": "s:10PaywallSDK0A3SdkO04initaC011environment5token24includeMasterpassSession8logLevelAA0C8ResponseVyAA04InitaC6ResultVGAA0A11EnvironmentO_SSSbAA0a3LogK0OtYaFZ",
+            "mangledName": "$s10PaywallSDK0A3SdkO04initaC011environment5token24includeMasterpassSession8logLevelAA0C8ResponseVyAA04InitaC6ResultVGAA0A11EnvironmentO_SSSbAA0a3LogK0OtYaFZ",
             "moduleName": "PaywallSDK",
             "static": true,
             "declAttributes": [
@@ -22528,6 +23093,451 @@
                         "name": "SdkActionType",
                         "printedName": "PaywallSDK.SdkActionType",
                         "usr": "s:10PaywallSDK13SdkActionTypeO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12CaseIterableP",
+            "mangledName": "$ss12CaseIterableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaywallLogLevel",
+        "printedName": "PaywallLogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "none",
+            "printedName": "none",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaywallSDK.PaywallLogLevel.Type) -> PaywallSDK.PaywallLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaywallLogLevel",
+                    "printedName": "PaywallSDK.PaywallLogLevel",
+                    "usr": "s:10PaywallSDK0A8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaywallSDK.PaywallLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaywallLogLevel",
+                        "printedName": "PaywallSDK.PaywallLogLevel",
+                        "usr": "s:10PaywallSDK0A8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaywallSDK0A8LogLevelO4noneyA2CmF",
+            "mangledName": "$s10PaywallSDK0A8LogLevelO4noneyA2CmF",
+            "moduleName": "PaywallSDK",
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaywallSDK.PaywallLogLevel.Type) -> PaywallSDK.PaywallLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaywallLogLevel",
+                    "printedName": "PaywallSDK.PaywallLogLevel",
+                    "usr": "s:10PaywallSDK0A8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaywallSDK.PaywallLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaywallLogLevel",
+                        "printedName": "PaywallSDK.PaywallLogLevel",
+                        "usr": "s:10PaywallSDK0A8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaywallSDK0A8LogLevelO5erroryA2CmF",
+            "mangledName": "$s10PaywallSDK0A8LogLevelO5erroryA2CmF",
+            "moduleName": "PaywallSDK",
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaywallSDK.PaywallLogLevel.Type) -> PaywallSDK.PaywallLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaywallLogLevel",
+                    "printedName": "PaywallSDK.PaywallLogLevel",
+                    "usr": "s:10PaywallSDK0A8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaywallSDK.PaywallLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaywallLogLevel",
+                        "printedName": "PaywallSDK.PaywallLogLevel",
+                        "usr": "s:10PaywallSDK0A8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaywallSDK0A8LogLevelO4infoyA2CmF",
+            "mangledName": "$s10PaywallSDK0A8LogLevelO4infoyA2CmF",
+            "moduleName": "PaywallSDK",
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaywallSDK.PaywallLogLevel.Type) -> PaywallSDK.PaywallLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaywallLogLevel",
+                    "printedName": "PaywallSDK.PaywallLogLevel",
+                    "usr": "s:10PaywallSDK0A8LogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaywallSDK.PaywallLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaywallLogLevel",
+                        "printedName": "PaywallSDK.PaywallLogLevel",
+                        "usr": "s:10PaywallSDK0A8LogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaywallSDK0A8LogLevelO5debugyA2CmF",
+            "mangledName": "$s10PaywallSDK0A8LogLevelO5debugyA2CmF",
+            "moduleName": "PaywallSDK",
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Var",
+            "name": "wireValue",
+            "printedName": "wireValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK0A8LogLevelO9wireValueSSvp",
+            "mangledName": "$s10PaywallSDK0A8LogLevelO9wireValueSSvp",
+            "moduleName": "PaywallSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK0A8LogLevelO9wireValueSSvg",
+                "mangledName": "$s10PaywallSDK0A8LogLevelO9wireValueSSvg",
+                "moduleName": "PaywallSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaywallSDK.PaywallLogLevel?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaywallLogLevel",
+                    "printedName": "PaywallSDK.PaywallLogLevel",
+                    "usr": "s:10PaywallSDK0A8LogLevelO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10PaywallSDK0A8LogLevelO8rawValueACSgSS_tcfc",
+            "mangledName": "$s10PaywallSDK0A8LogLevelO8rawValueACSgSS_tcfc",
+            "moduleName": "PaywallSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK0A8LogLevelO8rawValueSSvp",
+            "mangledName": "$s10PaywallSDK0A8LogLevelO8rawValueSSvp",
+            "moduleName": "PaywallSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK0A8LogLevelO8rawValueSSvg",
+                "mangledName": "$s10PaywallSDK0A8LogLevelO8rawValueSSvg",
+                "moduleName": "PaywallSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allCases",
+            "printedName": "allCases",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[PaywallSDK.PaywallLogLevel]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PaywallLogLevel",
+                    "printedName": "PaywallSDK.PaywallLogLevel",
+                    "usr": "s:10PaywallSDK0A8LogLevelO"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK0A8LogLevelO8allCasesSayACGvpZ",
+            "mangledName": "$s10PaywallSDK0A8LogLevelO8allCasesSayACGvpZ",
+            "moduleName": "PaywallSDK",
+            "static": true,
+            "implicit": true,
+            "declAttributes": [
+              "Nonisolated"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PaywallSDK.PaywallLogLevel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaywallLogLevel",
+                        "printedName": "PaywallSDK.PaywallLogLevel",
+                        "usr": "s:10PaywallSDK0A8LogLevelO"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK0A8LogLevelO8allCasesSayACGvgZ",
+                "mangledName": "$s10PaywallSDK0A8LogLevelO8allCasesSayACGvgZ",
+                "moduleName": "PaywallSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10PaywallSDK0A8LogLevelO",
+        "mangledName": "$s10PaywallSDK0A8LogLevelO",
+        "moduleName": "PaywallSDK",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CaseIterable",
+            "printedName": "CaseIterable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "AllCases",
+                "printedName": "AllCases",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[PaywallSDK.PaywallLogLevel]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "PaywallLogLevel",
+                        "printedName": "PaywallSDK.PaywallLogLevel",
+                        "usr": "s:10PaywallSDK0A8LogLevelO"
                       }
                     ],
                     "usr": "s:Sa"
@@ -25173,6 +26183,53 @@
                 "declKind": "Accessor",
                 "usr": "s:10PaywallSDK13SdkErrorCodesO16MASTERPASS_ERRORSSvgZ",
                 "mangledName": "$s10PaywallSDK13SdkErrorCodesO16MASTERPASS_ERRORSSvgZ",
+                "moduleName": "PaywallSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "MASTERPASS_TIMEOUT",
+            "printedName": "MASTERPASS_TIMEOUT",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaywallSDK13SdkErrorCodesO18MASTERPASS_TIMEOUTSSvpZ",
+            "mangledName": "$s10PaywallSDK13SdkErrorCodesO18MASTERPASS_TIMEOUTSSvpZ",
+            "moduleName": "PaywallSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaywallSDK13SdkErrorCodesO18MASTERPASS_TIMEOUTSSvgZ",
+                "mangledName": "$s10PaywallSDK13SdkErrorCodesO18MASTERPASS_TIMEOUTSSvgZ",
                 "moduleName": "PaywallSDK",
                 "static": true,
                 "implicit": true,
@@ -33104,28 +34161,28 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.6oq3PfCUZf\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphonesimulator\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.XbyXv3rJAu\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphonesimulator\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 295,
       "length": 23,
       "value": "\"PaywallSDK_PaywallSDK\""
     },
     {
-      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.6oq3PfCUZf\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphonesimulator\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.XbyXv3rJAu\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphonesimulator\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "Array",
       "offset": 965,
       "length": 2,
       "value": "[]"
     },
     {
-      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.6oq3PfCUZf\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphonesimulator\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.XbyXv3rJAu\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphonesimulator\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1492,
       "length": 9,
       "value": "\".bundle\""
     },
     {
-      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.6oq3PfCUZf\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphonesimulator\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
+      "filePath": "\/var\/folders\/r5\/0r8pt8tj4_s_xg775w27mdxr0000gn\/T\/tmp.XbyXv3rJAu\/dd\/Build\/Intermediates.noindex\/PaywallSDK.build\/Release-iphonesimulator\/PaywallSDK.build\/DerivedSources\/resource_bundle_accessor.swift",
       "kind": "StringLiteral",
       "offset": 1644,
       "length": 51,
@@ -34001,43 +35058,57 @@
     },
     {
       "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
-      "kind": "Array",
-      "offset": 5112,
-      "length": 241,
-      "value": "[\"AUTHENTICATION_FAILED\", \"CLIENT_IS_NOT_AUTHENTICATED\", \"SOURCE_CHANNEL_IS_NOT_AUTHORIZED\", \"TOKEN_IS_REQUIRED\", \"TOKEN_IS_NOT_VALID\", \"TOKEN_HAS_EXPIRED\", \"TOKEN_ALREADY_USED\"]"
-    },
-    {
-      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
       "kind": "StringLiteral",
-      "offset": 5840,
+      "offset": 4609,
       "length": 14,
       "value": "\"linkMerchant\""
     },
     {
       "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
       "kind": "StringLiteral",
-      "offset": 9022,
+      "offset": 7791,
       "length": 11,
       "value": "\"resendOtp\""
     },
     {
       "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
       "kind": "StringLiteral",
-      "offset": 9076,
+      "offset": 7845,
       "length": 20,
       "value": "\"TOKEN_ALREADY_USED\""
     },
     {
       "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/AccountOperations.swift",
       "kind": "StringLiteral",
-      "offset": 12055,
+      "offset": 10824,
       "length": 12,
       "value": "\"deleteCard\""
     },
     {
       "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/MasterpassOperationSupport.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3620,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/MasterpassOperationSupport.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5211,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/MasterpassOperationSupport.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5679,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/MasterpassOperationSupport.swift",
       "kind": "IntegerLiteral",
-      "offset": 5459,
+      "offset": 6118,
       "length": 3,
       "value": "400"
     },
@@ -34142,7 +35213,7 @@
     {
       "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Internal\/Operations\/PaymentOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 14214,
+      "offset": 14404,
       "length": 5,
       "value": "false"
     },
@@ -34226,14 +35297,14 @@
     {
       "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Payment\/PaymentModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 7605,
+      "offset": 7664,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/Payment\/PaymentModels.swift",
       "kind": "BooleanLiteral",
-      "offset": 12275,
+      "offset": 12334,
       "length": 4,
       "value": "true"
     },
@@ -34289,14 +35360,14 @@
     {
       "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/PaywallSdk.swift",
       "kind": "StringLiteral",
-      "offset": 784,
+      "offset": 802,
       "length": 7,
       "value": "\"1.0.0\""
     },
     {
       "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/PaywallSdk.swift",
       "kind": "StringLiteral",
-      "offset": 900,
+      "offset": 918,
       "length": 7,
       "value": "\"1.7.1\""
     },
@@ -34702,7 +35773,14 @@
     {
       "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
       "kind": "StringLiteral",
-      "offset": 3687,
+      "offset": 3553,
+      "length": 20,
+      "value": "\"MASTERPASS_TIMEOUT\""
+    },
+    {
+      "filePath": "\/Users\/tunahandemirdoven\/Projects\/PaywallIosSdk\/Sources\/PaywallSDK\/SdkErrorCodes.swift",
+      "kind": "StringLiteral",
+      "offset": 3751,
       "length": 20,
       "value": "\"TERMS_NOT_ACCEPTED\""
     },

@@ -19,6 +19,9 @@ public struct InitPaywallSdkResult : Swift.Sendable, Swift.Equatable, Swift.Cust
   public let sdkInitialized: Swift.Bool
   public let hasMasterpassSession: Swift.Bool
   public let body: PaywallSDK.VerifyTempTokenBody?
+  public var providerMeta: PaywallSDK.ProviderMeta? {
+    get
+  }
   public var description: Swift.String {
     get
   }
@@ -83,6 +86,9 @@ public struct GetCardListResult : Swift.Sendable, Swift.Equatable, Swift.CustomS
   public let cards: [PaywallSDK.MasterpassCard]?
   public let accountInformation: PaywallSDK.MasterpassAccountInformation?
   public let token: Swift.String?
+  public var providerMeta: PaywallSDK.ProviderMeta? {
+    get
+  }
   public var description: Swift.String {
     get
   }
@@ -128,6 +134,9 @@ public struct LinkMerchantResult : Swift.Sendable, Swift.Equatable, Swift.Custom
   public let cards: [PaywallSDK.MasterpassCard]?
   public let accountInformation: PaywallSDK.MasterpassAccountInformation?
   public let token: Swift.String?
+  public var providerMeta: PaywallSDK.ProviderMeta? {
+    get
+  }
   public var description: Swift.String {
     get
   }
@@ -136,6 +145,9 @@ public struct LinkMerchantResult : Swift.Sendable, Swift.Equatable, Swift.Custom
 public struct ResendOtpResult : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
   public let success: Swift.Bool?
   public let token: Swift.String?
+  public var providerMeta: PaywallSDK.ProviderMeta? {
+    get
+  }
   public var description: Swift.String {
     get
   }
@@ -151,6 +163,9 @@ public struct DeleteCardParams : Swift.Sendable, Swift.CustomStringConvertible {
 }
 public struct DeleteCardResult : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
   public let success: Swift.Bool
+  public var providerMeta: PaywallSDK.ProviderMeta? {
+    get
+  }
   public var description: Swift.String {
     get
   }
@@ -158,6 +173,9 @@ public struct DeleteCardResult : Swift.Sendable, Swift.Equatable, Swift.CustomSt
 }
 public struct MasterpassProviderInitResult : Swift.Sendable, Swift.Equatable, Swift.CustomStringConvertible {
   public let masterpassSdkInitialized: Swift.Bool
+  public var providerMeta: PaywallSDK.ProviderMeta? {
+    get
+  }
   public var description: Swift.String {
     get
   }
@@ -188,6 +206,9 @@ public struct VerifyOtpResult : Swift.Sendable, Swift.Equatable, Swift.CustomStr
   public let activityId: Swift.Int64?
   public let uniqueCode: Swift.String?
   public let merchantUniqueCode: Swift.String?
+  public var providerMeta: PaywallSDK.ProviderMeta? {
+    get
+  }
   public var description: Swift.String {
     get
   }
@@ -218,6 +239,9 @@ public struct AddCardResult : Swift.Sendable, Swift.Equatable, Swift.CustomStrin
   public let redirectUrl: Swift.String?
   public let errorCode: Swift.String?
   public let errorDetails: PaywallSDK.PaywallJSON?
+  public var providerMeta: PaywallSDK.ProviderMeta? {
+    get
+  }
   public var description: Swift.String {
     get
   }
@@ -401,6 +425,9 @@ public struct MasterpassPaymentInitResult : Swift.Sendable, Swift.Equatable, Swi
   public let uniqueCode: Swift.String?
   public let merchantUniqueCode: Swift.String?
   public let maskedCard: PaywallSDK.MaskedCard?
+  public var providerMeta: PaywallSDK.ProviderMeta? {
+    get
+  }
   public var description: Swift.String {
     get
   }
@@ -510,7 +537,7 @@ public enum PaywallSdk {
   public static let masterpassVersion: Swift.String
   public static let providers: PaywallSDK.Providers
   public static let payment: PaywallSDK.Payment
-  public static func initPaywallSdk(environment: PaywallSDK.PaywallEnvironment, token: Swift.String, includeMasterpassSession: Swift.Bool) async -> PaywallSDK.SdkResponse<PaywallSDK.InitPaywallSdkResult>
+  public static func initPaywallSdk(environment: PaywallSDK.PaywallEnvironment, token: Swift.String, includeMasterpassSession: Swift.Bool, logLevel: PaywallSDK.PaywallLogLevel = .error) async -> PaywallSDK.SdkResponse<PaywallSDK.InitPaywallSdkResult>
   #if compiler(>=5.3) && $NonescapableTypes
   @discardableResult
   public static func setNetworkListener(_ listener: (any PaywallSDK.PaywallNetworkListener)?) -> Swift.Bool
@@ -594,6 +621,26 @@ public enum PaywallSdk {
     get
   }
 }
+@frozen public enum PaywallLogLevel : Swift.String, Swift.Sendable, Swift.CaseIterable {
+  case none
+  case error
+  case info
+  case debug
+  public var wireValue: Swift.String {
+    get
+  }
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias AllCases = [PaywallSDK.PaywallLogLevel]
+  public typealias RawValue = Swift.String
+  nonisolated public static var allCases: [PaywallSDK.PaywallLogLevel] {
+    get
+  }
+  public var rawValue: Swift.String {
+    get
+  }
+}
 @frozen public enum PaywallEnvironment : Swift.String, Swift.Sendable, Swift.CaseIterable {
   case dev
   case test
@@ -661,6 +708,7 @@ public enum SdkErrorCodes {
   public static let MISSING_MASTERPASS_REQUEST_BODY: Swift.String
   public static let PAYMENT_INIT_FAILED: Swift.String
   public static let MASTERPASS_ERROR: Swift.String
+  public static let MASTERPASS_TIMEOUT: Swift.String
   public static let TERMS_NOT_ACCEPTED: Swift.String
 }
 public struct SdkResponse<T> {
@@ -1043,6 +1091,10 @@ extension PaywallSDK.SdkActionType : Swift.Equatable {}
 extension PaywallSDK.SdkActionType : Swift.Hashable {}
 extension PaywallSDK.SdkActionType : Swift.RawRepresentable {}
 extension PaywallSDK.SdkActionType : Swift.BitwiseCopyable {}
+extension PaywallSDK.PaywallLogLevel : Swift.Equatable {}
+extension PaywallSDK.PaywallLogLevel : Swift.Hashable {}
+extension PaywallSDK.PaywallLogLevel : Swift.RawRepresentable {}
+extension PaywallSDK.PaywallLogLevel : Swift.BitwiseCopyable {}
 extension PaywallSDK.PaywallEnvironment : Swift.Equatable {}
 extension PaywallSDK.PaywallEnvironment : Swift.Hashable {}
 extension PaywallSDK.PaywallEnvironment : Swift.RawRepresentable {}

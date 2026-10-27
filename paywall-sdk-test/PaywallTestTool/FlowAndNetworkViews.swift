@@ -278,7 +278,7 @@ struct GuideView: View {
                     Text("• actionType (yalnızca ACTION_REQUIRED): BANK_OTP, MASTERPASS_OTP, 3D, MERCHANT_LINK_REQUIRED")
                     Text("• errorCode + message (yalnızca FAILED); field: hatalı alan, actionHint: sonraki adım")
                     Text("• data: işleme özel sonuç (kartlar, redirectUrl, paymentId, maskedCard...)")
-                    Text("• providerMeta: httpStatus ve Masterpass responseCode (ör. 0000, 5010)")
+                    Text("• data.providerMeta: httpStatus, Masterpass responseCode (ör. 0000, 5010) ve raw (ham cevap). data yoksa cevabın kendisinde")
                 }
                 .font(.footnote)
             }

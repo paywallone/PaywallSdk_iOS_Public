@@ -167,8 +167,11 @@ enum Guide {
             if let action { steps += action.actions }
             if code == "MASTERPASS_ERROR" {
                 steps.append("Masterpass'a ulaşılamadı ya da cevap çözülemedi; bağlantıyı kontrol edip tekrar dene.")
+            } else if code == "MASTERPASS_TIMEOUT" {
+                steps.append("Masterpass zamanında cevap vermedi; ödemenin sonucu belirsiz. "
+                    + "Tekrar denemeden önce ödemenin durumunu Paywall'dan sorgula.")
             } else if code == "SDK_ERROR" {
-                steps.append("Beklenmeyen hata (ör. Paywall'a ulaşılamadı). message alanına bak.")
+                steps.append("Beklenmeyen hata. message alanına bak.")
             }
             if let message = response.message, message != meaning { steps.append("SDK mesajı: \(message)") }
         }

@@ -1,11 +1,10 @@
 import Foundation
 import PaywallSDK
 
-/// Shows `SdkResponse` values as JSON.
+/// Shows `SdkResponse` values as JSON, as the web SDK prints them: tokens as they are, `raw` as JSON and empty
+/// (`nil`) fields left out.
 /// Built with `Mirror`, so every public field of the SDK result types appears without extra code.
 enum SdkJSON {
-    private static let tokenKeys: Set<String> = ["token", "masterpassToken", "accessToken", "Token", "MasterpassToken"]
-
     static func response<T>(_ response: SdkResponse<T>) -> PaywallJSON {
         let object: [String: PaywallJSON] = [
             "success": .bool(response.success),
@@ -15,12 +14,21 @@ enum SdkJSON {
             "errorCode": response.errorCode.map(PaywallJSON.string) ?? .null,
             "actionType": response.actionType.map { .string($0.wireValue) } ?? .null,
             "data": response.data.map(value) ?? .null,
-            "providerMeta": response.providerMeta.map(value) ?? .null,
+            "providerMeta": response.providerMeta.map(providerMeta) ?? .null,
             "actionHint": response.actionHint.map(PaywallJSON.string) ?? .null,
             "field": response.field.map(PaywallJSON.string) ?? .null,
             "nextActionHint": response.nextActionHint.map(PaywallJSON.string) ?? .null,
         ]
-        return masked(.object(object))
+        return .object(object.filter { $0.value != .null })
+    }
+
+    /// `raw` is JSON text in the SDK; shown as JSON, as the web SDK returns it.
+    private static func providerMeta(_ meta: ProviderMeta) -> PaywallJSON {
+        var object: [String: PaywallJSON] = [:]
+        if let httpStatus = meta.httpStatus { object["httpStatus"] = .number(String(httpStatus)) }
+        if let responseCode = meta.responseCode { object["responseCode"] = .string(responseCode) }
+        if let raw = meta.raw { object["raw"] = PaywallJSON.parse(raw) ?? .string(raw) }
+        return .object(object)
     }
 
     /// Short summary of a response: success, status, actionType and message.
@@ -33,15 +41,17 @@ enum SdkJSON {
         ])
     }
 
+    /// Keeps the first 6 and last 4 characters (the merchant's access token in request logs).
     static func maskToken(_ token: String?) -> PaywallJSON {
         guard let token else { return .null }
         return .string(token.count < 8 ? "***" : String(token.prefix(6)) + "..." + String(token.suffix(4)))
     }
 
-    /// Reflects any SDK value into JSON.
+    /// Reflects any SDK value into JSON; `nil` fields are left out.
     static func value(_ any: Any) -> PaywallJSON {
         switch any {
         case let json as PaywallJSON: return json
+        case let meta as ProviderMeta: return providerMeta(meta)
         case let string as String: return .string(string)
         case let bool as Bool: return .bool(bool)
         case let int as Int: return .number(String(int))
@@ -65,32 +75,14 @@ enum SdkJSON {
             var object: [String: PaywallJSON] = [:]
             for child in mirror.children {
                 guard let label = child.label else { continue }
-                object[label] = value(child.value)
+                let json = value(child.value)
+                if json != .null { object[label] = json }
             }
             return .object(object)
         case .enum:
             return .string(String(describing: any))
         default:
             return .string(String(describing: any))
-        }
-    }
-
-    private static func masked(_ json: PaywallJSON) -> PaywallJSON {
-        switch json {
-        case let .object(object):
-            var result: [String: PaywallJSON] = [:]
-            for (key, value) in object {
-                if tokenKeys.contains(key), let text = value.stringValue {
-                    result[key] = maskToken(text)
-                } else {
-                    result[key] = masked(value)
-                }
-            }
-            return .object(result)
-        case let .array(values):
-            return .array(values.map(masked))
-        default:
-            return json
         }
     }
 }
